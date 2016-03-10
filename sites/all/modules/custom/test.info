@@ -1,0 +1,5 @@
+;this is a test module
+name = Test
+description = This is a test module
+version = 1
+core = 7.x
