@@ -1,0 +1,16 @@
+name = Our Awards and Professionals
+description = content type awards and professionals
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = miscellaneous_content_type
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_prof_description
+features[field_base][] = field_prof_pic
+features[field_instance][] = node-our_awards-body
+features[field_instance][] = node-professionals-field_prof_description
+features[field_instance][] = node-professionals-field_prof_pic
+features[node][] = our_awards
+features[node][] = professionals
