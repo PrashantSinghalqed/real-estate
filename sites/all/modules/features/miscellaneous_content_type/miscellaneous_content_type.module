@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the miscellaneous content type feature.
  */
+
+include_once 'miscellaneous_content_type.features.inc';
