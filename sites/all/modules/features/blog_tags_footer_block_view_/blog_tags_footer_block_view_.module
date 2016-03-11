@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Blog Tags footer block view  feature.
+ */
+
+include_once 'blog_tags_footer_block_view_.features.inc';
