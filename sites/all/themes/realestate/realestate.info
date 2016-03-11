@@ -1,0 +1,15 @@
+name = Real Estate Theme
+description = Drupal 7 responsive theme for Real estate website
+
+core = 7.x
+
+scripts[] = js/realestate.js
+
+stylesheets[all][] = css/style.css
+
+
+regions[header_top] = Header Top
+regions[header] = Header
+regions[preface] = Preface
+regions[content] = Content
+regions[footer] = Footer
