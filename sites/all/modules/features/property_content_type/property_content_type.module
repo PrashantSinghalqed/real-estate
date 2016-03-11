@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Property content-type feature.
+ */
+
+include_once 'property_content_type.features.inc';

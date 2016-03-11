@@ -1,0 +1,16 @@
+name = Testimonial Content-type
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_client_designation
+features[field_base][] = field_client_name
+features[field_base][] = field_testimonial_description
+features[field_base][] = field_testimonial_image
+features[field_instance][] = node-testimonial-field_client_designation
+features[field_instance][] = node-testimonial-field_client_name
+features[field_instance][] = node-testimonial-field_testimonial_description
+features[field_instance][] = node-testimonial-field_testimonial_image
+features[node][] = testimonial

@@ -6,3 +6,4 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
+sites/all/modules/crap
