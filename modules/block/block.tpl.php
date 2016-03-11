@@ -45,10 +45,7 @@
  */
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-<<<<<<< HEAD
-=======
 
->>>>>>> 450b1a0c49409e025223e231b707db6e7eabd9e4
   <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
   <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
