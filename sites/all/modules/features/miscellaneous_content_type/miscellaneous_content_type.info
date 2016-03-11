@@ -1,0 +1,6 @@
+name = miscellaneous content type
+description = miscellaneous content type created and expoerted
+core = 7.x
+package = Features
+features[features_api][] = api:2
+project path = sites/all/modules/features
