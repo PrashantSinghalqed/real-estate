@@ -48,7 +48,7 @@
 
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
+  <title><?php// print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
