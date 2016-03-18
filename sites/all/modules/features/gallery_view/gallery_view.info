@@ -1,0 +1,10 @@
+name = gallery view
+core = 7.x
+package = Features
+dependencies[] = views
+dependencies[] = views_isotope_views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = gallery_menu
+features[views_view][] = main_gallery
+features_exclude[dependencies][ctools] = ctools

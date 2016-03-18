@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the static text view feature.
+ */
+
+include_once 'static_text_view.features.inc';
