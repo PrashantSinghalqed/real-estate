@@ -24,6 +24,7 @@ features[menu_links][] = main-menu_gallery-2:Gallery2
 features[menu_links][] = main-menu_gallery3:Gallery3
 features[menu_links][] = main-menu_gallery4:Gallery4
 features[menu_links][] = main-menu_gallery:gallery-menu
+features[menu_links][] = main-menu_home:<front>
 features[views_view][] = gallery_menu
 features[views_view][] = main_gallery
 features_exclude[dependencies][ctools] = ctools
