@@ -11,6 +11,9 @@ function gallery_view_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "flexslider" && $api == "flexslider_default_preset") {
     return array("version" => "1");
   }
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -42,8 +45,8 @@ function gallery_view_image_default_styles() {
       7 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 400,
-          'height' => 400,
+          'width' => 500,
+          'height' => 500,
         ),
         'weight' => 2,
       ),
@@ -66,8 +69,8 @@ function gallery_view_image_default_styles() {
       9 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 280,
-          'height' => 280,
+          'width' => 350,
+          'height' => 350,
         ),
         'weight' => 2,
       ),
@@ -87,11 +90,11 @@ function gallery_view_image_default_styles() {
         ),
         'weight' => 1,
       ),
-      5 => array(
-        'name' => 'image_scale_and_crop',
+      10 => array(
+        'name' => 'image_resize',
         'data' => array(
-          'width' => 200,
-          'height' => 200,
+          'width' => 300,
+          'height' => 300,
         ),
         'weight' => 2,
       ),
