@@ -100,14 +100,14 @@ h2{
     margin-bottom: 52px;
     position: relative;
 }
-img{
+/* img{
   -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: auto;
     max-width: 100%;
     width: auto;
-}
+} */
 p{
       margin-bottom: 26px;
 }
