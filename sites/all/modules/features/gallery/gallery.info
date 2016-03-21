@@ -1,9 +1,13 @@
 name = gallery
 core = 7.x
 package = Features
+dependencies[] = colorbox
 dependencies[] = ctools
 dependencies[] = image
+dependencies[] = libraries
 dependencies[] = page_manager
+dependencies[] = property_content_type
+dependencies[] = property_type_taxonomy
 dependencies[] = views
 dependencies[] = views_isotope_views
 features[ctools][] = page_manager:pages_default:1
