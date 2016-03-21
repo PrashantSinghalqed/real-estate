@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Gallery 3 Page feature.
+ */
+
+include_once 'gallery_3_page.features.inc';
