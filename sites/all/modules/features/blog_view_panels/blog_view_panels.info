@@ -1,6 +1,7 @@
 name = blog-view-panels
 core = 7.x
 package = Features
+dependencies[] = blog_categories_block_view
 dependencies[] = blog_content_type
 dependencies[] = blog_s_view
 dependencies[] = ctools
