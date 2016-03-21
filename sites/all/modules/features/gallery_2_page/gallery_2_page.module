@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Gallery 2 Page feature.
+ */
+
+include_once 'gallery_2_page.features.inc';
