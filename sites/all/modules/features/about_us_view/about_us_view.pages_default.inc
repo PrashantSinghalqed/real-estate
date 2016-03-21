@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * about_us_panel.pages_default.inc
+ * about_us_view.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function about_us_panel_default_page_manager_pages() {
+function about_us_view_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
