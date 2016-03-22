@@ -1,0 +1,11 @@
+name = faq panel
+core = 7.x
+package = Features
+dependencies[] = blog_categories_block_view
+dependencies[] = ctools
+dependencies[] = faq_content_type
+dependencies[] = page_manager
+dependencies[] = panels
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = faq
