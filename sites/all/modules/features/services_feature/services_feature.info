@@ -1,0 +1,11 @@
+name = Services Feature
+description = Enables SERVICES view-blocks for the SERVICES page
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = rental_services_block
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][menu] = menu
