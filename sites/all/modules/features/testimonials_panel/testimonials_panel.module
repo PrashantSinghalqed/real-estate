@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the testimonials panel feature.
+ */
+
+include_once 'testimonials_panel.features.inc';
