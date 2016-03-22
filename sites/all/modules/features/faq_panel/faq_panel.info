@@ -4,6 +4,7 @@ package = Features
 dependencies[] = blog_categories_block_view
 dependencies[] = ctools
 dependencies[] = faq_content_type
+dependencies[] = faq_view_
 dependencies[] = page_manager
 dependencies[] = panels
 features[ctools][] = page_manager:pages_default:1
