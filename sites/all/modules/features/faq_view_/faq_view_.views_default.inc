@@ -48,6 +48,11 @@ function faq_view__views_default_views() {
   $handler->display->display_options['fields']['field_answer']['table'] = 'field_data_field_answer';
   $handler->display->display_options['fields']['field_answer']['field'] = 'field_answer';
   $handler->display->display_options['fields']['field_answer']['label'] = '';
+  $handler->display->display_options['fields']['field_answer']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_answer']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_answer']['settings'] = array(
+    'trim_length' => '200',
+  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -70,6 +75,7 @@ function faq_view__views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['path'] = 'faq-view';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'FAQs';
@@ -77,6 +83,9 @@ function faq_view__views_default_views() {
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
   $export['faq_view'] = $view;
 
   return $export;
