@@ -4,9 +4,9 @@ description = Drupal 7 responsive theme for Real estate website
 core = 7.x
 
 scripts[] = js/realestate.js
-
-stylesheets[all][] = css/style.css
 stylesheets[all][] = css/stylegallery.css
+stylesheets[all][] = css/style.css
+
 
 
 regions[header_top] = Header Top
