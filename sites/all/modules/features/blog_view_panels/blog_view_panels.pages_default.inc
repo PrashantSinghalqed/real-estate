@@ -215,6 +215,29 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->uuid = '0df93192-acde-4670-819c-dc0739cbc33e';
     $display->content['new-0df93192-acde-4670-819c-dc0739cbc33e'] = $pane;
     $display->panels['center'][0] = 'new-0df93192-acde-4670-819c-dc0739cbc33e';
+    $pane = new stdClass();
+    $pane->pid = 'new-c2460336-4f1c-4e02-a17d-c5aa7051ec9e';
+    $pane->panel = 'poll_region';
+    $pane->type = 'block';
+    $pane->subtype = 'poll-recent';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'POLL',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c2460336-4f1c-4e02-a17d-c5aa7051ec9e';
+    $display->content['new-c2460336-4f1c-4e02-a17d-c5aa7051ec9e'] = $pane;
+    $display->panels['poll_region'][0] = 'new-c2460336-4f1c-4e02-a17d-c5aa7051ec9e';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

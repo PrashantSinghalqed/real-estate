@@ -5,6 +5,7 @@ dependencies[] = blog_categories_block_view
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels
+dependencies[] = poll
 dependencies[] = testimonials_view_created
 features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:2

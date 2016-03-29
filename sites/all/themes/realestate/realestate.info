@@ -5,8 +5,11 @@ core = 7.x
 
 scripts[] = js/realestate.js
 
+stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/stylegallery.css
+stylesheets[all][] = css/style-service-contact.css
+
 
 
 regions[header_top] = Header Top

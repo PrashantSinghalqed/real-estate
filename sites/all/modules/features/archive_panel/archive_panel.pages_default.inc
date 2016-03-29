@@ -215,6 +215,29 @@ function archive_panel_default_page_manager_pages() {
     $pane->uuid = '17361945-296c-4aab-931e-81080b4b896b';
     $display->content['new-17361945-296c-4aab-931e-81080b4b896b'] = $pane;
     $display->panels['center'][0] = 'new-17361945-296c-4aab-931e-81080b4b896b';
+    $pane = new stdClass();
+    $pane->pid = 'new-7c426516-fb06-4789-b371-98d3c668604f';
+    $pane->panel = 'poll';
+    $pane->type = 'block';
+    $pane->subtype = 'poll-recent';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '7c426516-fb06-4789-b371-98d3c668604f';
+    $display->content['new-7c426516-fb06-4789-b371-98d3c668604f'] = $pane;
+    $display->panels['poll'][0] = 'new-7c426516-fb06-4789-b371-98d3c668604f';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-17361945-296c-4aab-931e-81080b4b896b';
   $handler->conf['display'] = $display;

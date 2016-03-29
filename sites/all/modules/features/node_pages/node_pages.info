@@ -1,12 +1,13 @@
-name = archive panel
+name = Node Pages
+description = Enables custom panel layout for node pages to include Categories View Block and Poll Block
 core = 7.x
 package = Features
-dependencies[] = archive
 dependencies[] = blog_categories_block_view
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels
+dependencies[] = panels_node
 dependencies[] = poll
 features[ctools][] = page_manager:pages_default:1
 features[features_api][] = api:2
-features[page_manager_pages][] = archive
+features[page_manager_handlers][] = node_view__panel_context_c0d07deb-1ffe-445d-a974-017a7117dea1

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Node Pages feature.
+ */
+
+include_once 'node_pages.features.inc';
