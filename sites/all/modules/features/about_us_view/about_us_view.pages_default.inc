@@ -77,8 +77,8 @@ function about_us_view_default_page_manager_pages() {
       'args' => '',
       'url' => '',
       'display' => 'page',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Get To Know Us',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();

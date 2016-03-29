@@ -1,3 +1,6 @@
+<head>
+<meta name="viewport" content="width = device-width">
+</head>
 <div class="page-wrapper">
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
@@ -44,7 +47,13 @@
     <?php print render($page['header']); ?>
   </div>
   <div class="content">
+    <?php if ($title): ?>
+        <h2>
+          <?php print $title; ?>
+           <?php endif; ?>
+           </h2>
     <?php print render($page['content']); ?>
+
   </div>
   <div class="footer">
     <?php print render($page['footer']); ?>
