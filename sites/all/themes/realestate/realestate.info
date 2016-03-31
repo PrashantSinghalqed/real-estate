@@ -9,7 +9,7 @@ stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/stylegallery.css
 stylesheets[all][] = css/style-service-contact.css
-
+stylesheets[all][] = css/home.css
 
 
 regions[header_top] = Header Top

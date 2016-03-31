@@ -208,7 +208,10 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'blog-node',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -238,7 +241,7 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->uuid = 'c2460336-4f1c-4e02-a17d-c5aa7051ec9e';
     $display->content['new-c2460336-4f1c-4e02-a17d-c5aa7051ec9e'] = $pane;
     $display->panels['poll_region'][0] = 'new-c2460336-4f1c-4e02-a17d-c5aa7051ec9e';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

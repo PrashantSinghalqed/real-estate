@@ -57,8 +57,8 @@ function gallery_menu_image_default_styles() {
       9 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 350,
-          'height' => 350,
+          'width' => 400,
+          'height' => 400,
         ),
         'weight' => 2,
       ),

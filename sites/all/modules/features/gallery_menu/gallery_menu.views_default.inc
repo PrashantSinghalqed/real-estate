@@ -59,7 +59,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -89,13 +91,26 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'button';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = '<button>more</button>';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'MORE';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -128,7 +143,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -193,7 +210,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -231,15 +250,25 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '20',
+    'trim_length' => '100',
   );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'button';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = '<button>more</button>';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'MORE';
+  /* Field: Content: Price */
+  $handler->display->display_options['fields']['field_property_price']['id'] = 'field_property_price';
+  $handler->display->display_options['fields']['field_property_price']['table'] = 'field_data_field_property_price';
+  $handler->display->display_options['fields']['field_property_price']['field'] = 'field_property_price';
+  $handler->display->display_options['fields']['field_property_price']['label'] = '';
+  $handler->display->display_options['fields']['field_property_price']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_price']['click_sort_column'] = 'amount';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -447,7 +476,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -477,13 +508,26 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'button';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = '<button>more</button>';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'MORE';
 
   /* Display: Gallery 3 block */
   $handler = $view->new_display('block', 'Gallery 3 block', 'block_3');
@@ -495,7 +539,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -525,13 +571,26 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'button';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = '<button>more</button>';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'MORE';
 
   /* Display: Gallery 4 block */
   $handler = $view->new_display('block', 'Gallery 4 block', 'block_4');
@@ -548,7 +607,9 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['table'] = 'field_data_field_property_image';
   $handler->display->display_options['fields']['field_property_image']['field'] = 'field_property_image';
   $handler->display->display_options['fields']['field_property_image']['label'] = '';
+  $handler->display->display_options['fields']['field_property_image']['element_class'] = 'galleryimage';
   $handler->display->display_options['fields']['field_property_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_property_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
@@ -578,13 +639,29 @@ function gallery_menu_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '100',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'button';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = '<button>more</button>';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'MORE';
+
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $export['gallery_menu'] = $view;
 
   return $export;

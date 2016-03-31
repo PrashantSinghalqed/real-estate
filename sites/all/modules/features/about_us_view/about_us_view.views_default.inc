@@ -186,7 +186,7 @@ function about_us_view_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '400';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '20';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
@@ -239,7 +239,7 @@ function about_us_view_views_default_views() {
   $handler->display->display_options['fields']['field_prof_description']['table'] = 'field_data_field_prof_description';
   $handler->display->display_options['fields']['field_prof_description']['field'] = 'field_prof_description';
   $handler->display->display_options['fields']['field_prof_description']['label'] = '';
-  $handler->display->display_options['fields']['field_prof_description']['alter']['max_length'] = '100';
+  $handler->display->display_options['fields']['field_prof_description']['alter']['max_length'] = '5';
   $handler->display->display_options['fields']['field_prof_description']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_prof_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;

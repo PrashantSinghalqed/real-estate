@@ -1,0 +1,93 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+
+.field-content{
+  font-family: 'FontAwesome';
+}
+.view-blog .field-content{
+  text-align:left;
+  margin-top:15px;
+}
+.view-blog .views-field-name .field-content:before {
+  content:"\f007";
+  color:#1fadff;
+  /* padding-right:10px; */
+  /* margin-right:5px; */
+}
+.view-blog .views-field-created .field-content:before {
+  content:"\f073";
+  color:#1fadff;
+  /* padding-right:10px; */
+  /*
+  margin-right:5px; */
+}
+.view-blog .views-field-uid .field-content:before {
+  content:"\f06e";
+  color:#1fadff;
+  /* padding-right:10px; */
+  margin-right:5px;
+}
+.view-blog .views-field-comment-count .field-content:before {
+  content:"\f075";
+  color:#1fadff;
+  /* padding-right:10px; */
+  margin-right:5px;
+}
+
+.view-blog .views-field-title{
+  text-align:left;
+   margin-top:15px;
+}
+.view-blog ul.pager li.first,
+.view-blog ul.pager li.pager-item a,
+.view-blog ul.pager li.pager-next a,
+.view-blog ul.pager li.pager-last a{
+  webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #1fadff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    display: inline-block;
+    font: 700 14px/20px 'Open Sans', sans-serif;
+    outline: none;
+    padding: 12px 16px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+.panels-flexible-column {
+  width: 43%;
+  margin-left: 100px;
+  text-align:center;
+
+}
+.panels-flexible-region-20-categories .views-row-even,
+.panels-flexible-region-20-categories .views-row-odd{
+  float:none;
+  padding:0;
+}
+.view-blog .views-field .button {
+  float:left;
+  padding:0 4px;
+}
+.view-blog .views-field .button a{
+  padding: 12px 18px 13px
+}
+
+/* @media (max-width:767px){
+  .pane-blog .pane-content{
+
+
+  .tb-megamenu-nav.nav.level-0.items-8{
+    max-height: 40px;
+    overflow: scroll;
+  }
+}
+@media (max-width:995px){
+  .pane-blog .pane-content{
+
+    width: 492px;}
+} */
+
