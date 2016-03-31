@@ -51,6 +51,11 @@ function blog_s_view_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -78,11 +83,6 @@ function blog_s_view_views_default_views() {
   $handler->display->display_options['fields']['comment_count']['label'] = '';
   $handler->display->display_options['fields']['comment_count']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['comment_count']['suffix'] = 'comment(s)';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
@@ -106,40 +106,36 @@ function blog_s_view_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/link/to/destination" class="button">admin\'s blog</a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="button"><a href="/link/to/destination" >admin\'s blog</a></div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<a href="/link/to/destination" class="button">Read more...</a></br>';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="button"><a href="/link/to/destination" >Read more...</a></div>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
-  $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_4']['label'] = '';
-  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '</br>';
-  $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['label'] = '';
-  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<a href="/link/to/destination" class="button">Login</a>or ';
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="button"><a href="/link/to/destination" >Login</a>or</div> ';
+  $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
   $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<a href="/link/to/destination" class="button">Register</a>to post comments';
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="button"><a href="/link/to/destination" >Register</a>to post comments</div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_5']['id'] = 'nothing_5';
   $handler->display->display_options['fields']['nothing_5']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_5']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_5']['label'] = '';
-  $handler->display->display_options['fields']['nothing_5']['alter']['text'] = '</br></br>';
+  $handler->display->display_options['fields']['nothing_5']['alter']['text'] = '<br></br></br></br>';
+  $handler->display->display_options['fields']['nothing_5']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

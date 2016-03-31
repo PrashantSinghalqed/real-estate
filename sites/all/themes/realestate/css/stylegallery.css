@@ -50,7 +50,7 @@ ul li a:hover, ul li a.selected{
     color: #1fadff;
     text-decoration: none;
 }
-.isotope-options li:hover,.isotope-options li:active{
+.isotope-options li:hover{
   border-bottom: 1px solid #1fadff;
 }
 #isotope-container {
@@ -95,5 +95,54 @@ ul li a:hover, ul li a.selected{
     /* transition: .2s ease; */
     width: 100%;
 }
+.isotope-options li a{
+  text-decoration:none;
+}
+
+/* .view-gallery-menu .isotope-element{
+  width:370px;
+} */
+.view-display-id-block_5 .isotope-element{
+  width:370px;
+}
+.view-display-id-block_2 .isotope-element{
+  width:570px;
+}
+.view-display-id-block_3 .isotope-element{
+  width:370px;
+}
+.view-display-id-block_4 .isotope-element{
+  width:270px;
+}
+.view-display-id-block_1 .isotope-element{
+  width:270px;
+}
+.view-gallery-menu .views-field-title,
+.view-gallery-menu .views-field-body,
+.view-gallery-menu .button{
+  text-align:left;
+  margin-top:15px;
+}
+@media screen and (max-width: 479px){
+/* .isotope-options{
+      display: none;
+    margin: 0 0 10px;
+ } */
+ /*  .item-list ul li a{
+
+    display:block;
+} */
+.isotope-options li{
+      display: block;
+      text-align:right;
+}
+  .view-display-id-block_5 .isotope-element{
+  width:187px;
+}
+
+}
+
+
+
 
 
