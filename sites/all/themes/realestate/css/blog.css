@@ -58,15 +58,23 @@
     letter-spacing: 0;
 }
 .panels-flexible-column {
-  width: 43%;
+  width: 40%;
   margin-left: 100px;
   text-align:center;
 
 }
-.panels-flexible-region-20-categories .views-row-even,
+.view-id-blog .views-field-body  p{
+  padding: 0;
+}
+/*.panels-flexible-region-20-categories .views-row-even,
 .panels-flexible-region-20-categories .views-row-odd{
   float:none;
   padding:0;
+  clear: both;
+}*/
+.view-blog-categories-block-view .views-row{
+  float: left;
+  clear: both;
 }
 .view-blog .views-field .button {
   float:left;

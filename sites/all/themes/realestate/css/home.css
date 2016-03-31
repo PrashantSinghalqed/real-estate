@@ -78,10 +78,13 @@
     text-decoration: none;
 }
 /*--------------------------- gallery theming--------------------*/
-/*.pane-gallery-menu .view-display-id-block_1 .isotope-container{
+.pane-gallery-menu .view-display-id-block_1 .isotope-container{
   margin-left: -15px;
     margin-right: -15px;
 
+}
+.view-gallery-menu  p{
+  margin-bottom: 20px;
 }
 .pane-gallery-menu #isotope-instance-0 .isotope-element{
   width: 300px;
@@ -98,6 +101,8 @@
     letter-spacing: 2px;
     color: #343434;
     border-top: 2px solid #eaebef;
+    margin-top: 20px;
+    text-align: left;
 }
 .pane-gallery-menu .isotope-element.views-field-field-property-image a{
   background: #000;
@@ -126,7 +131,8 @@
     overflow: hidden;
     position: relative;
     text-decoration: none;
-}*/
+}
+
 /*-----------------------footer---------------------------*/
 .footer-tags{
   position: relative;
@@ -173,6 +179,7 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
 }
 .panels-flexible-region-inside{
   padding:0 32px;
