@@ -59,5 +59,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <a href="#" id="backtotop" style="right: 50%; margin-right: -605px; display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 </body>
 </html>

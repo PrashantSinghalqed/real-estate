@@ -1,3 +1,6 @@
+<head>
+<meta name="viewport" content="width = device-width">
+</head>
 <div class="page-wrapper">
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
@@ -43,6 +46,7 @@
   <div class="header">
     <?php print render($page['header']); ?>
   </div>
+  <?php print $messages; ?>
   <div class="content">
     <?php print render($page['content']); ?>
   </div>
@@ -52,7 +56,6 @@
   <div class="preface">
     <?php print render($page['preface']); ?>
   </div>
-
 
 
 
