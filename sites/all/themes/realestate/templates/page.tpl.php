@@ -45,6 +45,7 @@
   <div class="header">
     <div class="header-nav">
     <?php print render($page['header']); ?>
+  </div>
   </div></div>
   <div class="content">
     <?php if ($title): ?>
@@ -62,7 +63,6 @@
   <div class="preface">
     <?php print render($page['preface']); ?>
   </div>
-
 
 
 
