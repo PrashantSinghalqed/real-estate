@@ -197,6 +197,29 @@ function home_page_panel_default_page_manager_pages() {
     $pane->uuid = '7d7f874c-ac77-454f-8d77-1ac07e3637bf';
     $display->content['new-7d7f874c-ac77-454f-8d77-1ac07e3637bf'] = $pane;
     $display->panels['center'][3] = 'new-7d7f874c-ac77-454f-8d77-1ac07e3637bf';
+    $pane = new stdClass();
+    $pane->pid = 'new-d1f2d3eb-6f28-4fbe-8299-c2b28fb75533';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'poll-recent';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = 'd1f2d3eb-6f28-4fbe-8299-c2b28fb75533';
+    $display->content['new-d1f2d3eb-6f28-4fbe-8299-c2b28fb75533'] = $pane;
+    $display->panels['center'][4] = 'new-d1f2d3eb-6f28-4fbe-8299-c2b28fb75533';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-64807e18-078b-4d99-b9ad-4e9d8ee53919';
   $handler->conf['display'] = $display;

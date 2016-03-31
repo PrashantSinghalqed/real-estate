@@ -128,16 +128,18 @@ function about_us_view_default_page_manager_pages() {
     $display->content['new-976f13b3-7a1b-40cc-b386-2df85edda0d8'] = $pane;
     $display->panels['center'][1] = 'new-976f13b3-7a1b-40cc-b386-2df85edda0d8';
     $pane = new stdClass();
-    $pane->pid = 'new-3d10e4a3-1be9-4327-b0ed-c0bbdc557eb1';
+    $pane->pid = 'new-1bd4e8be-8def-4453-ae0d-145405d8ca30';
     $pane->panel = 'center';
-    $pane->type = 'block';
-    $pane->subtype = 'block-1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => '',
+      'title' => '',
+      'body' => 'YEARS OF REAL ESTATE AND FINANCIAL EXPERIENCE!',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -147,9 +149,9 @@ function about_us_view_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '3d10e4a3-1be9-4327-b0ed-c0bbdc557eb1';
-    $display->content['new-3d10e4a3-1be9-4327-b0ed-c0bbdc557eb1'] = $pane;
-    $display->panels['center'][2] = 'new-3d10e4a3-1be9-4327-b0ed-c0bbdc557eb1';
+    $pane->uuid = '1bd4e8be-8def-4453-ae0d-145405d8ca30';
+    $display->content['new-1bd4e8be-8def-4453-ae0d-145405d8ca30'] = $pane;
+    $display->panels['center'][2] = 'new-1bd4e8be-8def-4453-ae0d-145405d8ca30';
     $pane = new stdClass();
     $pane->pid = 'new-cfbf35a6-97b9-47aa-9458-8982f70bcda6';
     $pane->panel = 'center';
