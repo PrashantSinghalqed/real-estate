@@ -85,6 +85,28 @@ function contact_feature_views_default_views() {
   $handler->display->display_options['fields']['field_company_name']['label'] = '';
   $handler->display->display_options['fields']['field_company_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_company_name']['empty'] = 'N/A';
+  /* Field: Location: Address */
+  $handler->display->display_options['fields']['address']['id'] = 'address';
+  $handler->display->display_options['fields']['address']['table'] = 'location';
+  $handler->display->display_options['fields']['address']['field'] = 'address';
+  $handler->display->display_options['fields']['address']['label'] = '';
+  $handler->display->display_options['fields']['address']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['address']['empty'] = 'N/A';
+  $handler->display->display_options['fields']['address']['hide'] = array(
+    'street' => 'street',
+    'additional' => 'additional',
+    'country' => 'country',
+    'locpick' => 'locpick',
+    'province_name' => 'province_name',
+    'map_link' => 'map_link',
+    'coords' => 'coords',
+    'name' => 0,
+    'city' => 0,
+    'province' => 0,
+    'postal_code' => 0,
+    'country_name' => 0,
+  );
+  $handler->display->display_options['fields']['address']['exclude_cck'] = 0;
   /* Field: Content: Telephone */
   $handler->display->display_options['fields']['field_telephone']['id'] = 'field_telephone';
   $handler->display->display_options['fields']['field_telephone']['table'] = 'field_data_field_telephone';
