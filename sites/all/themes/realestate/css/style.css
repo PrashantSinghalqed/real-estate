@@ -30,7 +30,7 @@ p{
   display: block;
 }
 #edit-search-block-form--2{
-	display: none
+	display: none;
 }
 
 .button a,.about-desc a{
@@ -235,7 +235,7 @@ h6 a{
     margin-left: 100px;
     }
 
-@media screen and (min-width: 320px) and (max-width: 640px){
+ @media screen and (min-width: 320px) and (max-width: 640px){
 .about-desc{
   padding: 0;
     font-size: 3em;
@@ -257,7 +257,7 @@ h6 a{
   margin-bottom: 55px;
 }
 /*our advantages*/
-.about-title-wrapper a {
+ .about-title-wrapper a {
     color: #343434;
     font: bold 16px/26px 'Open Sans', sans-serif;
     margin-bottom: 5px;
@@ -291,6 +291,7 @@ h2 {
     position: relative;
     margin-bottom: 102px;
     }
-/*our awards*/
+
 
 }
+
