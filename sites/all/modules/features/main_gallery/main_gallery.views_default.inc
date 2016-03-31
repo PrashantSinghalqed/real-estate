@@ -23,6 +23,7 @@ function main_gallery_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'main gallery';
+  $handler->display->display_options['css_class'] = 'filters';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -45,7 +46,8 @@ function main_gallery_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['element_type'] = 'span';
+  $handler->display->display_options['fields']['name']['element_type'] = 'div';
+  $handler->display->display_options['fields']['name']['element_class'] = 'heading';
   $handler->display->display_options['fields']['name']['element_label_type'] = '0';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['element_wrapper_type'] = '0';

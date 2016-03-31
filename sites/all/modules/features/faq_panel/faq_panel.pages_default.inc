@@ -150,29 +150,6 @@ function faq_panel_default_page_manager_pages() {
     $display->content['new-2de46433-9807-433f-9055-16e32fe487b3'] = $pane;
     $display->panels['categories'][0] = 'new-2de46433-9807-433f-9055-16e32fe487b3';
     $pane = new stdClass();
-    $pane->pid = 'new-8603b064-c78c-4837-b244-e23fc0dd0205';
-    $pane->panel = 'categories';
-    $pane->type = 'block';
-    $pane->subtype = 'poll-recent';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '8603b064-c78c-4837-b244-e23fc0dd0205';
-    $display->content['new-8603b064-c78c-4837-b244-e23fc0dd0205'] = $pane;
-    $display->panels['categories'][1] = 'new-8603b064-c78c-4837-b244-e23fc0dd0205';
-    $pane = new stdClass();
     $pane->pid = 'new-61220900-e53e-4752-b7b5-aa45b2b1c26e';
     $pane->panel = 'faqs';
     $pane->type = 'views';

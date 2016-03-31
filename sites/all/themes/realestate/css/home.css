@@ -1,0 +1,190 @@
+.views-field-nothing-1{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.views-field-nothing{
+  border: 1px solid #eaebef;
+    padding: 0px 10px 0;
+    margin-bottom: 30px;
+    margin:32px;
+}
+.panel-pane p{
+  padding:0 190px;
+  margin-bottom: 90px;
+
+}
+.views-row-last h2{
+  letter-spacing: 0px;
+}
+/*--------------------Menu theming-------------------*/
+.header-nav{
+  position: relative;
+    z-index: 14;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding: 10px 0 22px;
+  position: fixed;
+  background: #FFF;
+    width: 100%;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    top:0;
+}
+
+.region-header{
+  padding-top: 36px;
+}
+#block-tb-megamenu-main-menu{
+  margin:0 120px;
+}
+.tb-megamenu-nav{
+  float: right;
+    background: none;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
+    z-index: 101;
+    position: relative;
+}
+.tb-megamenu-nav li{
+  background: none;
+    border: 0;
+    font: 400 15px/20px 'Open Sans', sans-serif;
+    margin: 0 0 0 62px;
+    overflow: inherit;
+    padding: 10px;
+    text-transform: none
+}
+.tb-megamenu .nav .active a, .tb-megamenu .nav .active  a:hover, .tb-megamenu .nav  .active  a:focus{
+  color: #1fadff;
+    text-decoration: none;
+    background-color: #FFF;
+
+}
+.tb-megamenu{
+  background-color: #FFF;
+}
+.tb-megamenu .nav li a{
+  color: #343434;
+    font:  400 15px/20px 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-right: none;
+    padding:0 15px;
+    }
+
+.tb-megamenu-nav{
+  font: bold 16px/26px 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+/*--------------------------- gallery theming--------------------*/
+.pane-gallery-menu .view-display-id-block_1 .isotope-container{
+  margin-left: -15px;
+    margin-right: -15px;
+
+}
+.view-gallery-menu  p{
+  margin-bottom: 20px;
+}
+.pane-gallery-menu #isotope-instance-0 .isotope-element{
+  width: 300px;
+}
+.pane-gallery-menu .views-field-body p{
+  padding:0;
+  margin:0;
+}
+.pane-gallery-menu .views-field-field-property-price{
+  padding-top: 11px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #343434;
+    border-top: 2px solid #eaebef;
+    margin-top: 20px;
+    text-align: left;
+}
+.pane-gallery-menu .isotope-element.views-field-field-property-image a{
+  background: #000;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+.pane-gallery-menu .view-display-id-block_1 .isotope-element{
+    width: 300px;
+    background: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    margin: 0 15px 30px;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: auto;
+}
+.pane-gallery-menu .view-display-id-block_1 .isotope-element .views-field-field-property-image a {
+    background: #000;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+/*-----------------------footer---------------------------*/
+.footer-tags{
+  position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 15%;
+}
+.view-blog-tags-footer-block-view a{
+  font-weight: 700;
+    display: inline-block;
+    font-size: 16px !important;
+    opacity: 1 !important;
+    line-height: 20px;
+    color: #4d4d4d;
+    background: #2c2c2c;
+    padding: 18px 25px 19px;
+    margin: 0 0 10px;
+    float:left;
+    margin-left:56px;
+}
+.footer{
+  clear: both;
+    padding: 0;
+    position: relative;
+    background: #343434;
+    color: #8b8b8b;
+}
+.region-footer {
+    padding: 60px 0 35px;
+    text-align: center;
+}
+.view-blog-tags-footer-block-view a:hover{
+  background: #1fadff;
+    color: #fff;
+    text-decoration: none;
+}
+/*--------------------poll-------------------*/
+.pane-poll-recent{
+  border: 1px solid #eaebef;
+    padding: 58px 10px 0;
+    margin-bottom: 30px;
+        position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+.panels-flexible-region-inside{
+  padding:0 32px;
+}
+.poll .title{
+  margin-bottom: 60px;
+  padding: 0 190px;
+}

@@ -77,8 +77,8 @@ function about_us_view_default_page_manager_pages() {
       'args' => '',
       'url' => '',
       'display' => 'page',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Get To Know Us',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -128,6 +128,31 @@ function about_us_view_default_page_manager_pages() {
     $display->content['new-976f13b3-7a1b-40cc-b386-2df85edda0d8'] = $pane;
     $display->panels['center'][1] = 'new-976f13b3-7a1b-40cc-b386-2df85edda0d8';
     $pane = new stdClass();
+    $pane->pid = 'new-1bd4e8be-8def-4453-ae0d-145405d8ca30';
+    $pane->panel = 'center';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => 'YEARS OF REAL ESTATE AND FINANCIAL EXPERIENCE!',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '1bd4e8be-8def-4453-ae0d-145405d8ca30';
+    $display->content['new-1bd4e8be-8def-4453-ae0d-145405d8ca30'] = $pane;
+    $display->panels['center'][2] = 'new-1bd4e8be-8def-4453-ae0d-145405d8ca30';
+    $pane = new stdClass();
     $pane->pid = 'new-cfbf35a6-97b9-47aa-9458-8982f70bcda6';
     $pane->panel = 'center';
     $pane->type = 'views';
@@ -157,11 +182,11 @@ function about_us_view_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'cfbf35a6-97b9-47aa-9458-8982f70bcda6';
     $display->content['new-cfbf35a6-97b9-47aa-9458-8982f70bcda6'] = $pane;
-    $display->panels['center'][2] = 'new-cfbf35a6-97b9-47aa-9458-8982f70bcda6';
+    $display->panels['center'][3] = 'new-cfbf35a6-97b9-47aa-9458-8982f70bcda6';
     $pane = new stdClass();
     $pane->pid = 'new-40d65af7-3251-496d-9cc9-95dc26fb30cd';
     $pane->panel = 'center';
@@ -192,11 +217,11 @@ function about_us_view_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '40d65af7-3251-496d-9cc9-95dc26fb30cd';
     $display->content['new-40d65af7-3251-496d-9cc9-95dc26fb30cd'] = $pane;
-    $display->panels['center'][3] = 'new-40d65af7-3251-496d-9cc9-95dc26fb30cd';
+    $display->panels['center'][4] = 'new-40d65af7-3251-496d-9cc9-95dc26fb30cd';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

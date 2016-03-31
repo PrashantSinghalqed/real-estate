@@ -14,6 +14,8 @@ stylesheets[all][] = css/style-service-contact.css
 stylesheets[all][] = css/skeleton-mobile.css
 stylesheets[all][] = css/style-mobile.css
 
+stylesheets[all][] = css/home.css
+stylesheets[all][] = css/blog.css
 
 regions[header_top] = Header Top
 regions[header] = Header

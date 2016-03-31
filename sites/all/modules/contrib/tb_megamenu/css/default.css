@@ -28,7 +28,7 @@
 .tb-megamenu .nav > li > a:focus,
 .tb-megamenu .nav > li > a:hover {
   background-color: #fff;
-  color: #e54e4b;
+  color: #1fadff;
   text-decoration: none;
   text-shadow: none;
   outline: none;
@@ -36,12 +36,7 @@
 .tb-megamenu .nav > .active > a,
 .tb-megamenu .nav > .active > a:hover,
 .tb-megamenu .nav > .active > a:focus {
-  background-color: #e54e4b;
-  color: #fff;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+
   outline: none;
 }
 .tb-megamenu .btn-navbar {
@@ -113,11 +108,11 @@
 }
 .tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
   background-color: #fff;
-  color: #e54e4b;
+  color: #1fadff;
 }
 .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
 .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #e54e4b;
+  background-color: #1fadff;
   color: #fff;
 }
 .tb-megamenu .mega-inner {
@@ -254,7 +249,7 @@
   background-color: inherit;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  color: #e54e4b;
+  color: #1fadff;
   text-decoration: none;
 }
 .tb-megamenu .dropdown-menu .active > a,
@@ -262,7 +257,7 @@
   color: #eee;
   text-decoration: none;
   outline: 0;
-  background-color: #e54e4b;
+  background-color: #1fadff;
 }
 .tb-megamenu .dropdown-menu .disabled > a,
 .tb-megamenu .dropdown-menu .disabled > a:hover {
@@ -283,7 +278,7 @@
 .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
 .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle,
 .tb-megamenu .nav > li.dropdown.open.active > a:hover {
-  background-color: #e54e4b;
+  background-color: #1fadff;
   border-color: #444;
   color: #eee;
 }
@@ -1418,11 +1413,11 @@
     background-color: #fff;
     background-image: none;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-	color: #e54e4b;
+	color: #1fadff;
   }
 .tb-megamenu .nav-collapse .nav > li.active > a:hover,
 .tb-megamenu .nav-collapse .nav > li.active > a:focus {
-  background-color: #e54e4b;
+  background-color: #1fadff;
 }
 .tb-megamenu .nav-collapse .dropdown-menu a {
     border-top: 1px solid #222;
