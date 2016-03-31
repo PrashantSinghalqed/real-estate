@@ -93,6 +93,10 @@ body{
     position: relative;
     letter-spacing: 2px;
 }
+div .12container{
+  margin:auto;
+  width: 1300px;
+}
 /*-----------------------------about us page theming-----------------*/
 .about-desc a{
   text-decoration: none;
