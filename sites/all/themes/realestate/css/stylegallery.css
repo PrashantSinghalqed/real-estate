@@ -14,20 +14,20 @@
     padding: 0 87px;
 }
 
-.item-list ul li  {
+/*.item-list ul li  {
       text-transform: none;
     font-size: 16px;
     font-weight: 700;
-    margin: 0 0 auto 3.5em;
+    margin: 0 0 auto 3.5em;*/
     /*color: #343434;*/
-    color:black;
+    /*color:black;
     padding: 0 10px 5px;
     background: none;
     position: relative;
-}
+}*/
 /* .isotope-options li:hover{
   border-bottom: 1px solid #1fadff;
-} */
+}
 /* .item-list ul li:hover, .item-list ul li:hover:after{
     border-bottom: 1px solid #1fadff;
 } */
@@ -94,6 +94,22 @@ ul li a:hover, ul li a.selected{
     /* -webkit-transition: .2s ease; */
     /* transition: .2s ease; */
     width: 100%;
+}
+.view-dom-id-f03c498a712703990919b1ee85a61b00 a .button {
+    webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #1fadff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    display: inline-block;
+    font: 700 14px/20px 'Open Sans', sans-serif;
+    outline: none;
+    padding: 12px 70px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
 }
 
 
