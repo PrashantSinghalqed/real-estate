@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * static_text_view.views_default.inc
+ * home_page_panel.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function static_text_view_views_default_views() {
+function home_page_panel_views_default_views() {
   $export = array();
 
   $view = new view();
