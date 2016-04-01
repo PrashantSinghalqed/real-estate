@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * blog_content_type.features.field_base.inc
+ * blog_view_panels.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function blog_content_type_field_default_field_bases() {
+function blog_view_panels_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_blog_categories'.
@@ -82,6 +82,25 @@ function blog_content_type_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_youtube_'.
+  $field_bases['field_youtube_'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_youtube_',
+    'indexes' => array(
+      'video_id' => array(
+        0 => 'video_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'youtube',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'youtube',
   );
 
   return $field_bases;
