@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * faq_content_type.features.field_base.inc
+ * faq_panel.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function faq_content_type_field_default_field_bases() {
+function faq_panel_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_answer'.

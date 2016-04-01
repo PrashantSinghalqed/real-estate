@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * faq_content_type.features.field_instance.inc
+ * faq_panel.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function faq_content_type_field_default_field_instances() {
+function faq_panel_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-faq-field_answer'.

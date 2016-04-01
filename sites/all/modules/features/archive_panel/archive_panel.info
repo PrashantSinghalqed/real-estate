@@ -1,8 +1,9 @@
-name = archive panel
+name = archive page
+description = enables archive page under home menu
 core = 7.x
 package = Features
 dependencies[] = archive
-dependencies[] = blog_categories_block_view
+dependencies[] = blog_view_panels
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels
