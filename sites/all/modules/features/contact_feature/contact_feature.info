@@ -81,5 +81,4 @@ features[variable][] = webform_blocks
 features[variable][] = webform_node_poll
 features[variable][] = webform_node_webform
 features[views_view][] = contact_page
-features[webform][] = contact_form
 features_exclude[dependencies][menu] = menu

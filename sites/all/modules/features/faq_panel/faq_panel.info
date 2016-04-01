@@ -1,7 +1,6 @@
 name = faq panel
 core = 7.x
 package = Features
-dependencies[] = blog_categories_block_view
 dependencies[] = blog_view_panels
 dependencies[] = ctools
 dependencies[] = page_manager

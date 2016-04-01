@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * property_content_type.features.field_base.inc
+ * gallery.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function property_content_type_field_default_field_bases() {
+function gallery_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_property_image'.

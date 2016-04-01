@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the archive panel feature.
- */
-
-include_once 'archive_panel.features.inc';

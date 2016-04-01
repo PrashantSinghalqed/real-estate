@@ -16,7 +16,10 @@ function contact_feature_default_page_manager_pages() {
   $page->admin_title = 'Contacts Page';
   $page->admin_description = 'Contacts Page accessible through url - /contacts';
   $page->path = 'contacts';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

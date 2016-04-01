@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * property_content_type.features.field_instance.inc
+ * gallery.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function property_content_type_field_default_field_instances() {
+function gallery_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-property-body'.

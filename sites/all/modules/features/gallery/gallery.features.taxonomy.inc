@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * property_type_taxonomy.features.taxonomy.inc
+ * gallery.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function property_type_taxonomy_taxonomy_default_vocabularies() {
+function gallery_taxonomy_default_vocabularies() {
   return array(
     'property_type' => array(
       'name' => 'Property-type',
