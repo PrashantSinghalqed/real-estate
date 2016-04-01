@@ -28,6 +28,7 @@ features[field_instance][] = node-blog-field_blog_tags
 features[field_instance][] = node-blog-field_youtube_
 features[node][] = blog
 features[page_manager_pages][] = archive
+features[page_manager_pages][] = blog
 features[taxonomy][] = blog_categories
 features[taxonomy][] = blog_tags
 features[variable][] = comment_anonymous_blog

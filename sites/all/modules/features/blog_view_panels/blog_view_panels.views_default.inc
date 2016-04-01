@@ -94,7 +94,7 @@ function blog_view_panels_views_default_views() {
     'image_style' => 'large',
     'image_link' => '',
   );
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
