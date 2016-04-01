@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * contacts_page.pages_default.inc
+ * contact_feature.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function contacts_page_default_page_manager_pages() {
+function contact_feature_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
@@ -64,6 +64,8 @@ function contacts_page_default_page_manager_pages() {
           1 => 1,
         ),
         'parent' => 'canvas',
+        'class' => 'grid-12',
+        'hide_empty' => 0,
       ),
       'main-row' => array(
         'type' => 'row',
@@ -94,7 +96,7 @@ function contacts_page_default_page_manager_pages() {
       'info' => array(
         'type' => 'region',
         'title' => 'Info',
-        'width' => 50,
+        'width' => '30.479841892730835',
         'width_type' => '%',
         'parent' => '1',
         'class' => '',
@@ -103,7 +105,7 @@ function contacts_page_default_page_manager_pages() {
       'form' => array(
         'type' => 'region',
         'title' => 'Form',
-        'width' => 50,
+        'width' => '44.52015810726916',
         'width_type' => '%',
         'parent' => '1',
         'class' => '',
@@ -113,11 +115,20 @@ function contacts_page_default_page_manager_pages() {
   );
   $display->panel_settings = array(
     'style_settings' => array(
-      'default' => NULL,
+      'default' => array(
+        'clean_markup' => array(
+          'region_wrapper' => 'div',
+          'additional_region_classes' => 'container-12',
+          'additional_region_attributes' => '',
+          'enable_inner_div' => 0,
+          'pane_separators' => 0,
+        ),
+      ),
       'center' => NULL,
       'info' => NULL,
       'form' => NULL,
     ),
+    'style' => 'clean_element',
   );
   $display->cache = array();
   $display->title = 'Contacts Page Panel';
@@ -202,8 +213,8 @@ function contacts_page_default_page_manager_pages() {
       'args' => '',
       'url' => '',
       'display' => 'block',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'CONTACT INFO',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -217,7 +228,7 @@ function contacts_page_default_page_manager_pages() {
     $pane->uuid = 'ab43e7d0-1517-42c4-8062-6079a4165d48';
     $display->content['new-ab43e7d0-1517-42c4-8062-6079a4165d48'] = $pane;
     $display->panels['info'][0] = 'new-ab43e7d0-1517-42c4-8062-6079a4165d48';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

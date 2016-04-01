@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * services_page.pages_default.inc
+ * services_feature.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function services_page_default_page_manager_pages() {
+function services_feature_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
@@ -366,7 +366,7 @@ function services_page_default_page_manager_pages() {
     $pane->uuid = 'dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
     $display->content['new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb'] = $pane;
     $display->panels['center'][5] = 'new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-05d717ef-7f24-4c92-a2c4-3be153332353';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

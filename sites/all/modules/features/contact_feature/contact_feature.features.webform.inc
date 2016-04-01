@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * webform_contact_form.features.webform.inc
+ * contact_feature.features.webform.inc
  */
 
 /**
  * Implements hook_webform_defaults().
  */
-function webform_contact_form_webform_defaults() {
+function contact_feature_webform_defaults() {
 $webforms = array();
   $webforms['contact_form'] = array(
   'title' => 'CONTACT FORM',
@@ -233,7 +233,7 @@ $webforms = array();
   'picture' => 0,
   'data' => 'b:0;',
   'webform_features_author' => 'prashant',
-  'webform_features_revision_author' => '',
+  'webform_features_revision_author' => 'prashant',
 );
 return $webforms;
 }

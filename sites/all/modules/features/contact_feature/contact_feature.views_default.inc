@@ -55,7 +55,7 @@ function contact_feature_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = '<h1>Contact Info</h1>';
+  $handler->display->display_options['title'] = 'CONTACT INFO';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -77,6 +77,7 @@ function contact_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = 'Sed ut perspiciatis unde omnis iste natus error sit.';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque et quasi architecto beatae vitae dicta sunt explicabo. Mornunc odio gravida atcursus neus a lorem. Maecenas tristique orci ac sem. Duis ultric pharetra magna.</p>';
+  $handler->display->display_options['fields']['nothing']['element_label_type'] = 'h4';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Content: Company Name */
   $handler->display->display_options['fields']['field_company_name']['id'] = 'field_company_name';
