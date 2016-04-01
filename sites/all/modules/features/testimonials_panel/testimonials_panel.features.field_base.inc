@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * testimonial_content_type.features.field_base.inc
+ * testimonials_panel.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function testimonial_content_type_field_default_field_bases() {
+function testimonials_panel_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_client_designation'.
@@ -25,7 +25,7 @@ function testimonial_content_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 50,
+      'max_length' => 255,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -46,7 +46,7 @@ function testimonial_content_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 45,
+      'max_length' => 255,
     ),
     'translatable' => 0,
     'type' => 'text',

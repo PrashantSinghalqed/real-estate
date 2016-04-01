@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * testimonials_view_created.views_default.inc
+ * testimonials_panel.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function testimonials_view_created_views_default_views() {
+function testimonials_panel_views_default_views() {
   $export = array();
 
   $view = new view();
@@ -29,7 +29,7 @@ function testimonials_view_created_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['total_pages'] = '1';

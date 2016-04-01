@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * testimonial_content_type.strongarm.inc
+ * testimonials_panel.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function testimonial_content_type_strongarm() {
+function testimonials_panel_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

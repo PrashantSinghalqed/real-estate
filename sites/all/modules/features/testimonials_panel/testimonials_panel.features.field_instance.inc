@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * testimonial_content_type.features.field_instance.inc
+ * testimonials_panel.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function testimonial_content_type_field_default_field_instances() {
+function testimonials_panel_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-testimonial-field_client_designation'.
