@@ -65,9 +65,9 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
-    'colorbox_node_style' => '4_column_gallery',
-    'colorbox_node_style_first' => '4_column_gallery',
-    'colorbox_image_style' => '',
+    'colorbox_node_style' => 'prof-pic',
+    'colorbox_node_style_first' => 'prof-pic',
+    'colorbox_image_style' => 'prof-pic',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
     'colorbox_caption' => 'auto',
@@ -96,6 +96,8 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '20';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
@@ -216,8 +218,8 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
-    'colorbox_node_style' => '4_column_gallery',
-    'colorbox_node_style_first' => '4_column_gallery',
+    'colorbox_node_style' => 'prof-pic',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
@@ -483,9 +485,9 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
-    'colorbox_node_style' => '2_column',
-    'colorbox_node_style_first' => '2_column',
-    'colorbox_image_style' => '',
+    'colorbox_node_style' => 'large',
+    'colorbox_node_style_first' => 'large',
+    'colorbox_image_style' => 'large',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
     'colorbox_caption' => 'auto',
@@ -514,6 +516,8 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '20';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
@@ -546,9 +550,9 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
-    'colorbox_node_style' => '3_column_gallery',
-    'colorbox_node_style_first' => '3_column_gallery',
-    'colorbox_image_style' => '',
+    'colorbox_node_style' => 'medium',
+    'colorbox_node_style_first' => 'medium',
+    'colorbox_image_style' => 'medium',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
     'colorbox_caption' => 'auto',
@@ -577,6 +581,8 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '20';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
