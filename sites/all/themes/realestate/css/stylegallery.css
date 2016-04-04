@@ -123,13 +123,16 @@ ul li a:hover, ul li a.selected{
   width:370px;
 }
 .view-display-id-block_2 .isotope-element{
-  width:570px;
+  width: 45%
+}
+.view-display-id-block_2 .isotope-element .galleryimage,.view-display-id-block_3 .isotope-element .galleryimage,.view-display-id-block_4 .isotope-element .galleryimage{
+    height: 500px;
 }
 .view-display-id-block_3 .isotope-element{
-  width:370px;
+  width:30%;
 }
 .view-display-id-block_4 .isotope-element{
-  width:270px;
+  width:22%;
 }
 .view-display-id-block_1 .isotope-element{
   width:270px;
@@ -139,6 +142,20 @@ ul li a:hover, ul li a.selected{
 .view-gallery-menu .button{
   text-align:left;
   margin-top:15px;
+}
+/*.view-display-id-block_5 .view-content,
+.view-display-id-block_3 .view-content{
+    margin:auto;
+    width: 1040px;
+}*/
+/*.view-gallery-menu .view-display-id-block_4 .view-content{
+    margin:auto;
+    width: 1300px;
+}*/
+/*----------------------------gallery 2 theming ------------------------*/
+#isotope-instance-0.isotope-element{
+    width: 48%;
+
 }
 @media screen and (max-width: 479px){
 /* .isotope-options{

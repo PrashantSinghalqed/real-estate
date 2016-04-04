@@ -1,8 +1,8 @@
 .views-field-nothing-1{
   text-align: center;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
-.views-field-nothing{
+.view-display-id-block .views-field-nothing{
   border: 1px solid #eaebef;
     padding: 0px 10px 0;
     margin-bottom: 30px;
@@ -78,17 +78,18 @@
     text-decoration: none;
 }
 /*--------------------------- gallery theming--------------------*/
-.pane-gallery-menu .view-display-id-block_1 .isotope-container{
-  margin-left: 50px;
-    margin-right: -15px;
-
+.panel-pane.pane-views.pane-gallery-menu{
+  width: 1200px;
+  margin: auto;;
 }
+/*.pane-gallery-menu .view-display-id-block_1 .isotope-container{
+}*/
 .view-gallery-menu  p{
   margin-bottom: 20px;
 }
-.pane-gallery-menu #isotope-instance-0 .isotope-element{
+/*.pane-gallery-menu #isotope-instance-0 .isotope-element{
   width: 300px;
-}
+}*/
 .pane-gallery-menu .views-field-body p{
   padding:0;
   margin:0;
@@ -118,12 +119,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: inherit;
-    margin: 0 15px 30px;
+    margin: 0 17px 0px;
     height: auto;
     overflow: visible;
     padding: 0;
     position: relative;
-    width: auto;
+    width: 22%;
+
 }
 .pane-gallery-menu .view-display-id-block_1 .isotope-element .views-field-field-property-image a {
     background: #000;
@@ -131,6 +133,9 @@
     overflow: hidden;
     position: relative;
     text-decoration: none;
+}
+.galleryimage{
+  height: 270px;
 }
 
 /*-----------------------footer---------------------------*/
@@ -171,15 +176,48 @@
     text-decoration: none;
 }
 /*--------------------poll-------------------*/
+.poll{
+  padding: 0 100px 30px;
+}
+.poll .text{
+  text-align: left;
+    width: 10%;
+    float: left;
+    /*line-height: 18px*/
+}
+.poll .bar {
+    width: 70%;
+    float: left;
+    background: #e0e0e0;
+    margin-top: 6px;
+    height: 9px;
+  }
+.poll .bar .foreground{
+    background: #1fadff;
+    height: 9px;
+}
+.poll .percent{
+     /* line-height: 18px;*/
+    text-align: center;
+    float: left;
+    width: 15%;
+    color: #b8b8b8;
+
+}
+.poll .total,.links{
+  display: none;
+}
+ .pane-poll-block{
+  width: 1200px;
+  margin:auto;
+}
 .pane-poll-recent{
   border: 1px solid #eaebef;
     padding: 58px 10px 0;
     margin-bottom: 30px;
-        position: relative;
-    width: 1200px;
-    margin: 0 auto;
+    position: relative;
     padding: 0;
-    width: 100%;
+
 }
 .panels-flexible-region-inside{
   padding:0 32px;
@@ -189,31 +227,68 @@
   padding: 0 190px;
 }
 .inside .pane-poll-recent{
-  width: 70%;
+
   padding: 0px 7%;
-  margin-bottom: 10%;
+  /*margin-bottom: 10%;*/
   margin-top: 10%;
 }
 /*-------------------------slideer-------------------------*/
-.views-field-field-testimonial-description{
+.view-slideshow.views-field-field-testimonial-description{
   margin-top: -250px;
     padding-left: 10%;
     text-align: center;
     padding-right: 10%;
     color: #fff;
 }
-.views-field-field-testimonial-description a{
+#flexslider-2.views-field-field-testimonial-description a{
   text-decoration: none;
   color: black;
 }
-.views-field-field-client-name{
+.view-slideshow .views-field-field-client-name{
   text-align: center;
     padding-left: 20%;
     padding-right: 20%;
     color: #fff;
 }
 /*---------------------news-------------------*/
-.inside .view-about-us{
-  padding-left: 9%;
-  padding-bottom: 5%;
+
+/*.pane-about-us .views-row-first{
+  width: 50%;
+}
+.views-row-odd {
+    float: left;
+    margin-right: 18px;
+}*/
+.pane-about-us{
+  margin: 0 120px;
+  width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+/*-------------------webform----------------*/
+.pane-webform-client-block-205{
+  background: #1fadff;
+  text-align: center;
+  width: 100%;
+}
+.webform-client-form{
+  text-align: center;
+    padding: 0 476px;
+    color:#fff;
+}
+.webform-component-textfield{
+  float: none;
+    width: 100%;
+    margin: 0 0 16px !important;
+}
+.element-invisible{
+  vertical-align: middle;
+}
+/*-----------------static block----------------*/
+.panel-pane.pane-views.pane-static{
+  width: 1200px;
+  margin:auto;
+ }
+.view-display-id-block .views-row-odd{
+  margin-right: 0px;
 }
