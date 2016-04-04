@@ -1,10 +1,9 @@
 <div class="page-wrapper">
-  
+
   <div class="header-top">
-  <?php  dsm($page['header_top']); ?>
-    <?php print render($page['header_top']); ?>
+      <?php print render($page['header_top']); ?>
   </div>
-  
+
   <div class="header">
     <?php print render($page['header']); ?>
   </div>
