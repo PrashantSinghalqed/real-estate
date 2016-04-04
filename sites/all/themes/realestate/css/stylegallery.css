@@ -125,14 +125,20 @@ ul li a:hover, ul li a.selected{
 .view-display-id-block_2 .isotope-element{
   width: 45%
 }
-.view-display-id-block_2 .isotope-element .galleryimage,.view-display-id-block_3 .isotope-element .galleryimage,.view-display-id-block_4 .isotope-element .galleryimage{
-    height: 500px;
+.view-display-id-block_2 .isotope-element .galleryimage{
+    height: 480px;
 }
 .view-display-id-block_3 .isotope-element{
   width:30%;
 }
+.view-display-id-block_3 .isotope-element .galleryimage{
+    height: 230px;
+}
 .view-display-id-block_4 .isotope-element{
   width:22%;
+}
+.view-display-id-block_4 .isotope-element .galleryimage{
+    height: 270px;
 }
 .view-display-id-block_1 .isotope-element{
   width:270px;
