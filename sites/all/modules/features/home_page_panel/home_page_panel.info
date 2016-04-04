@@ -1,7 +1,9 @@
-name = home_page
+name = Home Page
+description = Enables Home Page
 core = 7.x
 package = Features
 dependencies[] = about_us_page
+dependencies[] = contact_feature
 dependencies[] = ctools
 dependencies[] = flexslider
 dependencies[] = flexslider_views

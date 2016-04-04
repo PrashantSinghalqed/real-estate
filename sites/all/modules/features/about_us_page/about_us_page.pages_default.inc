@@ -53,7 +53,7 @@ function about_us_page_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'GET TO KNOW US';
+  $display->title = '';
   $display->uuid = '0ae31df7-c589-4955-a316-5afd063afadd';
   $display->content = array();
   $display->panels = array();
@@ -220,7 +220,30 @@ function about_us_page_default_page_manager_pages() {
     $pane->uuid = '40d65af7-3251-496d-9cc9-95dc26fb30cd';
     $display->content['new-40d65af7-3251-496d-9cc9-95dc26fb30cd'] = $pane;
     $display->panels['center'][4] = 'new-40d65af7-3251-496d-9cc9-95dc26fb30cd';
-  $display->hide_title = PANELS_TITLE_FIXED;
+    $pane = new stdClass();
+    $pane->pid = 'new-8baf0769-a52e-4586-81f4-a0cae8d755f2';
+    $pane->panel = 'center';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'olark_livechat';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '8baf0769-a52e-4586-81f4-a0cae8d755f2';
+    $display->content['new-8baf0769-a52e-4586-81f4-a0cae8d755f2'] = $pane;
+    $display->panels['center'][5] = 'new-8baf0769-a52e-4586-81f4-a0cae8d755f2';
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

@@ -120,8 +120,8 @@ function contact_feature_strongarm() {
   $strongarm->value = array(
     'width' => '1170px',
     'height' => '300px',
-    'latlong' => '18.550992739320403,74.34875002814044',
-    'zoom' => '11',
+    'latlong' => '18.564176577263844,73.97323123164063',
+    'zoom' => '10',
     'maxzoom' => '14',
     'styles' => array(
       'line_default' => array(
@@ -225,7 +225,7 @@ function contact_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_marker_file';
-  $strongarm->value = '125';
+  $strongarm->value = '63';
   $export['gmap_marker_file'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -764,6 +764,20 @@ function contact_feature_strongarm() {
   $strongarm->name = 'node_submitted_contact_info';
   $strongarm->value = 0;
   $export['node_submitted_contact_info'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_contact_info_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_contact_info_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_webform_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_webform_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

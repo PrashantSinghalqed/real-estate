@@ -1,9 +1,13 @@
-name = Services Page
-description = Enables SERVICES panel and SERVICES view-blocks for the SERVICES page (depends on About Us Page feature for an image style)
+name = Services
+description = Enables SERVICES page and SERVICES view-blocks for the SERVICES page (depends on About Us Page feature for an image style)
 core = 7.x
 package = Features
 dependencies[] = about_us_page
+dependencies[] = contact_feature
 dependencies[] = ctools
+dependencies[] = fontawesome
+dependencies[] = icon
+dependencies[] = icon_field
 dependencies[] = image
 dependencies[] = page_manager
 dependencies[] = panels
