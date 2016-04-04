@@ -1,68 +1,68 @@
 <?php
 /**
  * @file
- * testimonials_panel.strongarm.inc
+ * faq_panel.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function testimonials_panel_strongarm() {
+function faq_panel_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_testimonial';
+  $strongarm->name = 'comment_anonymous_faq';
   $strongarm->value = 0;
-  $export['comment_anonymous_testimonial'] = $strongarm;
+  $export['comment_anonymous_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_testimonial';
+  $strongarm->name = 'comment_default_mode_faq';
   $strongarm->value = 1;
-  $export['comment_default_mode_testimonial'] = $strongarm;
+  $export['comment_default_mode_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_testimonial';
+  $strongarm->name = 'comment_default_per_page_faq';
   $strongarm->value = '50';
-  $export['comment_default_per_page_testimonial'] = $strongarm;
+  $export['comment_default_per_page_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_testimonial';
-  $strongarm->value = 1;
-  $export['comment_form_location_testimonial'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_testimonial';
+  $strongarm->name = 'comment_faq';
   $strongarm->value = '1';
-  $export['comment_preview_testimonial'] = $strongarm;
+  $export['comment_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_testimonial';
+  $strongarm->name = 'comment_form_location_faq';
   $strongarm->value = 1;
-  $export['comment_subject_field_testimonial'] = $strongarm;
+  $export['comment_form_location_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_testimonial';
+  $strongarm->name = 'comment_preview_faq';
   $strongarm->value = '1';
-  $export['comment_testimonial'] = $strongarm;
+  $export['comment_preview_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__testimonial';
+  $strongarm->name = 'comment_subject_field_faq';
+  $strongarm->value = 1;
+  $export['comment_subject_field_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__faq';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -74,54 +74,54 @@ function testimonials_panel_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__testimonial'] = $strongarm;
+  $export['field_bundle_settings_node__faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_testimonial';
+  $strongarm->name = 'menu_options_faq';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_testimonial'] = $strongarm;
+  $export['menu_options_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_testimonial';
+  $strongarm->name = 'menu_parent_faq';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_testimonial'] = $strongarm;
+  $export['menu_parent_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_testimonial';
+  $strongarm->name = 'node_options_faq';
   $strongarm->value = array(
     0 => 'status',
     1 => 'promote',
   );
-  $export['node_options_testimonial'] = $strongarm;
+  $export['node_options_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_testimonial';
+  $strongarm->name = 'node_preview_faq';
   $strongarm->value = '1';
-  $export['node_preview_testimonial'] = $strongarm;
+  $export['node_preview_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_testimonial';
+  $strongarm->name = 'node_submitted_faq';
   $strongarm->value = 1;
-  $export['node_submitted_testimonial'] = $strongarm;
+  $export['node_submitted_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_testimonial_pattern';
+  $strongarm->name = 'pathauto_node_faq_pattern';
   $strongarm->value = '';
-  $export['pathauto_node_testimonial_pattern'] = $strongarm;
+  $export['pathauto_node_faq_pattern'] = $strongarm;
 
   return $export;
 }

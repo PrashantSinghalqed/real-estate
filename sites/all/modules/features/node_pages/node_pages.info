@@ -3,6 +3,7 @@ description = Enables custom panel layout for node pages to include Categories V
 core = 7.x
 package = Features
 dependencies[] = blog_view_panels
+dependencies[] = contact_feature
 dependencies[] = ctools
 dependencies[] = image
 dependencies[] = page_manager

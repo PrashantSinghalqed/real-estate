@@ -89,8 +89,8 @@ function services_feature_default_page_manager_pages() {
       'center' => array(
         'clean_markup' => array(
           'region_wrapper' => 'div',
-          'additional_region_classes' => 'main-wrapper',
-          'additional_region_attributes' => 'role="main"',
+          'additional_region_classes' => 'main-wrapper services-page-content',
+          'additional_region_attributes' => 'role="main" id="services-page"',
           'enable_inner_div' => 0,
           'pane_separators' => 1,
         ),
@@ -366,6 +366,29 @@ function services_feature_default_page_manager_pages() {
     $pane->uuid = 'dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
     $display->content['new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb'] = $pane;
     $display->panels['center'][5] = 'new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
+    $pane = new stdClass();
+    $pane->pid = 'new-e28fe6d3-fb37-4126-9110-4998bc231d78';
+    $pane->panel = 'center';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'olark_livechat';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = 'e28fe6d3-fb37-4126-9110-4998bc231d78';
+    $display->content['new-e28fe6d3-fb37-4126-9110-4998bc231d78'] = $pane;
+    $display->panels['center'][6] = 'new-e28fe6d3-fb37-4126-9110-4998bc231d78';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-05d717ef-7f24-4c92-a2c4-3be153332353';
   $handler->conf['display'] = $display;

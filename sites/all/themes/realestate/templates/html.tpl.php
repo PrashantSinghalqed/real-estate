@@ -49,6 +49,7 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <meta name="viewport" content="width = device-width">
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
@@ -60,4 +61,16 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
+<!-- Including script for StickUp menu -->
+<script src="../js/stickUp.min.js"></script>
+<script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.header' class
+                  $('.header').stickUp();
+                });
+              });
+</script>
+
 </html>

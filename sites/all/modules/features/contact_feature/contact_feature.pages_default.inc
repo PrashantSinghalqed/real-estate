@@ -16,10 +16,7 @@ function contact_feature_default_page_manager_pages() {
   $page->admin_title = 'Contacts Page';
   $page->admin_description = 'Contacts Page accessible through url - /contacts';
   $page->path = 'contacts';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -173,6 +170,29 @@ function contact_feature_default_page_manager_pages() {
     $pane->uuid = 'fe30fc5b-bd3b-43c3-b6ba-80e9476725b0';
     $display->content['new-fe30fc5b-bd3b-43c3-b6ba-80e9476725b0'] = $pane;
     $display->panels['center'][0] = 'new-fe30fc5b-bd3b-43c3-b6ba-80e9476725b0';
+    $pane = new stdClass();
+    $pane->pid = 'new-55255027-02b2-4408-a441-3fd476e9acf1';
+    $pane->panel = 'center';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'olark_livechat';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '55255027-02b2-4408-a441-3fd476e9acf1';
+    $display->content['new-55255027-02b2-4408-a441-3fd476e9acf1'] = $pane;
+    $display->panels['center'][1] = 'new-55255027-02b2-4408-a441-3fd476e9acf1';
     $pane = new stdClass();
     $pane->pid = 'new-40080966-aeac-4110-8dcd-7ffd2cbd910f';
     $pane->panel = 'form';

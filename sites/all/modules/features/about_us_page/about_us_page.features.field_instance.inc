@@ -95,6 +95,43 @@ function about_us_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-miscellaneous-field_icon'.
+  $field_instances['node-miscellaneous-field_icon'] = array(
+    'bundle' => 'miscellaneous',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_icon',
+    'label' => 'Icon',
+    'required' => FALSE,
+    'settings' => array(
+      'bundle' => NULL,
+      'icon' => NULL,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'icon_field',
+      'settings' => array(),
+      'type' => 'icon_field',
+      'weight' => 32,
+    ),
+  );
+
   // Exported field_instance: 'node-miscellaneous-field_image1'.
   $field_instances['node-miscellaneous-field_image1'] = array(
     'bundle' => 'miscellaneous',
@@ -325,6 +362,7 @@ function about_us_page_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Description');
+  t('Icon');
   t('Image');
   t('Prof_description');
   t('Prof_pic');

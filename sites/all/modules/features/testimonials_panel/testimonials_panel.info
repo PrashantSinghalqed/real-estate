@@ -1,8 +1,9 @@
-name = testimonials panel
-description = enable testimonial view from the home page
+name = Testimonials
+description = Enables Testimonials page and Testimonials content-type
 core = 7.x
 package = Features
 dependencies[] = blog_view_panels
+dependencies[] = contact_feature
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
@@ -38,4 +39,5 @@ features[variable][] = menu_parent_testimonial
 features[variable][] = node_options_testimonial
 features[variable][] = node_preview_testimonial
 features[variable][] = node_submitted_testimonial
+features[variable][] = pathauto_node_testimonial_pattern
 features[views_view][] = testimonials_view

@@ -162,9 +162,34 @@ function about_us_page_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__miscellaneous';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
+        'locations' => array(
+          'weight' => '30',
+        ),
         'title' => array(
           'weight' => '-5',
         ),
@@ -326,6 +351,34 @@ function about_us_page_strongarm() {
   $strongarm->name = 'node_submitted_professionals';
   $strongarm->value = 1;
   $export['node_submitted_professionals'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_miscellaneous_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_miscellaneous_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_our_awards_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_our_awards_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_professionals_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_professionals_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_category_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_category_pattern'] = $strongarm;
 
   return $export;
 }

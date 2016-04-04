@@ -179,7 +179,30 @@ function node_pages_default_page_manager_handlers() {
     $pane->uuid = 'bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
     $display->content['new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2'] = $pane;
     $display->panels['sidebar_'][0] = 'new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
-  $display->hide_title = PANELS_TITLE_FIXED;
+    $pane = new stdClass();
+    $pane->pid = 'new-daa9777c-8daf-4696-ae4e-88011d3713fa';
+    $pane->panel = 'sidebar_';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'olark_livechat';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'daa9777c-8daf-4696-ae4e-88011d3713fa';
+    $display->content['new-daa9777c-8daf-4696-ae4e-88011d3713fa'] = $pane;
+    $display->panels['sidebar_'][1] = 'new-daa9777c-8daf-4696-ae4e-88011d3713fa';
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
   $handler->conf['display'] = $display;
   $export['node_view__panel_context_c0d07deb-1ffe-445d-a974-017a7117dea1'] = $handler;

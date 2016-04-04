@@ -1,16 +1,19 @@
 
+
 <div class="page-wrapper">
 
 
+<!-- ======= Rendering Regions ========= -->
 
    <div class="header-top">
     <?php print render($page['header_top']); ?>
   </div>
   <div class="header">
     <div class="header-nav">
-    <?php print render($page['header']); ?>
+      <?php print render($page['header']); ?>
+    </div>
   </div>
-  </div>
+
   <div class="content">
     <?php if ($title): ?>
         <h2>
@@ -18,8 +21,11 @@
            <?php endif; ?>
            </h2>
            <div class="12container">
-    <?php print render($page['content']); ?>
+              <?php print render($page['content']); ?>
+
             </div>
+
+
   </div>
   <div class="footer">
   <div class="footer-tags">
@@ -28,7 +34,4 @@
   <div class="preface">
     <?php print render($page['preface']); ?>
   </div>
-
-
-
-</div>
+</div> <!-- /.page-wrapper -->
