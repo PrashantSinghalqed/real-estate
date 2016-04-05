@@ -220,6 +220,31 @@ function testimonials_panel_default_page_manager_pages() {
     $display->content['new-87d06358-8e97-436d-a8b7-8b5ab97a3ed7'] = $pane;
     $display->panels['center'][0] = 'new-87d06358-8e97-436d-a8b7-8b5ab97a3ed7';
     $pane = new stdClass();
+    $pane->pid = 'new-6baec8f9-e000-453d-b2d6-91ebf8a49817';
+    $pane->panel = 'center';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6baec8f9-e000-453d-b2d6-91ebf8a49817';
+    $display->content['new-6baec8f9-e000-453d-b2d6-91ebf8a49817'] = $pane;
+    $display->panels['center'][1] = 'new-6baec8f9-e000-453d-b2d6-91ebf8a49817';
+    $pane = new stdClass();
     $pane->pid = 'new-c14d5073-f107-49ee-9f0e-85d762908d0e';
     $pane->panel = 'poll';
     $pane->type = 'block';
@@ -242,7 +267,7 @@ function testimonials_panel_default_page_manager_pages() {
     $pane->uuid = 'c14d5073-f107-49ee-9f0e-85d762908d0e';
     $display->content['new-c14d5073-f107-49ee-9f0e-85d762908d0e'] = $pane;
     $display->panels['poll'][0] = 'new-c14d5073-f107-49ee-9f0e-85d762908d0e';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-87d06358-8e97-436d-a8b7-8b5ab97a3ed7';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

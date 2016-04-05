@@ -62,6 +62,7 @@ function faq_panel_default_page_manager_pages() {
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
+          1 => 3,
         ),
         'parent' => 'canvas',
       ),
@@ -112,6 +113,25 @@ function faq_panel_default_page_manager_pages() {
         'class' => '',
         'hide_empty' => 0,
       ),
+      3 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'poll',
+        ),
+        'parent' => 'main',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      'poll' => array(
+        'type' => 'region',
+        'title' => 'POLL',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '3',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
     ),
   );
   $display->panel_settings = array(
@@ -119,6 +139,7 @@ function faq_panel_default_page_manager_pages() {
       'default' => NULL,
       'faqs' => NULL,
       'categories' => NULL,
+      'poll' => NULL,
     ),
   );
   $display->cache = array();
@@ -184,7 +205,55 @@ function faq_panel_default_page_manager_pages() {
     $pane->uuid = '61220900-e53e-4752-b7b5-aa45b2b1c26e';
     $display->content['new-61220900-e53e-4752-b7b5-aa45b2b1c26e'] = $pane;
     $display->panels['faqs'][0] = 'new-61220900-e53e-4752-b7b5-aa45b2b1c26e';
-  $display->hide_title = PANELS_TITLE_FIXED;
+    $pane = new stdClass();
+    $pane->pid = 'new-45c78614-e0a3-4030-ae6a-45dcea2a1f02';
+    $pane->panel = 'faqs';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '45c78614-e0a3-4030-ae6a-45dcea2a1f02';
+    $display->content['new-45c78614-e0a3-4030-ae6a-45dcea2a1f02'] = $pane;
+    $display->panels['faqs'][1] = 'new-45c78614-e0a3-4030-ae6a-45dcea2a1f02';
+    $pane = new stdClass();
+    $pane->pid = 'new-3c50d464-7c08-43e4-a84e-a3d2306962d9';
+    $pane->panel = 'poll';
+    $pane->type = 'block';
+    $pane->subtype = 'poll-recent';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '3c50d464-7c08-43e4-a84e-a3d2306962d9';
+    $display->content['new-3c50d464-7c08-43e4-a84e-a3d2306962d9'] = $pane;
+    $display->panels['poll'][0] = 'new-3c50d464-7c08-43e4-a84e-a3d2306962d9';
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

@@ -171,16 +171,38 @@ function contact_feature_default_page_manager_pages() {
     $display->content['new-fe30fc5b-bd3b-43c3-b6ba-80e9476725b0'] = $pane;
     $display->panels['center'][0] = 'new-fe30fc5b-bd3b-43c3-b6ba-80e9476725b0';
     $pane = new stdClass();
-    $pane->pid = 'new-55255027-02b2-4408-a441-3fd476e9acf1';
+    $pane->pid = 'new-0419bd84-68a9-452f-b56d-1cef223cf085';
     $pane->panel = 'center';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'olark_livechat';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => 'Olark LiveChat Pane',
+      'title' => '',
+      'body' => '<!-- begin olark code -->
+<script data-cfasync="false" type=\'text/javascript\'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,\' onl\' + \'oad="var d=\',g,";d.getElementsByTagName(\'head\')[0].",j,"(d.",h,"(\'script\')).",k,"=\'",l,"//",a.l,"\'",\'"\',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain=\'"+d.domain+"\';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+\'d.write("\'+p().replace(/"/g,String.fromCharCode(92)+\'"\')+\'");d.close();\'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify(\'8652-437-10-3010\');/*]]>*/</script><noscript><a href="https://www.olark.com/site/8652-437-10-3010/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->',
+      'format' => 'unfiltered_text',
+      'substitute' => TRUE,
+      'name' => 'olark_livechat_custom_pane',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -190,9 +212,9 @@ function contact_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '55255027-02b2-4408-a441-3fd476e9acf1';
-    $display->content['new-55255027-02b2-4408-a441-3fd476e9acf1'] = $pane;
-    $display->panels['center'][1] = 'new-55255027-02b2-4408-a441-3fd476e9acf1';
+    $pane->uuid = '0419bd84-68a9-452f-b56d-1cef223cf085';
+    $display->content['new-0419bd84-68a9-452f-b56d-1cef223cf085'] = $pane;
+    $display->panels['center'][1] = 'new-0419bd84-68a9-452f-b56d-1cef223cf085';
     $pane = new stdClass();
     $pane->pid = 'new-40080966-aeac-4110-8dcd-7ffd2cbd910f';
     $pane->panel = 'form';

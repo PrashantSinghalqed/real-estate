@@ -18,6 +18,7 @@ features[features_api][] = api:2
 features[field_base][] = field_answer
 features[field_instance][] = node-faq-field_answer
 features[node][] = faq
+features[page_manager_pages][] = faq
 features[variable][] = comment_anonymous_faq
 features[variable][] = comment_default_mode_faq
 features[variable][] = comment_default_per_page_faq
