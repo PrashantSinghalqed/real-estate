@@ -1,8 +1,11 @@
 name = Services
-description = Enables SERVICES page and SERVICES view-blocks for the SERVICES page (depends on About Us Page feature for an image style)
+description = Enables SERVICES page and SERVICES view-blocks for the SERVICES page (depends on feature for an image style)
 core = 7.x
 package = Features
 dependencies[] = about_us_page
+dependencies[] = clean_markup
+dependencies[] = clean_markup_blocks
+dependencies[] = clean_markup_panels
 dependencies[] = contact_feature
 dependencies[] = ctools
 dependencies[] = fontawesome

@@ -26,6 +26,7 @@ features[field_instance][] = node-testimonial-field_client_name
 features[field_instance][] = node-testimonial-field_testimonial_description
 features[field_instance][] = node-testimonial-field_testimonial_image
 features[node][] = testimonial
+features[page_manager_pages][] = testimonials
 features[variable][] = comment_anonymous_testimonial
 features[variable][] = comment_default_mode_testimonial
 features[variable][] = comment_default_per_page_testimonial

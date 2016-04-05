@@ -155,16 +155,19 @@ function services_feature_default_page_manager_pages() {
     $display->content['new-05d717ef-7f24-4c92-a2c4-3be153332353'] = $pane;
     $display->panels['center'][0] = 'new-05d717ef-7f24-4c92-a2c4-3be153332353';
     $pane = new stdClass();
-    $pane->pid = 'new-277f34db-9b5a-4b2e-93a5-e523fbfd508b';
+    $pane->pid = 'new-348c0b74-c2a8-46db-93d8-4a842eda9511';
     $pane->panel = 'center';
-    $pane->type = 'block';
-    $pane->subtype = 'block-1';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+      'name' => 'superior_service_custom_pane',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -174,9 +177,9 @@ function services_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '277f34db-9b5a-4b2e-93a5-e523fbfd508b';
-    $display->content['new-277f34db-9b5a-4b2e-93a5-e523fbfd508b'] = $pane;
-    $display->panels['center'][1] = 'new-277f34db-9b5a-4b2e-93a5-e523fbfd508b';
+    $pane->uuid = '348c0b74-c2a8-46db-93d8-4a842eda9511';
+    $display->content['new-348c0b74-c2a8-46db-93d8-4a842eda9511'] = $pane;
+    $display->panels['center'][1] = 'new-348c0b74-c2a8-46db-93d8-4a842eda9511';
     $pane = new stdClass();
     $pane->pid = 'new-824327ee-ceaf-4936-96c5-8e7e1f288995';
     $pane->panel = 'center';
@@ -266,16 +269,55 @@ function services_feature_default_page_manager_pages() {
     $display->content['new-d080382c-51dc-4aed-861e-d559d8071033'] = $pane;
     $display->panels['center'][3] = 'new-d080382c-51dc-4aed-861e-d559d8071033';
     $pane = new stdClass();
-    $pane->pid = 'new-d5af5785-86d5-4ed5-b3be-7a6e9f79aab4';
+    $pane->pid = 'new-d3bf879d-e5ab-4b1e-a9da-9d73be0d941f';
     $pane->panel = 'center';
-    $pane->type = 'block';
-    $pane->subtype = 'block-2';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => 'APPRAISAL SERVICES',
-      'override_title_heading' => 'h2',
+      'admin_title' => 'Appraisal Services Pane',
+      'title' => '',
+      'body' => '<div id="parallax_five_wrapper" class="parallax_five_wrapper img-bg parallax-box image-parallax-box">
+<div class="container-12"><div class="grid-12">  <div class="region region-parallax-five">
+    
+<div id="block-block-14" class="block-block-14 block block-block block-odd">
+	<!-- Block title -->
+			<h2 class="title block-title">APPRAISAL SERVICES</h2>
+	
+	<!-- Block content -->
+	<div class="content block-content">
+		<div class="clearfix">
+<div class="col-1-2">
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet conse ctetur adipisi elit, sed do eiusmod tempor incididunt  labore et dolore</p>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+<div class="col-1-4">
+<ul class="list-1"><li><a href="#">Lorem ipsum dolor</a></li>
+<li><a href="#">Consectetuer adipiscing</a></li>
+<li><a href="#">Praesent vestibulum </a></li>
+<li><a href="#">Aenean nonummy</a></li>
+<li><a href="#">Phasellus porta us</a></li>
+<li><a href="#">Cum sociis natoque</a></li>
+</ul></div>
+<div class="col-1-4 col-last">
+<ul class="list-1"><li><a href="#">Lorem ipsum dolor</a></li>
+<li><a href="#">Consectetuer adipi</a></li>
+<li><a href="#">Praesent vestibulum</a></li>
+<li><a href="#">Aenean nonummy</a></li>
+<li><a href="#">Phasellus porta us</a></li>
+<li><a href="#">Cum sociis natoq</a></li>
+</ul></div>
+</div>
+	</div>
+</div>  </div>
+</div></div>
+<div class="parallax-bg" data-parallax-type="image" data-img-url="http://estate.dev/sites/all/themes/realestate/images/parallax-five.jpg" data-speed="0.5" data-invert="false" style="width: 1391px; margin-left: -696px; left: 50%;">
+<div class="parallax-img parallax-bg-inner" style="width: 1391px; height: 679px; margin-top: -52.5px; margin-left: 0px; background-image: url(&quot;http://estate.dev/sites/all/themes/realestate/images/parallax-five.jpg&quot;);"></div>
+</div>
+</div>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -285,9 +327,9 @@ function services_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $pane->uuid = 'd5af5785-86d5-4ed5-b3be-7a6e9f79aab4';
-    $display->content['new-d5af5785-86d5-4ed5-b3be-7a6e9f79aab4'] = $pane;
-    $display->panels['center'][4] = 'new-d5af5785-86d5-4ed5-b3be-7a6e9f79aab4';
+    $pane->uuid = 'd3bf879d-e5ab-4b1e-a9da-9d73be0d941f';
+    $display->content['new-d3bf879d-e5ab-4b1e-a9da-9d73be0d941f'] = $pane;
+    $display->panels['center'][4] = 'new-d3bf879d-e5ab-4b1e-a9da-9d73be0d941f';
     $pane = new stdClass();
     $pane->pid = 'new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
     $pane->panel = 'center';
@@ -367,16 +409,18 @@ function services_feature_default_page_manager_pages() {
     $display->content['new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb'] = $pane;
     $display->panels['center'][5] = 'new-dcf31c61-4e4d-475f-9e30-0a67f0a51abb';
     $pane = new stdClass();
-    $pane->pid = 'new-e28fe6d3-fb37-4126-9110-4998bc231d78';
+    $pane->pid = 'new-c25b6771-89d4-49f9-932d-ee470e705dea';
     $pane->panel = 'center';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'olark_livechat';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -386,9 +430,9 @@ function services_feature_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
-    $pane->uuid = 'e28fe6d3-fb37-4126-9110-4998bc231d78';
-    $display->content['new-e28fe6d3-fb37-4126-9110-4998bc231d78'] = $pane;
-    $display->panels['center'][6] = 'new-e28fe6d3-fb37-4126-9110-4998bc231d78';
+    $pane->uuid = 'c25b6771-89d4-49f9-932d-ee470e705dea';
+    $display->content['new-c25b6771-89d4-49f9-932d-ee470e705dea'] = $pane;
+    $display->panels['center'][6] = 'new-c25b6771-89d4-49f9-932d-ee470e705dea';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-05d717ef-7f24-4c92-a2c4-3be153332353';
   $handler->conf['display'] = $display;
