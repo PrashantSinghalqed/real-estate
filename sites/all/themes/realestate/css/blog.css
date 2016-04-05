@@ -86,7 +86,12 @@
 .view-id-blog .views-row.views-row-2{
   padding-right: 0;
 }
-
+.pane-poll-recent .poll .text{
+  text-align: left;
+    width: 10%;
+    float: none;
+    /*line-height: 18px*/
+}
 /* @media (max-width:767px){
   .pane-blog .pane-content{
 

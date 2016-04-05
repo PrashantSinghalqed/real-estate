@@ -45,6 +45,14 @@ function about_us_page_image_default_styles() {
         ),
         'weight' => 1,
       ),
+      4 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 570,
+          'height' => 150,
+        ),
+        'weight' => 2,
+      ),
     ),
   );
 
@@ -52,7 +60,7 @@ function about_us_page_image_default_styles() {
   $styles['isolation'] = array(
     'label' => 'isolation',
     'effects' => array(
-      1 => array(
+      13 => array(
         'name' => 'image_scale',
         'data' => array(
           'width' => 800,
@@ -60,6 +68,14 @@ function about_us_page_image_default_styles() {
           'upscale' => 0,
         ),
         'weight' => 1,
+      ),
+      14 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 800,
+          'height' => 325,
+        ),
+        'weight' => 2,
       ),
     ),
   );
@@ -76,6 +92,14 @@ function about_us_page_image_default_styles() {
           'upscale' => 0,
         ),
         'weight' => 1,
+      ),
+      7 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 270,
+          'height' => 270,
+        ),
+        'weight' => 2,
       ),
     ),
   );

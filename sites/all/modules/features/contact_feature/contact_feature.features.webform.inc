@@ -229,11 +229,11 @@ $webforms = array();
   'comment_count' => 0,
   'locations' => array(),
   'location' => array(),
-  'name' => 'prashant',
+  'name' => '',
   'picture' => 0,
-  'data' => 'b:0;',
-  'webform_features_author' => 'prashant',
-  'webform_features_revision_author' => 'prashant',
+  'data' => NULL,
+  'webform_features_author' => '',
+  'webform_features_revision_author' => 'rahul',
 );
 return $webforms;
 }

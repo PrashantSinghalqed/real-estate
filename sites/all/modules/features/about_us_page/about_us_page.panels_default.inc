@@ -58,7 +58,7 @@ function about_us_page_default_panels_mini() {
     $display->content['new-a99c5032-50c2-40f5-bba5-78ee66809266'] = $pane;
     $display->panels['center'][0] = 'new-a99c5032-50c2-40f5-bba5-78ee66809266';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-a99c5032-50c2-40f5-bba5-78ee66809266';
+  $display->title_pane = '0';
   $mini->display = $display;
   $export['static_block_aboutus_page'] = $mini;
 
