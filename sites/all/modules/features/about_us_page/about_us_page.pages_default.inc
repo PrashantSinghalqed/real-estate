@@ -221,16 +221,18 @@ function about_us_page_default_page_manager_pages() {
     $display->content['new-40d65af7-3251-496d-9cc9-95dc26fb30cd'] = $pane;
     $display->panels['center'][4] = 'new-40d65af7-3251-496d-9cc9-95dc26fb30cd';
     $pane = new stdClass();
-    $pane->pid = 'new-8baf0769-a52e-4586-81f4-a0cae8d755f2';
+    $pane->pid = 'new-fc5b9672-3b0a-4008-a94b-f245608717c5';
     $pane->panel = 'center';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'olark_livechat';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -240,9 +242,9 @@ function about_us_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
-    $pane->uuid = '8baf0769-a52e-4586-81f4-a0cae8d755f2';
-    $display->content['new-8baf0769-a52e-4586-81f4-a0cae8d755f2'] = $pane;
-    $display->panels['center'][5] = 'new-8baf0769-a52e-4586-81f4-a0cae8d755f2';
+    $pane->uuid = 'fc5b9672-3b0a-4008-a94b-f245608717c5';
+    $display->content['new-fc5b9672-3b0a-4008-a94b-f245608717c5'] = $pane;
+    $display->panels['center'][5] = 'new-fc5b9672-3b0a-4008-a94b-f245608717c5';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
