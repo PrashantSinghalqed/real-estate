@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Our Awards and Professionals feature.
- */
-
-include_once 'our_awards_and_professionals.features.inc';

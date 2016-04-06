@@ -17,25 +17,8 @@ function home_page_panel_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
- * Implements hook_image_default_styles().
+ * Implements hook_views_api().
  */
-function home_page_panel_image_default_styles() {
-  $styles = array();
-
-  // Exported image style: slideshow.
-  $styles['slideshow'] = array(
-    'label' => 'slideshow new',
-    'effects' => array(
-      2 => array(
-        'name' => 'image_resize',
-        'data' => array(
-          'width' => 1600,
-          'height' => 600,
-        ),
-        'weight' => 1,
-      ),
-    ),
-  );
-
-  return $styles;
+function home_page_panel_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }

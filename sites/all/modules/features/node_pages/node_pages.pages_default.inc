@@ -19,7 +19,7 @@ function node_pages_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Poll Panel',
+    'title' => 'Node Page Panel',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -179,7 +179,32 @@ function node_pages_default_page_manager_handlers() {
     $pane->uuid = 'bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
     $display->content['new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2'] = $pane;
     $display->panels['sidebar_'][0] = 'new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
-  $display->hide_title = PANELS_TITLE_FIXED;
+    $pane = new stdClass();
+    $pane->pid = 'new-0432a0a9-db01-4e25-a1fe-95567e68701e';
+    $pane->panel = 'sidebar_';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '0432a0a9-db01-4e25-a1fe-95567e68701e';
+    $display->content['new-0432a0a9-db01-4e25-a1fe-95567e68701e'] = $pane;
+    $display->panels['sidebar_'][1] = 'new-0432a0a9-db01-4e25-a1fe-95567e68701e';
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-bb7d6c0b-4bd9-4e5c-b1b2-0b46bca43fb2';
   $handler->conf['display'] = $display;
   $export['node_view__panel_context_c0d07deb-1ffe-445d-a974-017a7117dea1'] = $handler;

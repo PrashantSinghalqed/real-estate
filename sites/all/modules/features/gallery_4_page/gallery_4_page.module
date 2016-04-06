@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Gallery 4 Page feature.
- */
-
-include_once 'gallery_4_page.features.inc';
