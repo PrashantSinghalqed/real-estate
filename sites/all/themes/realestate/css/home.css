@@ -52,7 +52,7 @@
     margin: 0 0 0 62px;
     overflow: inherit;
     padding: 10px;
-    text-transform: none
+    text-transform: none;
 }
 .tb-megamenu .nav .active a, .tb-megamenu .nav .active  a:hover, .tb-megamenu .nav  .active  a:focus{
   color: #1fadff;
