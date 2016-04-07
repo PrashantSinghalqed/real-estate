@@ -1,0 +1,125 @@
+/*Common CSS for common elements having same CSS properties throught the site*/
+
+.page-wrapper {
+    overflow: hidden;
+    background: #fff;
+    color: #656565;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    min-width: 1250px;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: #343434;
+    font: 400 50px/50px 'Open Sans', sans-serif;
+    margin-bottom: 34px;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #343434;
+    font: 900 30px/30px 'Open Sans', sans-serif;
+    margin-bottom: 52px;
+    position: relative;
+}
+
+h2:after,
+h2:before {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #343434;
+    transform: translate(0, -150%);
+    -moz-transform: translate(0, -150%);
+    -ms-transform: translate(0, -150%);
+    -o-transform: translate(0, -150%);
+    -webkit-transform: translate(0, -150%);
+}
+
+h2:before {
+    margin-right: 25px;
+}
+
+h2:after {
+    margin-left: 25px;
+}
+
+h6 {
+    color: #343434;
+    font: bold 16px/26px 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+}
+
+a {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: #1fadff;
+    text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    color: #1fadff;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 26px;
+}
+
+.button a,
+.about-desc a,
+.button-primary,
+a.button {
+    webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #1fadff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    display: inline-block;
+    font: 700 14px/20px 'Open Sans', sans-serif;
+    outline: none;
+    padding: 12px 70px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.button a:hover,
+.about-desc a:hover,
+.button-primary:hover,
+a.button:hover {
+    background: #343434;
+    color: #fff;
+    text-decoration: none;
+}

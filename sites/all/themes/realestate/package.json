@@ -1,12 +1,12 @@
 {
- "name": "efsa",
+ "name": "realestate",
  "version": "1.0.0",
  "description": "grunt setup for sass",
  "main": "index.js",
  "scripts": {
    "test": "echo \"Error: no test specified\" && exit 1"
  },
- "author": "saket",
+ "author": "rahul",
  "license": "ISC",
  "dependencies": {
    "css-condense": "0.0.6",
