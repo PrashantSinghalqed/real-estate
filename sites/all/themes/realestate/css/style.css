@@ -44,6 +44,20 @@
   clear: both;
 }
 
+.page-about-us .content .region {
+  max-width: 100%;
+}
+.page-about-us .content .region .block-system-main, .page-about-us .content .region .block-views {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-about-us .content .region .block-system-main:after, .page-about-us .content .region .block-views:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 @media screen {
   .page-services .view-display-id-block_1 .view-content {
     width: 100%;
@@ -103,7 +117,184 @@
   }
 }
 
+@media screen {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 87.34177%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen {
+  .page-about-us .view-display-id-block_3 .view-content .combine-awards {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_3 .view-content .combine-awards {
+    width: 31.35593%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+@media screen {
+  .page-about-us .view-display-id-block_2 .views-row {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_2 .views-row {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+}
+@media screen {
+  .page-about-us .view-display-id-block_2 .views-row-last {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_2 .views-row-last {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.about-view-image {
+  padding: 0 240px;
+}
+
+.about-view-row {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/*------image--------*/
+.block-block-1 {
+  height: 702px;
+  background-attachment: fixed;
+  margin-left: 0px;
+  top: 2px;
+  background-image: url("../images/parallax-three.jpg");
+}
+
+.static-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: none;
+  position: relative;
+}
+
+h2.title-1 {
+  background: #333333;
+  color: #fff;
+  padding: 36px 50px 39px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.block-block-1 .container-12 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.static-block-region {
+  color: #fff;
+  padding: 220px 0 200px;
+}
+
+.about-view-row {
+  text-align: center;
+}
+
+.about-desc {
+  padding: 0 240px;
+}
+
+.page-about-us .block-views-about-us-block-1 .views-row-odd {
+  float: left;
+  margin-right: 40px;
+}
+
+/*-----our advantages-----*/
+.page-about-us .block-views-about-us-block-1 {
+  padding: 33px 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.about-desc a, .about-title-wrapper a {
+  color: #343434;
+  font: bold 16px/26px 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+
+.about-title-wrapper h6 {
+  margin-top: 0;
+}
+
+.about-title-wrapper {
+  padding-left: 28px;
+  border-left: 2px solid #eaebef;
+}
+
+.views-row-last .about-title-wrapper {
+  margin-left: 610px;
+}
+
 /*Common CSS for common elements having same CSS properties throught the site*/
+.page-wrapper {
+  overflow: hidden;
+  background: #fff;
+  color: #656565;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  min-width: 1250px;
+  position: relative;
+  letter-spacing: 2px;
+}
+
 h1 {
   color: #343434;
   font: 400 50px/50px 'Open Sans', sans-serif;
