@@ -45,3 +45,35 @@ $susy: (
     }
   }
 }
+.page-about-us .content{
+  .region{
+    max-width: 100%;
+    .block-{
+      &system-main,
+      &views{
+        @include container;
+      }
+    }
+  }
+}
+// @mixin two-column-block {
+//   .views-row-{
+//     &-first{
+//       @include breakpoint($mobile) {
+//         @include span(16);
+//       }
+//       @include breakpoint($tablet) {
+//         @include span(8);
+//       }
+//     }
+//     &-last {
+//       @include breakpoint($mobile) {
+//         @include span(16);
+//       }
+//       @include breakpoint($tablet) {
+//         @include span(8 last);
+//       }
+//     }
+//   }
+// }
+
