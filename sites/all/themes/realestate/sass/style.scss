@@ -1,4 +1,12 @@
+//Variables
+@import "variables/color";
+@import "variables/font";
+@import "variables/media";
+
+//Components
 @import "components/layout";
+
+//Pages
 @import "pages/aboutus";
 @import "pages/blog";
 @import "pages/common";
@@ -7,8 +15,9 @@
 @import "pages/homepage";
 @import "pages/services";
 @import "pages/testimonials";
+
+//Utilities
 @import "utils/_mixins";
 @import "utils/reset";
-@import "variables/color";
-@import "variables/font";
-@import "variables/media";
+
+
