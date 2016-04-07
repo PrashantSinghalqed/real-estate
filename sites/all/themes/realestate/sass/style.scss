@@ -1,2 +1,14 @@
-@import "pages/homepage";
+@import "components/layout";
+@import "pages/aboutus";
 @import "pages/blog";
+@import "pages/common";
+@import "pages/contactus";
+@import "pages/gallery";
+@import "pages/homepage";
+@import "pages/services";
+@import "pages/testimonials";
+@import "utils/_mixins";
+@import "utils/reset";
+@import "variables/color";
+@import "variables/font";
+@import "variables/media";
