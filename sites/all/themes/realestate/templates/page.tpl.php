@@ -16,16 +16,14 @@
 
   <div class="content">
     <?php if ($title): ?>
-        <h2>
-          <?php print $title; ?>
-           <?php endif; ?>
-           </h2>
-           <div class="12container">
-              <?php print render($page['content']); ?>
+      <h2>
+        <?php print $title; ?>
+      </h2>
+    <?php endif; ?>
 
-            </div>
-
-
+    <div class="container-12">
+      <?php print render($page['content']); ?>
+    </div>
   </div>
   <div class="footer">
   <div class="footer-tags">

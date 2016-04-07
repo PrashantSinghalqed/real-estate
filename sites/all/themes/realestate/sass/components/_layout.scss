@@ -1,0 +1,47 @@
+@import "susy";
+
+
+$susy: (
+ flow: ltr,
+ math: fluid,
+ output: float,
+ gutter-position: after,
+ container: 1200px,
+ container-position: center,
+ columns: 16,/* number of columns */
+ gutters: .25, /* gutter size */
+ column-width: false,
+ global-box-sizing: content-box,
+ last-flow: to
+);
+/* Makes border-box properties */
+@include border-box-sizing;
+
+
+// general website layout
+
+.page-wrapper >{
+  .header-top,
+  .header,
+  .content,
+  .footer {
+    .region{
+      @include container;
+    }
+  }
+}
+
+.page-home .content{
+  .region{
+    max-width: 100%;
+    .pane-{
+      &static,
+      &gallery-menu,
+      &poll-block,
+      &about-us,
+      &webform-client-block-205{
+        @include container;
+      }
+    }
+  }
+}
