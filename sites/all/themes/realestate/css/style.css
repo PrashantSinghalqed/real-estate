@@ -1,68 +1,692 @@
-/*
-Error: Invalid CSS after "...929eb3af63aed2b": expected "{", was ""
-        on line 125 of /Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/components/_layout.scss
-        from line 7 of /Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/style.scss
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../../../../libraries/fontawesome/fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../../../../libraries/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Makes border-box properties */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-120:     @include three-column-block;
-121:   }
-122: }
-123:  2b34a66403452c96e1fcc3b71929eb3af63aed2b
+.page-wrapper > .header-top .region,
+.page-wrapper > .header .region,
+.page-wrapper > .content .region,
+.page-wrapper > .footer .region {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-wrapper > .header-top .region:after,
+.page-wrapper > .header .region:after,
+.page-wrapper > .content .region:after,
+.page-wrapper > .footer .region:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/components/_layout.scss:125
-/Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/style.scss:7
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/usr/local/lib/ruby/gems/2.3.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...929eb3af63aed2b\": expected \"{\", was \"\"\A         on line 125 of /Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/components/_layout.scss\A         from line 7 of /Applications/MAMP/htdocs/realestate_backup/real-estate/sites/all/themes/realestate/sass/style.scss\A \A 120:     @include three-column-block;\A 121:   }\A 122: }\A 123: >>>>>>> 2b34a66403452c96e1fcc3b71929eb3af63aed2b"; }
+.page-home .content .region {
+  max-width: 100%;
+}
+.page-home .content .region .pane-static, .page-home .content .region .pane-gallery-menu, .page-home .content .region .pane-poll-block, .page-home .content .region .pane-about-us, .page-home .content .region .pane-webform-client-block-205 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-home .content .region .pane-static:after, .page-home .content .region .pane-gallery-menu:after, .page-home .content .region .pane-poll-block:after, .page-home .content .region .pane-about-us:after, .page-home .content .region .pane-webform-client-block-205:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.page-about-us .content .region {
+  max-width: 100%;
+}
+.page-about-us .content .region .block-system-main, .page-about-us .content .region .block-views {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-about-us .content .region .block-system-main:after, .page-about-us .content .region .block-views:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media screen {
+  .page-services .view-display-id-block_1 .view-content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-services .view-display-id-block_1 .view-content {
+    width: 87.34177%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .page-services .view-display-id-block_1 .view-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen {
+  .page-services .view-display-id-block_1 .view-content .col-1-3 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-services .view-display-id-block_1 .view-content .col-1-3 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media screen {
+  .page-services .view-display-id-block_1 .view-content .col-1-3.last {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-services .view-display-id-block_1 .view-content .col-1-3.last {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media screen {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 87.34177%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .page-about-us .view-display-id-block_3 .view-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen {
+  .page-about-us .view-display-id-block_3 .view-content .combine-awards {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_3 .view-content .combine-awards {
+    width: 31.35593%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+@media screen {
+  .page-about-us .view-display-id-block_2 .views-row {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_2 .views-row {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+}
+@media screen {
+  .page-about-us .view-display-id-block_2 .views-row-last {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .page-about-us .view-display-id-block_2 .views-row-last {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.about-view-image {
+  padding: 0 240px;
+}
+
+.about-view-row {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/*------image--------*/
+.block-block-1 {
+  height: 702px;
+  background-attachment: fixed;
+  margin-left: 0px;
+  top: 2px;
+  background-image: url("../images/parallax-three.jpg");
+}
+
+.static-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: none;
+  position: relative;
+}
+
+h2.title-1 {
+  background: #333333;
+  color: #fff;
+  padding: 36px 50px 39px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.block-block-1 .container-12 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.static-block-region {
+  color: #fff;
+  padding: 220px 0 200px;
+}
+
+.about-view-row {
+  text-align: center;
+}
+
+.about-desc {
+  padding: 0 240px;
+}
+
+.page-about-us .block-views-about-us-block-1 .views-row-odd {
+  float: left;
+  margin-right: 40px;
+}
+
+/*-----our advantages-----*/
+.page-about-us .block-views-about-us-block-1 {
+  padding: 33px 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.about-desc a, .about-title-wrapper a {
+  color: #343434;
+  font: bold 16px/26px 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+
+.about-title-wrapper h6 {
+  margin-top: 0;
+}
+
+.about-title-wrapper {
+  padding-left: 28px;
+  border-left: 2px solid #eaebef;
+}
+
+.views-row-last .about-title-wrapper {
+  margin-left: 610px;
+}
+
+/*Common CSS for common elements having same CSS properties throught the site*/
+.page-wrapper {
+  overflow: hidden;
+  background: #fff;
+  color: #656565;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  min-width: 1250px;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #343434;
+  font: 400 50px/50px 'Open Sans', sans-serif;
+  margin-bottom: 34px;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #343434;
+  font: 900 30px/30px 'Open Sans', sans-serif;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+h2:after,
+h2:before {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #343434;
+  transform: translate(0, -150%);
+  -moz-transform: translate(0, -150%);
+  -ms-transform: translate(0, -150%);
+  -o-transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
+}
+
+h2:before {
+  margin-right: 25px;
+}
+
+h2:after {
+  margin-left: 25px;
+}
+
+h6 {
+  color: #343434;
+  font: bold 16px/26px 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+
+a {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #1fadff;
+  text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #1fadff;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 26px;
+}
+
+.button a,
+.about-desc a,
+.button-primary,
+a.button {
+  webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #1fadff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+  display: inline-block;
+  font: 700 14px/20px 'Open Sans', sans-serif;
+  outline: none;
+  padding: 12px 70px 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.button a:hover,
+.about-desc a:hover,
+.button-primary:hover,
+a.button:hover {
+  background: #343434;
+  color: #fff;
+  text-decoration: none;
+}
+
+.view-main-gallery .item-list {
+  background: none;
+  text-align: left;
+}
+.view-main-gallery .item-list .isotope-options {
+  display: inline-block;
+  margin-bottom: 38px;
+  text-align: center;
+  border-bottom: 1px solid #eaebef;
+  padding: 0 87px;
+}
+.view-main-gallery .item-list .isotope-options li {
+  display: inline-block;
+}
+.view-main-gallery .item-list .isotope-options li a {
+  text-decoration: none;
+  color: black;
+}
+.view-main-gallery .item-list .isotope-options li a:hover {
+  color: #1fadff;
+  text-decoration: none;
+}
+.view-main-gallery .item-list .isotope-options li:hover {
+  border-bottom: 1px solid #1fadff;
+}
+
+#isotope-container {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.galleryimage a {
+  background: #000;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+.galleryimage a img {
+  opacity: .4;
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.galleryimage a:hover:after {
+  background: none;
+  color: #fff;
+  content: "\f00e";
+  font: 40px/40px FontAwesome;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  position: absolute;
+  top: 43%;
+  z-index: 999;
+}
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}

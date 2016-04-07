@@ -77,6 +77,24 @@ $susy: (
 //     }
 //   }
 // }
+@mixin four-column-block{
+        .views-row {
+        @include breakpoint($mobile){
+          @include span(16);
+        }
+        @include breakpoint($tablet){
+          @include span(4 of 16);
+        }
+        &-last{
+          @include breakpoint($mobile){
+            @include span(16);
+          }
+          @include breakpoint($tablet){
+            @include span(4 last of 16);
+      }
+    }
+  }
+}
 
 
 @mixin three-column-block{
@@ -95,8 +113,8 @@ $susy: (
         float: none;
         margin-right:0;
         margin: 0 auto;
-      }
-      .col-1-3 {
+        }
+        .col-1-3 {
         @include breakpoint($mobile){
           @include span(16);
         }
@@ -115,10 +133,47 @@ $susy: (
     }
 }
 
+
 .page-services {
   .view-display-id-block_1 {
     @include three-column-block;
   }
 }
+@mixin about-us-3-column-block{
+  .view-content{
+      @include breakpoint($mobile){
+        @include span(16);
+      }
+      @include breakpoint($tablet){
+        @include span(14 of 16);
+        float: none;
+        margin-right:0;
+        margin: 0 auto;
+      }
+      @include breakpoint($desktop){
+        @include span(12 of 16);
+        float: none;
+        margin-right:0;
+        margin: 0 auto;
+        }
+        .combine-awards {
+        @include breakpoint($mobile){
+          @include span(16);
+        }
+        @include breakpoint($tablet){
+          @include span(3.9  of 12);
+        }
 
-
+      }
+    }
+}
+.page-about-us {
+  .view-display-id-block_3 {
+    @include about-us-3-column-block;
+  }
+}
+.page-about-us {
+  .view-display-id-block_2 {
+    @include four-column-block;
+  }
+}
