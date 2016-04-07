@@ -1,0 +1,62 @@
+.view-main-gallery{
+  .item-list {
+   background: none;
+    text-align: center;
+  .isotope-options{
+      display: inline-block;
+    margin-bottom: 38px;
+    text-align: center;
+    border-bottom: 1px solid #eaebef;
+    padding: 0 87px;
+
+  li{
+   display:inline-block;
+  a{
+    text-decoration:none;
+    color: black;
+
+   }
+  a:hover{
+    color: #1fadff;
+    text-decoration: none;
+   }
+    }
+  li:hover{
+    border-bottom: 1px solid #1fadff;
+  }
+
+}
+}
+}
+#isotope-container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.galleryimage
+{a
+  {
+    background: #000;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    img{
+     opacity: .4;
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    }
+  }
+
+  a:hover:after {
+    background: none;
+    color: #fff;
+    content: "\f00e";
+    font: 40px/40px FontAwesome;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    position: absolute;
+    top: 43%;
+    z-index: 999;
+}
+  }

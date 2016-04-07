@@ -126,3 +126,59 @@ a.button:hover {
   background: #343434;
   color: #fff;
   text-decoration: none; }
+
+/* line 2, ../sass/pages/_gallery.scss */
+.view-main-gallery .item-list {
+  background: none;
+  text-align: center; }
+  /* line 5, ../sass/pages/_gallery.scss */
+  .view-main-gallery .item-list .isotope-options {
+    display: inline-block;
+    margin-bottom: 38px;
+    text-align: center;
+    border-bottom: 1px solid #eaebef;
+    padding: 0 87px; }
+    /* line 12, ../sass/pages/_gallery.scss */
+    .view-main-gallery .item-list .isotope-options li {
+      display: inline-block; }
+      /* line 14, ../sass/pages/_gallery.scss */
+      .view-main-gallery .item-list .isotope-options li a {
+        text-decoration: none;
+        color: black; }
+      /* line 19, ../sass/pages/_gallery.scss */
+      .view-main-gallery .item-list .isotope-options li a:hover {
+        color: #1fadff;
+        text-decoration: none; }
+    /* line 24, ../sass/pages/_gallery.scss */
+    .view-main-gallery .item-list .isotope-options li:hover {
+      border-bottom: 1px solid #1fadff; }
+
+/* line 31, ../sass/pages/_gallery.scss */
+#isotope-container {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+/* line 36, ../sass/pages/_gallery.scss */
+.galleryimage a {
+  background: #000;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none; }
+  /* line 43, ../sass/pages/_gallery.scss */
+  .galleryimage a img {
+    opacity: .4;
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+/* line 51, ../sass/pages/_gallery.scss */
+.galleryimage a:hover:after {
+  background: none;
+  color: #fff;
+  content: "\f00e";
+  font: 40px/40px FontAwesome;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  position: absolute;
+  top: 43%;
+  z-index: 999; }
