@@ -45,6 +45,7 @@ $susy: (
     }
   }
 }
+
 .page-about-us .content{
   .region{
     max-width: 100%;
@@ -76,4 +77,48 @@ $susy: (
 //     }
 //   }
 // }
+
+
+@mixin three-column-block{
+  .view-content{
+      @include breakpoint($mobile){
+        @include span(16);
+      }
+      @include breakpoint($tablet){
+        @include span(14 of 16);
+        float: none;
+        margin-right:0;
+        margin: 0 auto;
+      }
+      @include breakpoint($desktop){
+        @include span(12 of 16);
+        float: none;
+        margin-right:0;
+        margin: 0 auto;
+      }
+      .col-1-3 {
+        @include breakpoint($mobile){
+          @include span(16);
+        }
+        @include breakpoint($tablet){
+          @include span(4 of 12);
+        }
+        &.last{
+          @include breakpoint($mobile){
+            @include span(16);
+          }
+          @include breakpoint($tablet){
+            @include span(4 last of 12);
+          }
+        }
+      }
+    }
+}
+
+.page-services {
+  .view-display-id-block_1 {
+    @include three-column-block;
+  }
+}
+
 

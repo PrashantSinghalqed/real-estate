@@ -1,3 +1,8 @@
+//Variables
+@import "variables/color";
+@import "variables/font";
+@import "variables/media";
+
 //Components
 @import "components/layout";
 
@@ -15,7 +20,4 @@
 @import "utils/_mixins";
 @import "utils/reset";
 
-//Variables
-@import "variables/color";
-@import "variables/font";
-@import "variables/media";
+
