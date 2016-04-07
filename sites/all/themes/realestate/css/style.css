@@ -151,7 +151,7 @@ a.button:hover {
 
 .view-main-gallery .item-list {
   background: none;
-  text-align: center;
+  text-align: right;
 }
 .view-main-gallery .item-list .isotope-options {
   display: inline-block;
