@@ -72,7 +72,7 @@ function about_us_page_image_default_styles() {
       14 => array(
         'name' => 'image_resize',
         'data' => array(
-          'width' => 800,
+          'width' => 700,
           'height' => 325,
         ),
         'weight' => 2,
