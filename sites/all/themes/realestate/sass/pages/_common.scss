@@ -143,3 +143,30 @@ a.button:hover {
     color: #fff;
     text-decoration: none;
 }
+
+input[type="text"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="number"],
+input[type="month"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+    background: #fff;
+    border: 1px solid #eaebef;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #656565 !important;
+    font: 14px 'Open Sans', sans-serif;
+    max-width: 100%;
+    padding: 5px 10px 6px;
+}

@@ -84,6 +84,7 @@ function contact_feature_views_default_views() {
   $handler->display->display_options['fields']['field_company_name']['table'] = 'field_data_field_company_name';
   $handler->display->display_options['fields']['field_company_name']['field'] = 'field_company_name';
   $handler->display->display_options['fields']['field_company_name']['label'] = '';
+  $handler->display->display_options['fields']['field_company_name']['element_type'] = 'strong';
   $handler->display->display_options['fields']['field_company_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_company_name']['empty'] = 'N/A';
   /* Field: Location: Address */
@@ -91,6 +92,7 @@ function contact_feature_views_default_views() {
   $handler->display->display_options['fields']['address']['table'] = 'location';
   $handler->display->display_options['fields']['address']['field'] = 'address';
   $handler->display->display_options['fields']['address']['label'] = '';
+  $handler->display->display_options['fields']['address']['element_type'] = 'strong';
   $handler->display->display_options['fields']['address']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['address']['empty'] = 'N/A';
   $handler->display->display_options['fields']['address']['hide'] = array(
