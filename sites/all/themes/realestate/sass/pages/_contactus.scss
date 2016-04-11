@@ -1,7 +1,15 @@
 .page-contacts {
   .views-row-last {
     .views-field {
-      padding-right: 150px;
+      @include breakpoint($mobile){
+        padding-right: 50px;
+      }
+      @include breakpoint($tablet){
+        padding-right: 100px;
+      }
+      @include breakpoint($desktop){
+        padding-right: 150px;
+      }
       &.views-field-nothing {
         padding-right: initial;
       }
