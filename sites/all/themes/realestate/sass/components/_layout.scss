@@ -56,12 +56,39 @@ $susy: (
   }
 }
 
-.page-services .content {
-  .region {
-    max-width: 100%;
-    .pane-rental-services-block {
+.page-services .region-content {
+  width: 90%;
+  margin: 0 auto;
+  .pane-rental-services-block {
+    @include container;
+    }
+  .view-display-id-block {
+    @include four-column-block;
+  }
+  .view-display-id-block_1 {
+    @include three-column-block;
+  }
+  .view-display-id-block_2 {
+    @include two-column-block;
+  }
+  .parallax-four-wrapper {
+    //max-width: 100%;
+    .region-parallax-four{
       @include container;
     }
+  }
+  .parallax_five_wrapper {
+    .region-parallax-five{
+      @include column-2-1-1;
+    }
+  }
+}
+
+.page-contacts {
+  .region-content {
+    width: 95%;
+    margin: 0 auto;
+    @include two-pillars;
   }
 }
 // @mixin two-column-block {
@@ -84,19 +111,6 @@ $susy: (
 //     }
 //   }
 // }
-
-
-.page-services {
-  .view-display-id-block {
-    @include four-column-block;
-  }
-  .view-display-id-block_1 {
-    @include three-column-block;
-  }
-  .view-display-id-block_2 {
-    @include two-column-block;
-  }
-}
 
 .page-about-us {
   .view-display-id-block_3 {

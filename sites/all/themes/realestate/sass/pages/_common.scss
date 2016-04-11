@@ -4,17 +4,17 @@
     overflow: hidden;
     background: #fff;
     color: #656565;
-    font-family:'Open Sans',sans-serif;
+    font-family: $text-font-family;
     font-size: 14px;
     line-height: 26px;
-    min-width: 1250px;
+    //min-width: 1250px;
     position: relative;
     letter-spacing: 2px;
 }
 
 h1 {
     color: #343434;
-    font: 400 50px/50px 'Open Sans', sans-serif;
+    font: 400 50px/50px $text-font-family;
     margin-bottom: 34px;
 }
 
@@ -23,9 +23,17 @@ h2 {
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #343434;
-    font: 900 30px/30px 'Open Sans', sans-serif;
+    font: 900 30px/30px $text-font-family;
     margin-bottom: 52px;
     position: relative;
+    @include breakpoint($mobile){
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    @include breakpoint($desktop){
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
 }
 
 h2:after,
@@ -46,6 +54,12 @@ h2:before {
     -ms-transform: translate(0, -150%);
     -o-transform: translate(0, -150%);
     -webkit-transform: translate(0, -150%);
+    @include breakpoint($mobile){
+        display: none;
+    }
+    @include breakpoint($desktop){
+        display: inline-block;
+    }
 }
 
 h2:before {
@@ -56,9 +70,15 @@ h2:after {
     margin-left: 25px;
 }
 
+h4 {
+    color: #343434;
+    font: 400 18px/24px $text-font-family;
+    margin-bottom: 20px;
+}
+
 h6 {
     color: #343434;
-    font: bold 16px/26px 'Open Sans', sans-serif;
+    font: bold 16px/26px $text-font-family;
     margin-bottom: 5px;
 }
 
@@ -107,7 +127,7 @@ a.button {
     box-shadow: none;
     color: white;
     display: inline-block;
-    font: 700 14px/20px 'Open Sans', sans-serif;
+    font: 700 14px/20px $text-font-family;
     outline: none;
     padding: 12px 70px 13px;
     text-decoration: none;
