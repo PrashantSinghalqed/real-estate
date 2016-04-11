@@ -1,5 +1,3 @@
-@import "susy";
-
 
 $susy: (
  flow: ltr,
@@ -19,7 +17,6 @@ $susy: (
 
 
 // general website layout
-
 .page-wrapper >{
   .header-top,
   .header,
@@ -31,6 +28,8 @@ $susy: (
   }
 }
 
+
+// Homepage
 .page-home .content{
   .region{
     max-width: 100%;
@@ -45,3 +44,75 @@ $susy: (
     }
   }
 }
+
+// About Us
+.page-about-us .content{
+  .region{
+    max-width: 100%;
+    .block-{
+      &system-main,
+      &views{
+        @include container;
+      }
+    }
+  }
+}
+
+
+.page-services .content {
+  .region {
+    max-width: 100%;
+    .pane-rental-services-block {
+      @include container;
+    }
+  }
+}
+// @mixin two-column-block {
+//   .views-row-{
+//     &-first{
+//       @include breakpoint($mobile) {
+//         @include span(16);
+//       }
+//       @include breakpoint($tablet) {
+//         @include span(8);
+//       }
+//     }
+//     &-last {
+//       @include breakpoint($mobile) {
+//         @include span(16);
+//       }
+//       @include breakpoint($tablet) {
+//         @include span(8 last);
+//       }
+//     }
+//   }
+// }
+
+
+// Service page
+.page-services {
+  .view-display-id-block {
+    @include four-column-block;
+  }
+  .view-display-id-block_1 {
+    @include three-column-block;
+  }
+  .view-display-id-block_2 {
+    @include two-column-block;
+  }
+}
+
+
+
+
+// .page-about-us {
+//   .view-display-id-block_3 {
+//     @include about-us-3-column-block;
+//   }
+// }
+// .page-about-us {
+//   .view-display-id-block_2 {
+//     @include four-column-block;
+//   }
+// }
+

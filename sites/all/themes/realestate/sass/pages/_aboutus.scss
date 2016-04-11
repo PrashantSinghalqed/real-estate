@@ -1,0 +1,367 @@
+
+  // Get to know us
+
+@include breakpoint($mobile){
+  .view-content{
+    width:94%;
+    margin:0 3%;
+  }
+}
+@include breakpoint($tablet){
+  .view-content{
+    width:96%;
+    margin:0 2%;
+  }
+}
+@include breakpoint($desktop){
+  .view-content{
+    width:auto;
+    margin:0;
+  }
+}
+@include breakpoint($mobile){
+  h2:after,
+  h2:before {
+    display:none;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+}
+@include breakpoint($desktop){
+
+  h2:after,
+  h2:before {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #343434;
+    transform: translate(0, -150%);
+    -moz-transform: translate(0, -150%);
+    -ms-transform: translate(0, -150%);
+    -o-transform: translate(0, -150%);
+    -webkit-transform: translate(0, -150%);
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  h2 {
+    text-align: center;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #343434;
+    font: 900 30px/30px 'Open Sans', sans-serif;
+    margin-bottom: 52px;
+    position: relative;
+  }
+}
+
+  // Static Image
+
+
+
+  // Best Professionals
+
+
+
+
+  // Our Awards
+
+
+
+  .about-desc a,
+  .about-title-wrapper a,
+  .block-views-about-us-block-2 a,
+  .combine-awards a{
+    color: #343434;
+    font: bold 20px/26px 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+
+  }
+  .about-desc a:hover,
+  .about-title-wrapper a:hover,
+  .block-views-about-us-block-2 a:hover,
+  .combine-awards a:hover{
+    color: #1fadff;
+    text-decoration: none;
+  }
+
+/*------Get to know us block--------*/
+@include breakpoint($mobile){
+  .about-view-image {
+    padding:0;
+  }
+}
+@include breakpoint($desktop){
+  .about-view-image{
+    padding: 0 240px;
+  }
+}
+@include breakpoint($mobile){
+.about-desc {
+    padding:0;
+  }
+}
+@include breakpoint($tablet){
+  .about-desc{
+
+  }
+}
+@include breakpoint($desktop){
+  .about-desc{
+    padding: 0 240px;
+  }
+}
+@include breakpoint($mobile){
+  .about-view-row {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+}
+
+/*-----our advantages-----*/
+
+// @include breakpoint($tablet){
+//   .view-content{
+//     width:100%;
+//     margin:0;
+//   }
+// }
+// @include breakpoint($tablet){
+//   .page-about-us{
+//     .block-views-about-us-block-1{
+//       padding: 33px 0;
+//       position: relative;
+//       padding-bottom: 20px;
+//     }
+//   }
+// }
+// @include breakpoint($mobile){
+//   .about-title-wrapper h6{
+//     margin-top: 0;
+//   }
+// }
+// // .about-title-wrapper{
+// //   padding-left: 28px;
+// //   border-left: 2px solid #eaebef;
+// // }
+
+@include breakpoint($mobile){
+  .views-row-last .about-title-wrapper {
+    margin-left: 0px;
+  }
+}
+// @include breakpoint($mobile){
+//   .views-row-odd {
+//     margin-right: 0px;
+//     width:100%;
+//   }
+// }
+@include breakpoint($mobile){
+  .views-row-odd{
+    width:auto;
+  }
+}
+.about-title-wrapper{
+  padding-left: 28px;
+  border-left: 2px solid #eaebef;
+}
+// @include breakpoint($tablet){
+//   .page-about-us{
+//     .block-views-about-us-block-1{
+//       .views-row-odd {
+//         float :left;
+//         margin-right:40px;
+//       }
+//     }
+//   }
+// }
+
+// @include breakpoint($tablet){
+//   .views-row-last .about-title-wrapper{
+//     margin-left: 610px;
+//   }
+// }
+// @include breakpoint($tablet){
+//   .views-row-last{
+//     float:none;
+//   }
+// }
+.page-about-us{
+  .block-views-about-us-block-1{
+    @include two-column-block;
+  }
+}
+/*------image--------*/
+.block-block-1{
+      height: 702px;
+      background-attachment: fixed;
+      margin-left: 0px;
+      top: 2px;
+      background-image: url("../images/parallax-three.jpg");
+      padding: 58px 0 70px;
+    }
+.static-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: none;
+    position: relative;
+  }
+@include breakpoint($mobile){
+  .block-block-1{
+      width: auto;
+      padding: 0px 10px;
+      background-size:cover;
+    }
+  }
+@include breakpoint($tablet){
+  .block-block-1{
+    padding:2%;
+  }
+}
+
+
+
+h2.title-1 {
+      background: #333333;
+      color: #fff;
+      padding: 36px 50px 39px;
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+      margin-top:0;
+    }
+@include breakpoint($mobile){
+  h2.title-1 {
+      font-size: 30px;
+      line-height: 36px;
+      padding: 15px 20px;
+    }
+  }
+@include breakpoint($desktop){
+  h2.title-1{
+    font-size:50px;
+    line-height:50px;
+    padding:36px 50px 39px;
+  }
+}
+
+
+
+
+@include breakpoint($mobile){
+  .block-block-1{
+    .container-12{
+      width: auto;
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0px 0px 30px;
+    }
+  }
+}
+@include breakpoint($tablet){
+  .block-block-1{
+    .container-12{
+
+    }
+  }
+}
+@include breakpoint($desktop){
+  .block-block-1 {
+    .container-12 {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}
+.static-block-region{
+    color: #fff;
+    padding: 220px 0 200px;
+  }
+.about-view-row{
+  text-align: center;
+}
+
+
+
+
+/*--------professionals-------*/
+@include breakpoint($mobile){
+  .views-field-field-prof-pic img{
+      width:100%;
+    }
+  }
+@include breakpoint($desktop){
+  .views-field-field-prof-pic img{
+      width:auto;
+    }
+  }
+  .page-about-us {
+    .block-views-about-us-block-2 {
+      @include four-column-block;
+    }
+  }
+@include breakpoint($desktop){
+  .block-views-about-us-block-2{
+    padding: 58px 0 20px;
+  }
+}
+
+
+/*----------our awards---------*/
+.block-views-about-us-block-3{
+    border: 1px solid #eaebef;
+    padding: 80px 0;
+    margin-bottom: 30px;
+    .view-content {
+      .combine-awards {
+        &:last-child{
+          margin-right:0;
+        }
+      }
+    }
+  }
+@include breakpoint($mobile){
+.block-views-about-us-block-3{
+    width:96%;
+    padding: 40px 20px;
+  }
+  .combine-awards{
+    padding:0;
+  }
+}
+  .page-about-us {
+  .block-views-about-us-block-3 {
+      @include about-us-3-column-block;
+    }
+  }
+
+
+
+
+
+
+
+// @include breakpoint($mobile){
+
+// }
+// .page-about-us div.view-display-id-block_1{
+//   @include two-column-block;
+// }

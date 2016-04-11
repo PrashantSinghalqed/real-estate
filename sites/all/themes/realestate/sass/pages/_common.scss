@@ -1,17 +1,24 @@
 /*Common CSS for common elements having same CSS properties throught the site*/
 
-// .page-wrapper {
-//     overflow: hidden;
-//     background: #fff;
-//     color: #656565;
-//     font-family: 'Open Sans', sans-serif;
-//     font-size: 14px;
-//     line-height: 26px;
-//     min-width: 1250px;
-//     position: relative;
-//     letter-spacing: 2px;
-// }
-
+.page-wrapper {
+    overflow: hidden;
+    background: #fff;
+    color: #656565;
+    font-family:'Open Sans',sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    // min-width: 1250px;
+    position: relative;
+    letter-spacing: 2px;
+}
+img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
 h1 {
     color: #343434;
     font: 400 50px/50px 'Open Sans', sans-serif;
@@ -123,3 +130,13 @@ a.button:hover {
     color: #fff;
     text-decoration: none;
 }
+span{
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
