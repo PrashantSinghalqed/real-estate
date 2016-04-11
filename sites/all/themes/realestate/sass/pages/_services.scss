@@ -1,5 +1,214 @@
-// .page-services {
-//   .pane-rental-services-block{
-//     @extend %clearfix;
-//   }
-// }
+
+.page-services {
+  img {
+    @include breakpoint($mobile){
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    @include breakpoint($tablet){
+      width: auto;
+    }
+    // @include breakpoint($desktop){
+    //   width: auto;
+    // }
+  }
+  .pane-rental-services-block {
+    @extend %clearfix;
+  }
+  .view-rental-services-block {
+    @extend %clearfix;
+  }
+  .view-display-id-block {
+    padding-bottom: 30px;
+    .views-field.views-field-title{
+      min-height: 52px;
+      @include breakpoint($mobile){
+        min-height: 25px;
+      }
+      @include breakpoint($tablet){
+        min-height: 52px;
+      }
+    }
+   .views-field.views-field-body{
+      min-height: 105px;
+      @include breakpoint($mobile){
+        min-height: 50px;
+      }
+      @include breakpoint($tablet){
+        min-height: 105px;
+      }
+    }
+  }
+  a.button {
+    @include breakpoint($mobile){
+      padding: 12px 20px 13px;
+    }
+    @include breakpoint($desktop){
+      padding: 12px 70px 13px;
+    }
+  }
+  .parallax-box {
+    position: relative;
+  }
+  .region-parallax-four {
+    position: relative;
+    z-index: 9;
+    color: #fff;
+    padding: 220px 0 200px;
+  }
+  h2.title-1 {
+    @include breakpoint($mobile) {
+      padding: 15px 20px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    @include breakpoint($desktop) {
+      padding: 36px 50px 39px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+  .parallax_four_wrapper .parallax-bg {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: -120px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 150%;
+    background: url("../images/parallax-four.jpg") center no-repeat fixed;
+    background-size: cover;
+    max-height: 600px;
+  }
+  .pane-rental-services-block .block-views-services-two-block {
+    @extend %clearfix;
+    margin-top: 58px;
+    margin-bottom: 70px;
+    border: 1px solid #eaebef;
+    padding: 80px 100px 20px;
+    @include breakpoint($mobile){
+      padding: 40px 50px 20px;
+    }
+    @include breakpoint($desktop){
+      padding: 80px 100px 20px;
+    }
+    h6 {
+      padding-top: 15px;
+      margin-top: 0px;
+    }
+    .views-field-field-icon {
+      float: left;
+      font-size: 58px;
+      line-height: 58px;
+      margin: 0 30px 20px 0;
+      color: #343434;
+      @include breakpoint($mobile){
+        float: none;
+        margin: 0;
+      }
+      @include breakpoint($desktop){
+        float: left;
+        margin: 0 30px 20px 0;
+      }
+    }
+    .views-field-body {
+      clear: left;
+    }
+  }
+  .pane-rental-services-block .view-display-id-block_2 {
+    .block-three-caption {
+      padding-left: 28px;
+      border-left: 2px solid #eaebef;
+    }
+  }
+  .parallax_five_wrapper {
+    .region-parallax-five {
+      color: #fff;
+      position: relative;
+      z-index: 9;
+      padding: 130px 0 80px;
+      @include breakpoint($mobile){
+        padding: 80px 0 40px;
+      }
+      @include breakpoint($desktop){
+        padding: 130px 0 80px;
+      }
+      h2 {
+        color: #fff;
+      }
+      h2:before,
+      h2:after {
+        background-color: rgba(255,255,255,1);
+      }
+      a {
+        color: #fff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        @include breakpoint($mobile){
+          padding-left: 16px;
+        }
+      }
+      //padding: 220px 0 200px;
+    }
+    .parallax-bg {
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      left: -120px;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 150%;
+      background: url("../images/parallax-five.jpg") center no-repeat fixed;
+      background-size: cover;
+      max-height: 600px;
+      @include breakpoint($mobile){
+        max-height: 1000px;
+      }
+    }
+  }
+  .pane-rental-services-block.block-views-block-four-block {
+    margin: 30px 0;
+    &.border-one-wrap {
+      border: 1px solid #eaebef;
+      padding: 58px 10px 0;
+      margin-bottom: 30px;
+    }
+    .view-display-id-block_4 {
+      padding: 80px 0 0;
+      @include breakpoint($mobile){
+        padding: 0;
+      }
+      @include breakpoint($tablet){
+        padding: 80px 0 0;
+      }
+      .view-content {
+        text-align: center;
+        .views-field-field-image,
+        .views-field-body {
+          @include breakpoint($tablet){
+            padding: 0 100px;
+          }
+          @include breakpoint($desktop){
+            padding: 0 180px;
+          }
+          @include breakpoint($widedesktop){
+            padding: 0 240px;
+          }
+        }
+        .views-field-nothing {
+            padding-top: 68px;
+            margin-bottom: -21px;
+        }
+      }
+    }
+  }
+
+
+}
+

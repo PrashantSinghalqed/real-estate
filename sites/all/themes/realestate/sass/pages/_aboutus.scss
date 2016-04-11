@@ -1,4 +1,5 @@
 
+
   // Get to know us
 
 @include breakpoint($mobile){
@@ -13,12 +14,12 @@
     margin:0 2%;
   }
 }
-@include breakpoint($desktop){
-  .view-content{
-    width:auto;
-    margin:0;
-  }
-}
+// @include breakpoint($desktop){
+//   .view-content{
+//     width:auto;
+//     margin:0;
+//   }
+// }
 @include breakpoint($mobile){
   h2:after,
   h2:before {
@@ -65,20 +66,6 @@
     position: relative;
   }
 }
-
-  // Static Image
-
-
-
-  // Best Professionals
-
-
-
-
-  // Our Awards
-
-
-
   .about-desc a,
   .about-title-wrapper a,
   .block-views-about-us-block-2 a,
@@ -122,6 +109,10 @@
     padding: 0 240px;
   }
 }
+.about-view-row{
+  text-align: center;
+}
+/*-------our advantages-----------*/
 @include breakpoint($mobile){
   .about-view-row {
     margin-bottom: 30px;
@@ -129,33 +120,6 @@
     padding-bottom: 20px;
   }
 }
-
-/*-----our advantages-----*/
-
-// @include breakpoint($tablet){
-//   .view-content{
-//     width:100%;
-//     margin:0;
-//   }
-// }
-// @include breakpoint($tablet){
-//   .page-about-us{
-//     .block-views-about-us-block-1{
-//       padding: 33px 0;
-//       position: relative;
-//       padding-bottom: 20px;
-//     }
-//   }
-// }
-// @include breakpoint($mobile){
-//   .about-title-wrapper h6{
-//     margin-top: 0;
-//   }
-// }
-// // .about-title-wrapper{
-// //   padding-left: 28px;
-// //   border-left: 2px solid #eaebef;
-// // }
 
 @include breakpoint($mobile){
   .views-row-last .about-title-wrapper {
@@ -177,43 +141,22 @@
   padding-left: 28px;
   border-left: 2px solid #eaebef;
 }
-// @include breakpoint($tablet){
-//   .page-about-us{
-//     .block-views-about-us-block-1{
-//       .views-row-odd {
-//         float :left;
-//         margin-right:40px;
-//       }
-//     }
-//   }
-// }
 
-// @include breakpoint($tablet){
-//   .views-row-last .about-title-wrapper{
-//     margin-left: 610px;
-//   }
-// }
-// @include breakpoint($tablet){
-//   .views-row-last{
-//     float:none;
-//   }
-// }
 .page-about-us{
   .block-views-about-us-block-1{
     @include two-column-block;
   }
 }
-/*------image--------*/
+/*-------image----------*/
 .block-block-1{
-      height: 702px;
-      background-attachment: fixed;
-      margin-left: 0px;
-      top: 2px;
-      background-image: url("../images/parallax-three.jpg");
-      padding: 58px 0 70px;
-    }
+   height: 702px;
+    background-attachment: fixed;
+    margin-left: 0px;
+    top: 2px;
+    background-image: url("../images/parallax-three.jpg");
+}
 .static-image{
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: none;
@@ -291,16 +234,11 @@ h2.title-1 {
     }
   }
 }
+
 .static-block-region{
     color: #fff;
     padding: 220px 0 200px;
   }
-.about-view-row{
-  text-align: center;
-}
-
-
-
 
 /*--------professionals-------*/
 @include breakpoint($mobile){
@@ -347,21 +285,8 @@ h2.title-1 {
     padding:0;
   }
 }
-  .page-about-us {
+.page-about-us {
   .block-views-about-us-block-3 {
-      @include about-us-3-column-block;
-    }
+    @include about-us-3-column-block;
   }
-
-
-
-
-
-
-
-// @include breakpoint($mobile){
-
-// }
-// .page-about-us div.view-display-id-block_1{
-//   @include two-column-block;
-// }
+}

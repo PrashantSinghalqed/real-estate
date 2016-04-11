@@ -1,0 +1,10 @@
+.page-contacts {
+  .view-row-last {
+    .views-field {
+      padding-right: 150px;
+      &.views-field-nothing {
+        padding-right: none;
+      }
+    }
+  }
+}
