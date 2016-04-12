@@ -252,6 +252,35 @@
     @include two-column-block;
   }
 }
+/*------------video----------------*/
+.pane-custom{
+  @include breakpoint($mobile){
+    .container-12{
+      width:100%;
+    }
+  }
+  @include breakpoint($tablet){
+    .container-12{
+      width:1200px;
+      margin:auto;
+    }
+  }
+  .parallax_two_wrapper{
+    height:500px;
+    color: #fff;
+    padding: 220px 0 200px;
+  }
+  .parallax-bg{
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
 /*------------web form------------*/
 .pane-webform-client-block-205{
   background: #1fadff;
@@ -320,3 +349,25 @@
     color: #1fadff;
   }
 }
+// .webform-client-form {
+//       .webform-component {
+//         &--name,
+//         &--email {
+//           @include breakpoint($mobile){
+//             @include span(16);
+//           }
+//           @include breakpoint($tablet){
+//             @include span(5);
+//           }
+//         }
+//         &--subject {
+//           @include breakpoint($mobile){
+//             @include span(16);
+//           }
+//           @include breakpoint($tablet){
+//             @include span(6 last);
+//           }
+//         }
+//       }
+//     }
+

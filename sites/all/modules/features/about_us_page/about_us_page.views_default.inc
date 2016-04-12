@@ -274,16 +274,37 @@ function about_us_page_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Icon  */
+  $handler->display->display_options['fields']['field_icon_']['id'] = 'field_icon_';
+  $handler->display->display_options['fields']['field_icon_']['table'] = 'field_data_field_icon_';
+  $handler->display->display_options['fields']['field_icon_']['field'] = 'field_icon_';
+  $handler->display->display_options['fields']['field_icon_']['label'] = '';
+  $handler->display->display_options['fields']['field_icon_']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_icon_']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_icon_']['click_sort_column'] = 'bundle';
+  $handler->display->display_options['fields']['field_icon_']['settings'] = array(
+    'link_to_content' => 0,
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="com">
+[field_icon_] 
+[title]
+</div>';
   /* Field: Content: Description */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';

@@ -13,13 +13,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_poll';
-  $strongarm->value = 'edit-webform';
-  $export['additional_settings__active_tab_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_miscellaneous';
   $strongarm->value = 0;
   $export['comment_anonymous_miscellaneous'] = $strongarm;
@@ -30,13 +23,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'comment_anonymous_our_awards';
   $strongarm->value = 0;
   $export['comment_anonymous_our_awards'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_poll';
-  $strongarm->value = 0;
-  $export['comment_anonymous_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -62,13 +48,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_poll';
-  $strongarm->value = 1;
-  $export['comment_default_mode_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_professionals';
   $strongarm->value = 1;
   $export['comment_default_mode_professionals'] = $strongarm;
@@ -86,13 +65,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'comment_default_per_page_our_awards';
   $strongarm->value = '50';
   $export['comment_default_per_page_our_awards'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_poll';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -118,13 +90,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_poll';
-  $strongarm->value = 1;
-  $export['comment_form_location_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_professionals';
   $strongarm->value = 1;
   $export['comment_form_location_professionals'] = $strongarm;
@@ -146,13 +111,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_poll';
-  $strongarm->value = '1';
-  $export['comment_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_miscellaneous';
   $strongarm->value = '1';
   $export['comment_preview_miscellaneous'] = $strongarm;
@@ -163,13 +121,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'comment_preview_our_awards';
   $strongarm->value = '1';
   $export['comment_preview_our_awards'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_poll';
-  $strongarm->value = '1';
-  $export['comment_preview_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -202,37 +153,9 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_poll';
-  $strongarm->value = 1;
-  $export['comment_subject_field_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_professionals';
   $strongarm->value = 1;
   $export['comment_subject_field_professionals'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_poll';
-  $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_poll';
-  $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_poll';
-  $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -287,6 +210,9 @@ function about_us_page_strongarm() {
         'title' => array(
           'weight' => '-5',
         ),
+        'locations' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -331,15 +257,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_poll';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_professionals';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -359,13 +276,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'menu_parent_our_awards';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_our_awards'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_poll';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -396,15 +306,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_poll';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_professionals';
   $strongarm->value = array(
     0 => 'status',
@@ -425,13 +326,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'node_preview_our_awards';
   $strongarm->value = '1';
   $export['node_preview_our_awards'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_poll';
-  $strongarm->value = '1';
-  $export['node_preview_poll'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -457,13 +351,6 @@ function about_us_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_poll';
-  $strongarm->value = 1;
-  $export['node_submitted_poll'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_professionals';
   $strongarm->value = 1;
   $export['node_submitted_professionals'] = $strongarm;
@@ -481,13 +368,6 @@ function about_us_page_strongarm() {
   $strongarm->name = 'pathauto_node_our_awards_pattern';
   $strongarm->value = '';
   $export['pathauto_node_our_awards_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_poll_pattern';
-  $strongarm->value = '';
-  $export['pathauto_node_poll_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

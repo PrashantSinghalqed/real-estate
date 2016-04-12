@@ -266,6 +266,47 @@ function about_us_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-our_awards-field_icon_'.
+  $field_instances['node-our_awards-field_icon_'] = array(
+    'bundle' => 'our_awards',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'icon_field',
+        'settings' => array(
+          'link_to_content' => FALSE,
+        ),
+        'type' => 'icon_field_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_icon_',
+    'label' => 'Icon ',
+    'required' => 0,
+    'settings' => array(
+      'bundle' => NULL,
+      'icon' => NULL,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'icon_field',
+      'settings' => array(),
+      'type' => 'icon_field',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-professionals-field_prof_description'.
   $field_instances['node-professionals-field_prof_description'] = array(
     'bundle' => 'professionals',
@@ -363,6 +404,7 @@ function about_us_page_field_default_field_instances() {
   t('Body');
   t('Description');
   t('Icon');
+  t('Icon ');
   t('Image');
   t('Prof_description');
   t('Prof_pic');

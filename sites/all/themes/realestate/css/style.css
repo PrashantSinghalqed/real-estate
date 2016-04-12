@@ -2201,6 +2201,34 @@ h2.title-1 {
   }
 }
 
+/*------------video----------------*/
+@media screen {
+  .pane-custom .container-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .pane-custom .container-12 {
+    width: 1200px;
+    margin: auto;
+  }
+}
+.pane-custom .parallax_two_wrapper {
+  height: 500px;
+  color: #fff;
+  padding: 220px 0 200px;
+}
+.pane-custom .parallax-bg {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
 /*------------web form------------*/
 .pane-webform-client-block-205 {
   background: #1fadff;
