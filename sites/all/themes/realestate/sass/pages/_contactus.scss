@@ -1,0 +1,39 @@
+.page-contacts {
+  .views-row-last {
+    .views-field {
+      @include breakpoint($mobile){
+        padding-right: 50px;
+      }
+      @include breakpoint($tablet){
+        padding-right: 100px;
+      }
+      @include breakpoint($desktop){
+        padding-right: 150px;
+      }
+      &.views-field-nothing {
+        padding-right: initial;
+      }
+    }
+  }
+    .webform-client-form {
+      .webform-component {
+        &--name,
+        &--email {
+          @include breakpoint($mobile){
+            @include span(16);
+          }
+          @include breakpoint($tablet){
+            @include span(5);
+          }
+        }
+        &--subject {
+          @include breakpoint($mobile){
+            @include span(16);
+          }
+          @include breakpoint($tablet){
+            @include span(6 last);
+          }
+        }
+      }
+    }
+}

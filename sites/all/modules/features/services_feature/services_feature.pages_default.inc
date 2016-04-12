@@ -85,7 +85,7 @@ function services_feature_default_page_manager_pages() {
   );
   $display->panel_settings = array(
     'style_settings' => array(
-      'default' => NULL,
+      'default' => array(),
       'center' => array(
         'clean_markup' => array(
           'region_wrapper' => 'div',
@@ -99,6 +99,7 @@ function services_feature_default_page_manager_pages() {
     'center' => array(
       'style' => 'clean_element',
     ),
+    'style' => 'clean_element',
   );
   $display->cache = array();
   $display->title = '';
@@ -312,8 +313,7 @@ function services_feature_default_page_manager_pages() {
 	</div>
 </div>  </div>
 </div></div>
-<div class="parallax-bg" data-parallax-type="image" data-img-url="http://estate.dev/sites/all/themes/realestate/images/parallax-five.jpg" data-speed="0.5" data-invert="false" style="width: 1391px; margin-left: -696px; left: 50%;">
-<div class="parallax-img parallax-bg-inner" style="width: 1391px; height: 679px; margin-top: -52.5px; margin-left: 0px; background-image: url(&quot;http://estate.dev/sites/all/themes/realestate/images/parallax-five.jpg&quot;);"></div>
+<div class="parallax-bg parallax-img-2" data-type="background" data-speed="10">
 </div>
 </div>',
       'format' => 'full_html',
