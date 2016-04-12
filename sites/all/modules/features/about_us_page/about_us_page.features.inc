@@ -36,16 +36,7 @@ function about_us_page_image_default_styles() {
   $styles['advantages'] = array(
     'label' => 'advantages',
     'effects' => array(
-      2 => array(
-        'name' => 'image_scale',
-        'data' => array(
-          'width' => 570,
-          'height' => 150,
-          'upscale' => 0,
-        ),
-        'weight' => 1,
-      ),
-      4 => array(
+      8 => array(
         'name' => 'image_resize',
         'data' => array(
           'width' => 570,

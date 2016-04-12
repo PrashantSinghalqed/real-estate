@@ -233,7 +233,7 @@ $webforms = array();
   'picture' => 0,
   'data' => NULL,
   'webform_features_author' => '',
-  'webform_features_revision_author' => 'rahul',
+  'webform_features_revision_author' => '',
 );
 return $webforms;
 }

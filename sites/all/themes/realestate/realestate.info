@@ -5,16 +5,7 @@ core = 7.x
 
 scripts[] = js/realestate.js
 
-stylesheets[all][] = css/reset.css
-stylesheets[all][] = css/skeleton.css
-stylesheets[all][] = css/shortcodes.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/stylegallery.css
-stylesheets[all][] = css/home.css
-stylesheets[all][] = css/blog.css
-stylesheets[all][] = css/style-service-contact.css
-stylesheets[all][] = css/skeleton-mobile.css
-stylesheets[all][] = css/style-mobile.css
 
 regions[header_top] = Header Top
 regions[header] = Header
