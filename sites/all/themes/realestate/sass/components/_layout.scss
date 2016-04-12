@@ -38,7 +38,8 @@ $susy: (
       &gallery-menu,
       &poll-block,
       &about-us,
-      &webform-client-block-205{
+      //&webform-client-block-205
+      {
         @include container;
       }
     }

@@ -141,7 +141,13 @@
   padding-left: 28px;
   border-left: 2px solid #eaebef;
 }
-
+.bar{
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.total{
+  display:none;
+}
 .page-about-us{
   .block-views-about-us-block-1{
     @include two-column-block;
@@ -195,6 +201,14 @@ h2.title-1 {
       padding: 15px 20px;
     }
   }
+@include breakpoint($tablet){
+  h2.title-1{
+    font-size:30px;
+    line-height: 36px;
+    padding: 15px 20px;
+  }
+
+}
 @include breakpoint($desktop){
   h2.title-1{
     font-size:50px;
@@ -264,6 +278,43 @@ h2.title-1 {
 
 
 /*----------our awards---------*/
+
+// @include breakpoint($mobile){
+//   .com{
+//     height:auto;
+//     .fa{
+//       width:100%;
+//     }
+//   }
+// }
+@include breakpoint($tablet){
+  .com{
+    height:100px;
+  }
+}
+@include breakpoint($desktop){
+  .com{
+    height:74px;
+  }
+}
+.fa {
+      float: left;
+      font-size: 58px;
+      line-height: 58px;
+      margin: 0 30px 20px 0;
+      color: #343434;
+      @include breakpoint($mobile){
+        float: none;
+        margin: 0;
+        width:100%;
+      }
+      @include breakpoint($tablet){
+        float: left;
+        margin: 0 30px 20px 0;
+        width:auto;
+        width:30%;
+      }
+    }
 .block-views-about-us-block-3{
     border: 1px solid #eaebef;
     padding: 80px 0;
@@ -283,6 +334,11 @@ h2.title-1 {
   }
   .combine-awards{
     padding:0;
+  }
+}
+@include breakpoint($desktop){
+  .block-views-about-us-block-3{
+    padding:40px;
   }
 }
 .page-about-us {
