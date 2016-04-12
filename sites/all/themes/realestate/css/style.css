@@ -282,6 +282,117 @@ h2.title-1 {
   margin-left: 610px;
 }
 
+.view-blog .field-content {
+  text-align: left;
+  margin-top: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-blog .field-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.view-blog .views-field-name,
+.view-blog .views-field-created,
+.view-blog .views-field-uid,
+.view-blog .views-field-comment-count {
+  font-family: "FontAwesome";
+  display: inline-block;
+}
+
+.panels-flexible-region-38-categories {
+  margin-left: 50px;
+}
+
+.view-blog .item-list {
+  margin-top: 10px;
+}
+
+.view-blog .views-field-name .field-content:before {
+  content: "\f007";
+  color: #1fadff;
+}
+
+.view-blog .views-field-created .field-content:before {
+  content: "\f073";
+  color: #1fadff;
+}
+
+.view-blog .views-field-uid .field-content:before {
+  content: "\f06e";
+  color: #1fadff;
+  margin-right: 5px;
+}
+
+.view-blog .views-field-comment-count .field-content:before {
+  content: "\f075";
+  color: #1fadff;
+  margin-right: 5px;
+}
+
+.view-blog .views-field-title {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.view-blog ul.pager li.first,
+.view-blog ul.pager li.pager-item a,
+.view-blog ul.pager li.pager-next a,
+.view-blog ul.pager li.pager-last a {
+  webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #1fadff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+  display: inline-block;
+  font: 700 14px/20px 'Open Sans', sans-serif;
+  outline: none;
+  padding: 12px 16px 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.panels-flexible-column {
+  text-align: center;
+}
+
+.panels-flexible-column.panels-flexible-column-38-1.panels-flexible-column-last {
+  margin-left: 150px;
+}
+
+.view-id-blog .views-field-body p {
+  padding: 0;
+}
+
+.panels-flexible-column-38-main .panels-flexible-column-first {
+  width: 60%;
+}
+
+.panels-flexible-column-38-1 .panels-flexible-column-last {
+  width: 36%;
+}
+
+.view-blog .views-field .button a {
+  padding: 12px 8px 13px;
+  margin-top: 10px;
+}
+
+.view-id-blog .views-row .views-row-2 {
+  padding-right: 0;
+}
+
+.pane-poll-recent .poll .text {
+  text-align: left;
+  width: 10%;
+  float: none;
+}
+
 /*Common CSS for common elements having same CSS properties throught the site*/
 .page-wrapper {
   overflow: hidden;
@@ -290,7 +401,6 @@ h2.title-1 {
   font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   line-height: 26px;
-  min-width: 1250px;
   position: relative;
   letter-spacing: 2px;
 }
@@ -458,7 +568,6 @@ a.button:hover {
 }
 
 .galleryimage a:hover:after {
-  background: none;
   color: #fff;
   content: "\f00e";
   font: 40px/40px FontAwesome;
@@ -477,38 +586,6 @@ a.button:hover {
   width: 100%;
 }
 
-.view-display-id-block_5 .isotope-element {
-  width: 370px;
-}
-
-.view-display-id-block_2 .isotope-element {
-  width: 45%;
-}
-
-.view-display-id-block_2 .isotope-element .galleryimage {
-  height: 480px;
-}
-
-.view-display-id-block_3 .isotope-element {
-  width: 30%;
-}
-
-.view-display-id-block_3 .isotope-element .galleryimage {
-  height: 230px;
-}
-
-.view-display-id-block_4 .isotope-element {
-  width: 22%;
-}
-
-.view-display-id-block_4 .isotope-element .galleryimage {
-  height: 270px;
-}
-
-.view-display-id-block_1 .isotope-element {
-  width: 270px;
-}
-
 .view-gallery-menu .views-field-title,
 .view-gallery-menu .views-field-body,
 .view-gallery-menu .button {
@@ -524,63 +601,263 @@ a.button:hover {
   margin-bottom: 20px;
 }
 
-.view-display-id-block_3 .item-list ul.isotope-container {
+.pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  list-style: none;
 }
-.view-display-id-block_3 .item-list ul.isotope-container:after {
+.pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container:after {
   content: " ";
   display: block;
   clear: both;
 }
-.view-display-id-block_3 .item-list ul.isotope-container li.isotope-element {
+.pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element {
   margin: 0 0 0.25em 0;
   width: 32%;
   margin-right: 2%;
 }
-.view-display-id-block_3 .item-list ul.isotope-container li.isotope-element:nth-child(3n + 2) {
+.pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element:nth-child(3n + 2) {
   margin-right: 0;
 }
 
-.view-display-id-block_2 .item-list ul.isotope-container {
+.pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  list-style: none;
 }
-.view-display-id-block_2 .item-list ul.isotope-container:after {
+.pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container:after {
   content: " ";
   display: block;
   clear: both;
 }
-.view-display-id-block_2 .item-list ul.isotope-container li.isotope-element {
+.pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element {
   margin: 0 0 0.25em 0;
   width: 49%;
   margin-right: 2%;
 }
-.view-display-id-block_2 .item-list ul.isotope-container li.isotope-element:nth-child(3n + 1) {
+.pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4) {
   margin-right: 0;
 }
 
-.view-display-id-block_4 .item-list ul.isotope-container {
+.pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container,
+.pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  list-style: none;
 }
-.view-display-id-block_4 .item-list ul.isotope-container:after {
+.pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container:after,
+.pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container:after {
   content: " ";
   display: block;
   clear: both;
 }
-.view-display-id-block_4 .item-list ul.isotope-container li.isotope-element {
+.pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element,
+.pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element {
   margin: 0 0 0.25em 0;
   width: 23%;
   margin-right: 2.66%;
 }
-.view-display-id-block_4 .item-list ul.isotope-container li.isotope-element:nth-child(4n + 2) {
+.pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element:nth-child(4n + 2),
+.pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element:nth-child(4n + 2) {
   margin-right: 0;
 }
 
+.view-display-id-block_4 .galleryimage a,
+.view-display-id-block_1 .galleryimage a {
+  height: 270px;
+}
+
+.view-display-id-block_3 .galleryimage a {
+  height: 220px;
+}
+
+.view-display-id-block_2 .galleryimage a {
+  height: 480px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .page-gallery4 .page-wrapper {
+    width: 778px;
+    margin: auto;
+  }
+
+  .view-display-id-block_2 .galleryimage a,
+  .view-display-id-block_4 .galleryimage a,
+  .view-display-id-block_1 .galleryimage a,
+  .view-display-id-block_3 .galleryimage a {
+    height: 182px;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container {
+    width: 748px;
+  }
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element {
+    margin: 0 0 0.25em 0;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4),
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4),
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4) {
+    margin-right: 0;
+  }
+
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container {
+    width: 748px;
+  }
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element {
+    margin: 0 0 0.25em 0;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  .view-gallery-menu .isotope-element .views-field.views-field-title {
+    height: 52px;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_1 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_2 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_3 .galleryimage img {
+    height: 182px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 380px) {
+  .view-main-gallery .item-list {
+    background: none;
+    text-align: right;
+  }
+  .view-main-gallery .item-list .isotope-options {
+    width: 167px;
+    padding: 20px;
+    border: 0;
+    text-align: right;
+  }
+
+  .page-gallery4 .page-wrapper {
+    width: 425px;
+    margin: auto;
+  }
+
+  .view-display-id-block_2 .galleryimage a,
+  .view-display-id-block_4 .galleryimage a,
+  .view-display-id-block_1 .galleryimage a,
+  .view-display-id-block_3 .galleryimage a {
+    width: 182px;
+    height: 105px;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container {
+    width: 395px;
+  }
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element {
+    margin: 0 0 0.25em 0;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4),
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4),
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 4) {
+    margin-right: 0;
+  }
+
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container {
+    width: 395px;
+  }
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element {
+    margin: 0 0 0.25em 0;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_1 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_2 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_3 .galleryimage img {
+    width: 100%;
+    height: 105px;
+  }
+
+  .view-gallery-menu .isotope-element .views-field.views-field-title {
+    height: 52px;
+  }
+
+  .view-gallery-menu .isotope-element .views-field .field-content {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 379px) {
+  .view-main-gallery .item-list {
+    background: none;
+    text-align: right;
+  }
+  .view-main-gallery .item-list .isotope-options {
+    width: 167px;
+    padding: 20px;
+    border: 0;
+    text-align: right;
+  }
+
+  .page-gallery4 .page-wrapper {
+    width: 366px;
+    margin: auto;
+  }
+
+  .view-display-id-block_2 .galleryimage a,
+  .view-display-id-block_4 .galleryimage a,
+  .view-display-id-block_1 .galleryimage a,
+  .view-display-id-block_3 .galleryimage a {
+    height: 167px;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container,
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container {
+    width: 336px;
+  }
+  .pane-gallery-menu .view-display-id-block_4 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_1 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_2 .item-list ul.isotope-container li.isotope-element,
+  .pane-gallery-menu .view-display-id-block_3 .item-list ul.isotope-container li.isotope-element {
+    margin: 0 0 0.25em 0;
+    width: 94%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .pane-gallery-menu .view-display-id-block_4 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_1 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_2 .galleryimage img,
+  .pane-gallery-menu .view-display-id-block_3 .galleryimage img {
+    height: 167px;
+  }
+
+  .view-gallery-menu .isotope-element .views-field .field-content {
+    height: 70px;
+  }
+
+  .view-gallery-menu .isotope-element .views-field.views-field-title {
+    height: 52px;
+  }
+}
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 article,
