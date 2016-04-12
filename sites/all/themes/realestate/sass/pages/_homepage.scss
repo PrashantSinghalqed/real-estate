@@ -1,0 +1,322 @@
+/*-----------flex slider-----------*/
+
+.page-home .flexslider {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+/*-------static block----------*/
+
+.page-home .pane-content .view-id-static{
+    border: 1px solid #eaebef;
+    padding: 58px 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    h2 {
+        margin-bottom: 63px;
+    }
+    @include breakpoint($mobile) {
+        p {
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    @include breakpoint($tablet) {
+        p {
+            margin-bottom: 90px;
+            padding: 0 50px;
+        }
+    }
+    @include breakpoint($desktop) {
+        p {
+            margin-bottom: 90px;
+            padding: 0 190px;
+        }
+    }
+    .views-field-nothing-1 {
+        padding-top: 68px;
+        margin-bottom: -21px;
+    }
+}
+/*------------gallery block------------*/
+
+.pane-gallery-menu {
+    padding: 46px 0;
+}
+/*-----------slider 2-------------------*/
+
+
+.pane-slideshow {
+    .view-display-id-block_1 {
+        width: 1440px;
+        margin-left: -720px;
+        left: 50%;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        right: 0;
+        top: 0;
+        height: 702px;
+        background-attachment: fixed;
+        margin-left: 0px;
+        top: 2px;
+        background-image: url("../images/parallax-one.jpg");
+        background-size: cover;
+    }
+}
+
+@include breakpoint($mobile) {
+    #flexslider-2 {
+      a{
+        color:#fff;
+      }
+        padding: 130px 0px 80px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@include breakpoint($desktop) {
+    #flexslider-2 {
+        padding: 130px 180px 80px;
+    }
+}
+
+.views-field-field-testimonial-image {
+    width: 87px;
+    margin-bottom: 37px;
+    display: inline-block;
+}
+
+.view-display-id-block_1 {
+    .flexslider {
+        img {
+            border-radius: 100px;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+@include breakpoint($desktop) {
+  .view-display-id-block_1{
+    .view-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
+}
+
+@include breakpoint($mobile) {
+    .pane-slideshow {
+        .view-display-id-block_1 {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@include breakpoint($desktop) {
+    .pane-slideshow {
+        .view-display-id-block_1 {
+            // width: 1440px;
+            max-height: 500px;
+        }
+    }
+    .flex-direction-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .flex-prev {
+        left: 50%;
+        margin-left: -25px;
+        background: url(../images/next.png) 0 0 no-repeat;
+        margin-right: 20px;
+    }
+    .flex-next {
+        right: 50%;
+        margin-right: -25px;
+        background: url(../images/prev.png) 0 0 no-repeat;
+        margin-left: 20px;
+    }
+    .flex-direction-nav a {
+        opacity: 1;
+        display: block;
+        bottom: 0;
+        top: auto;
+        width: 9px;
+        height: 16px;
+        text-indent: -9999px;
+        margin: 0;
+    }
+}
+/*----------polls--------------*/
+.pane-poll-block{
+    border: 1px solid #eaebef;
+    padding: 58px 10px 0;
+    margin-bottom: 30px;
+}
+.pane-poll-block{
+  @include breakpoint($mobile){
+    .title{
+      padding:0;
+      margin:0;
+    }
+  }
+  @include breakpoint($desktop){
+    .title{
+      padding: 58px 190px;
+      margin-bottom: 30px;
+    }
+    margin-bottom:60px;
+  }
+}
+.bar{
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.total{
+  display:none;
+}
+.poll{
+  @include breakpoint($mobile){
+    padding: 0 0 10px ;
+  }
+  @include breakpoint($desktop){
+    padding:0 100px 30px;
+  }
+  .text{
+    float:left;
+    padding-right:30px;
+  }
+  .bar{
+    //width: 70%;
+    background: #e0e0e0;
+   margin-top: 10px;
+  margin-bottom: 12px;
+  }
+  @include breakpoint($mobile){
+    .bar{
+      height:10px;
+        .foreground{
+          height:10px;
+        }
+      }
+  }
+
+}
+.links{
+  display:none;
+}
+.page-home{
+  .pane-poll-block{
+    @include home-three-column-block;
+  }
+}
+// .poll .text,
+// .poll .bar{
+//   padding: 0 100px 30px;
+// }
+
+/*------------news-------------*/
+@include breakpoint($mobile){
+  .about-view-row {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+}
+
+@include breakpoint($mobile){
+  .views-row-last .about-title-wrapper {
+    margin-left: 0px;
+  }
+}
+@include breakpoint($mobile){
+  .views-row-odd{
+    width:auto;
+  }
+}
+.about-title-wrapper{
+  padding-left: 28px;
+  border-left: 2px solid #eaebef;
+}
+
+.page-home{
+  .view-display-id-block_1{
+    @include two-column-block;
+  }
+}
+/*------------web form------------*/
+.pane-webform-client-block-205{
+  background: #1fadff;
+  padding: 50px 0 25px;
+  color: #fff;
+  align-content: center;
+  text-align: center;
+  // .webform-client-form{
+  //     padding:0 482px;
+  // }
+  h2{
+    color:#fff;
+  }
+  h2:before,
+  h2:after{
+    background:#fff;
+  }
+  .form-item .webform-component .webform-component-textfield {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px !important;
+  }
+  @include breakpoint($mobile){
+    .webform-component-textarea{
+      padding:0;
+    }
+  }
+  @include breakpoint($tablet){
+    .webform-component-textarea {
+      padding: 0 148px;
+    }
+  }
+  @include breakpoint($desktop){
+    .webform-component-textarea {
+      padding: 0 275px;
+    }
+  }
+  @include breakpoint($widedesktop){
+  .webform-component-textarea {
+    vertical-align: middle;
+    clear: both;
+    padding:0 482px;
+    }
+  }
+  .form-text,
+  .form-textarea{
+    background: rgba(0,0,0,0.06);
+    color: #fff !important;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 14px 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .grippie{
+    display:none;
+  }
+  .button-primary{
+    background: #343434;
+    color: #fff;
+  }
+  .button-primary:hover{
+    background: #fff;
+    color: #1fadff;
+  }
+}
