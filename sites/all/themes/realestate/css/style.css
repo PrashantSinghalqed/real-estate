@@ -910,10 +910,9 @@ div.footer {
 }
 div.footer .footer-tags {
   position: relative;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 15%;
 }
 div.footer .region-footer {
   padding: 60px 0 35px;
