@@ -901,7 +901,6 @@ div#backtotop {
 }
 
 div.footer {
-  margin-top: 100px;
   clear: both;
   padding: 0;
   position: relative;
@@ -996,18 +995,170 @@ div.footer .block-copyright a:hover {
   color: #1fadff;
 }
 
+.header-nav {
+  position: relative;
+  z-index: 14;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  padding: 10px 0 22px;
+  /* position: fixed; */
+  background: #FFF;
+  width: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  /* top: 125px; */
+}
+
+.region-header {
+  padding-top: 36px;
+}
+
+#block-tb-megamenu-main-menu {
+  margin: 0 120px;
+}
+
+.tb-megamenu-nav {
+  float: right;
+  background: none;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+  z-index: 101;
+  position: relative;
+}
+
+.tb-megamenu-nav li {
+  background: none;
+  border: 0;
+  font: 400 15px/20px 'Open Sans', sans-serif;
+  margin: 0 0 0 62px;
+  overflow: inherit;
+  padding: 10px;
+  text-transform: none;
+}
+
+.tb-megamenu .nav .active a, .tb-megamenu .nav .active a:hover, .tb-megamenu .nav .active a:focus {
+  color: #1fadff;
+  text-decoration: none;
+  background-color: #FFF;
+}
+
+.tb-megamenu {
+  background-color: #FFF;
+}
+
+.tb-megamenu .nav li a {
+  color: #343434;
+  font: 400 15px/20px 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+  text-decoration: none;
+  border-right: none;
+  padding: 0 15px;
+}
+
+.tb-megamenu-nav {
+  font: bold 16px/26px 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.region-header-top {
+  z-index: 99;
+  padding: 0 0 29px;
+}
+
+#block-block-2 {
+  float: left;
+  padding: 30px 0 0;
+}
+#block-block-2 p {
+  margin: 0;
+}
+
+.search-button {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  background: none;
+}
+
+.search-button .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+}
+.search-button .fa:after {
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  content: 'Search';
+  padding-left: 18px;
+}
+
+.header-top .block-block-3 {
+  float: right;
+  padding: 56px 0 0;
+}
+.header-top ul.menu {
+  margin: 0;
+}
+.header-top ul.menu li:first-child {
+  margin-left: 0;
+}
+.header-top .block-block-3 ul.menu li:before {
+  padding-right: 18px;
+  font-size: 18px;
+  font-family: FontAwesome;
+}
+.header-top .block-block-3 ul.menu li {
+  background: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 48px;
+  letter-spacing: 1px;
+}
+.header-top .row:after, .header-top .clearfix:after {
+  clear: both;
+}
+.header-top .clearfix:before, .header-top .clearfix:after, .header-top .row:before, .header-top .row:after {
+  content: '\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.header-top .clearfix:before, .header-top .clearfix:after, .header-top .row:before, .header-top .row:after {
+  content: '\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+.header-top .block-block-3 ul.menu li.sign-in:before {
+  content: '\f13e';
+}
+.header-top .block-block-3 ul.menu li.register:before {
+  content: '\f023';
+}
+
 @media screen {
-  .view-content {
+  .page-about-us .view-content {
     width: 94%;
     margin: 0 3%;
   }
 }
 @media (min-width: 768px) {
-  .view-content {
+  .page-about-us .view-content {
     width: 96%;
     margin: 0 2%;
   }
 }
+
 @media screen {
   h2:after,
   h2:before {
@@ -1120,15 +1271,6 @@ div.footer .block-copyright a:hover {
   border-left: 2px solid #eaebef;
 }
 
-.bar {
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
-.total {
-  display: none;
-}
-
 @media screen {
   .page-about-us .block-views-about-us-block-1 .views-row-first {
     width: 100%;
@@ -1215,7 +1357,7 @@ h2.title-1 {
   }
 }
 @media screen {
-  .block-block-1 .container-12 {
+  .page-about-us .block-block-1 .container-12 {
     width: auto;
     display: block;
     float: none;
@@ -1224,7 +1366,7 @@ h2.title-1 {
   }
 }
 @media (min-width: 1024px) {
-  .block-block-1 .container-12 {
+  .page-about-us .block-block-1 .container-12 {
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -2215,7 +2357,6 @@ h2.title-1 {
 .pane-custom .parallax_two_wrapper {
   height: 500px;
   color: #fff;
-  padding: 220px 0 200px;
 }
 .pane-custom .parallax-bg {
   bottom: 0;
