@@ -308,72 +308,74 @@
 
 /*------------web form------------*/
 
-.pane-webform-client-block-205,
-.pane-webform-client-block-598 {
-    background: #1fadff;
-    padding: 50px 0 25px;
-    color: #fff;
-    align-content: center;
-    text-align: center;
-    // .webform-client-form{
-    //     padding:0 482px;
-    // }
-    h2 {
+.page-home {
+    .pane-webform-client-block-205,
+    .pane-webform-client-block-598 {
+        background: #1fadff;
+        padding: 50px 0 25px;
         color: #fff;
-    }
-    h2:before,
-    h2:after {
-        background: #fff;
-    }
-    .form-item .webform-component .webform-component-textfield {
-        float: none;
-        width: 100%;
-        margin: 0 0 16px !important;
-    }
-    @include breakpoint($mobile) {
-        .webform-component-textarea {
-            padding: 0;
+        align-content: center;
+        text-align: center;
+        // .webform-client-form{
+        //     padding:0 482px;
+        // }
+        h2 {
+            color: #fff;
         }
-    }
-    @include breakpoint($tablet) {
-        .webform-component-textarea {
-            padding: 0 148px;
+        h2:before,
+        h2:after {
+            background: #fff;
         }
-    }
-    @include breakpoint($desktop) {
-        .webform-component-textarea {
-            padding: 0 275px;
+        .form-item .webform-component .webform-component-textfield {
+            float: none;
+            width: 100%;
+            margin: 0 0 16px !important;
         }
-    }
-    @include breakpoint($widedesktop) {
-        .webform-component-textarea {
-            vertical-align: middle;
-            clear: both;
-            padding: 0 482px;
+        @include breakpoint($mobile) {
+            .webform-component-textarea {
+                padding: 0;
+            }
         }
-    }
-    .form-text,
-    .form-textarea {
-        background: rgba(0, 0, 0, 0.06);
-        color: #fff !important;
-        border: none;
-        font-size: 14px;
-        line-height: 17px;
-        padding: 14px 18px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    .grippie {
-        display: none;
-    }
-    .button-primary {
-        background: #343434;
-        color: #fff;
-    }
-    .button-primary:hover {
-        background: #fff;
-        color: #1fadff;
+        @include breakpoint($tablet) {
+            .webform-component-textarea {
+                padding: 0 148px;
+            }
+        }
+        @include breakpoint($desktop) {
+            .webform-component-textarea {
+                padding: 0 275px;
+            }
+        }
+        @include breakpoint($widedesktop) {
+            .webform-component-textarea {
+                vertical-align: middle;
+                clear: both;
+                padding: 0 482px;
+            }
+        }
+        .form-text,
+        .form-textarea {
+            background: rgba(0, 0, 0, 0.06);
+            color: #fff !important;
+            border: none;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 14px 18px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .grippie {
+            display: none;
+        }
+        .button-primary {
+            background: #343434;
+            color: #fff;
+        }
+        .button-primary:hover {
+            background: #fff;
+            color: #1fadff;
+        }
     }
 }
 
