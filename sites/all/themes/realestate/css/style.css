@@ -2223,7 +2223,7 @@ h2.title-1 {
 }
 
 @media screen {
-  .page-home .pane-poll-block .pane-content .text {
+  .pane-poll-block .pane-content .text {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -2232,7 +2232,7 @@ h2.title-1 {
   }
 }
 @media (min-width: 768px) {
-  .page-home .pane-poll-block .pane-content .text {
+  .pane-poll-block .pane-content .text {
     width: 11.39241%;
     float: left;
     margin-right: 1.26582%;
@@ -2240,7 +2240,7 @@ h2.title-1 {
   }
 }
 @media (min-width: 1440px) {
-  .page-home .pane-poll-block .pane-content .text {
+  .pane-poll-block .pane-content .text {
     width: 11.39241%;
     float: left;
     margin-right: 1.26582%;
@@ -2248,31 +2248,31 @@ h2.title-1 {
   }
 }
 @media screen {
-  .page-home .pane-poll-block .pane-content .bar {
+  .pane-poll-block .pane-content .bar {
     width: 87.34177%;
     float: left;
     margin-right: 1.26582%;
   }
 }
 @media (min-width: 768px) {
-  .page-home .pane-poll-block .pane-content .bar {
+  .pane-poll-block .pane-content .bar {
     width: 81.01266%;
     float: left;
     margin-right: 1.26582%;
   }
 }
 @media (min-width: 1440px) {
-  .page-home .pane-poll-block .pane-content .bar {
+  .pane-poll-block .pane-content .bar {
     width: 81.01266%;
     float: left;
     margin-right: 1.26582%;
   }
 }
-.page-home .pane-poll-block .pane-content .bar .foreground {
+.pane-poll-block .pane-content .bar .foreground {
   background: #1fadff;
 }
 @media screen {
-  .page-home .pane-poll-block .pane-content .percent {
+  .pane-poll-block .pane-content .percent {
     width: 11.39241%;
     float: right;
     margin-right: 0;
@@ -2280,7 +2280,7 @@ h2.title-1 {
   }
 }
 @media (min-width: 768px) {
-  .page-home .pane-poll-block .pane-content .percent {
+  .pane-poll-block .pane-content .percent {
     width: 5.06329%;
     float: right;
     margin-right: 0;
@@ -2288,12 +2288,16 @@ h2.title-1 {
   }
 }
 @media (min-width: 1440px) {
-  .page-home .pane-poll-block .pane-content .percent {
+  .pane-poll-block .pane-content .percent {
     width: 5.06329%;
     float: right;
     margin-right: 0;
     height: 30px;
   }
+}
+
+.poll .bar .foreground {
+  background: #1fadff;
 }
 
 /*------------news-------------*/

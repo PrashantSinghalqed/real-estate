@@ -8,9 +8,11 @@
     margin-bottom: 0;
     overflow: hidden;
 }
+
+
 /*-------static block----------*/
 
-.page-home .pane-content .view-id-static{
+.page-home .pane-content .view-id-static {
     border: 1px solid #eaebef;
     padding: 58px 10px 0;
     margin-bottom: 30px;
@@ -41,13 +43,16 @@
         margin-bottom: -21px;
     }
 }
+
+
 /*------------gallery block------------*/
 
 .pane-gallery-menu {
     padding: 46px 0;
 }
-/*-----------slider 2-------------------*/
 
+
+/*-----------slider 2-------------------*/
 
 .pane-slideshow {
     .view-display-id-block_1 {
@@ -71,9 +76,9 @@
 
 @include breakpoint($mobile) {
     #flexslider-2 {
-      a{
-        color:#fff;
-      }
+        a {
+            color: #fff;
+        }
         padding: 130px 0px 80px;
         text-align: center;
         color: #fff;
@@ -103,12 +108,12 @@
 }
 
 @include breakpoint($desktop) {
-  .view-display-id-block_1{
-    .view-content {
-        width: 100%;
-        margin: 0 auto;
+    .view-display-id-block_1 {
+        .view-content {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
-  }
 }
 
 @include breakpoint($mobile) {
@@ -155,201 +160,223 @@
         margin: 0;
     }
 }
+
+
 /*----------polls--------------*/
-.pane-poll-block{
+
+.pane-poll-block {
     border: 1px solid #eaebef;
     padding: 58px 10px 0;
     margin-bottom: 30px;
 }
-.pane-poll-block{
-  @include breakpoint($mobile){
-    .title{
-      padding:0;
-      margin:0;
-    }
-  }
-  @include breakpoint($desktop){
-    .title{
-      padding: 58px 190px;
-      margin-bottom: 30px;
-    }
-    margin-bottom:60px;
-  }
-}
-.bar{
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-.total{
-  display:none;
-}
-.poll{
-  @include breakpoint($mobile){
-    padding: 0 0 10px ;
-  }
-  @include breakpoint($desktop){
-    padding:0 100px 30px;
-  }
-  .text{
-    float:left;
-    padding-right:30px;
-  }
-  .bar{
-    //width: 70%;
-    background: #e0e0e0;
-   margin-top: 10px;
-  margin-bottom: 12px;
-  }
-  @include breakpoint($mobile){
-    .bar{
-      height:10px;
-        .foreground{
-          height:10px;
-        }
-      }
-  }
 
+.pane-poll-block {
+    @include breakpoint($mobile) {
+        .title {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    @include breakpoint($desktop) {
+        .title {
+            padding: 58px 190px;
+            margin-bottom: 30px;
+        }
+        margin-bottom:60px;
+    }
 }
-.links{
-  display:none;
+
+.bar {
+    margin-top: 10px;
+    margin-bottom: 12px;
 }
-.page-home{
-  .pane-poll-block{
+
+.total {
+    display: none;
+}
+
+.poll {
+    @include breakpoint($mobile) {
+        padding: 0 0 10px;
+    }
+    @include breakpoint($desktop) {
+        padding: 0 100px 30px;
+    }
+    .text {
+        float: left;
+        padding-right: 30px;
+    }
+    .bar {
+        //width: 70%;
+        background: #e0e0e0;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    @include breakpoint($mobile) {
+        .bar {
+            height: 10px;
+            .foreground {
+                height: 10px;
+            }
+        }
+    }
+}
+
+.links {
+    display: none;
+}
+
+.pane-poll-block {
     @include home-three-column-block;
-  }
 }
+
+.poll .bar .foreground {
+    background: #1fadff;
+    //height: 9px;
+}
+
 // .poll .text,
 // .poll .bar{
 //   padding: 0 100px 30px;
 // }
 
 /*------------news-------------*/
-@include breakpoint($mobile){
-  .about-view-row {
-    margin-bottom: 30px;
-    position: relative;
-    padding-bottom: 20px;
-  }
+
+@include breakpoint($mobile) {
+    .about-view-row {
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 20px;
+    }
 }
 
-@include breakpoint($mobile){
-  .views-row-last .about-title-wrapper {
-    margin-left: 0px;
-  }
-}
-@include breakpoint($mobile){
-  .views-row-odd{
-    width:auto;
-  }
-}
-.about-title-wrapper{
-  padding-left: 28px;
-  border-left: 2px solid #eaebef;
+@include breakpoint($mobile) {
+    .views-row-last .about-title-wrapper {
+        margin-left: 0px;
+    }
 }
 
-.page-home{
-  .view-display-id-block_1{
-    @include two-column-block;
-  }
+@include breakpoint($mobile) {
+    .views-row-odd {
+        width: auto;
+    }
 }
+
+.about-title-wrapper {
+    padding-left: 28px;
+    border-left: 2px solid #eaebef;
+}
+
+.page-home {
+    .view-display-id-block_1 {
+        @include two-column-block;
+    }
+}
+
+
 /*------------video----------------*/
-.page-home .pane-custom{
-  @include breakpoint($mobile){
-    .container-12{
-      width:100%;
+
+.page-home .pane-custom {
+    @include breakpoint($mobile) {
+        .container-12 {
+            width: 100%;
+        }
     }
-  }
-  @include breakpoint($tablet){
-    .container-12{
-      width:1200px;
-      margin:auto;
+    @include breakpoint($tablet) {
+        .container-12 {
+            width: 1200px;
+            margin: auto;
+        }
     }
-  }
-  .parallax_two_wrapper{
-    height:500px;
-    color: #fff;
-    // padding: 220px 0 200px;
-  }
-  .parallax-bg{
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
+    .parallax_two_wrapper {
+        height: 500px;
+        color: #fff;
+        // padding: 220px 0 200px;
+    }
+    .parallax-bg {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
 }
+
+
 /*------------web form------------*/
+
 .pane-webform-client-block-205,
-.pane-webform-client-block-598{
-  background: #1fadff;
-  padding: 50px 0 25px;
-  color: #fff;
-  align-content: center;
-  text-align: center;
-  // .webform-client-form{
-  //     padding:0 482px;
-  // }
-  h2{
-    color:#fff;
-  }
-  h2:before,
-  h2:after{
-    background:#fff;
-  }
-  .form-item .webform-component .webform-component-textfield {
-    float: none;
-    width: 100%;
-    margin: 0 0 16px !important;
-  }
-  @include breakpoint($mobile){
-    .webform-component-textarea{
-      padding:0;
-    }
-  }
-  @include breakpoint($tablet){
-    .webform-component-textarea {
-      padding: 0 148px;
-    }
-  }
-  @include breakpoint($desktop){
-    .webform-component-textarea {
-      padding: 0 275px;
-    }
-  }
-  @include breakpoint($widedesktop){
-  .webform-component-textarea {
-    vertical-align: middle;
-    clear: both;
-    padding:0 482px;
-    }
-  }
-  .form-text,
-  .form-textarea{
-    background: rgba(0,0,0,0.06);
-    color: #fff !important;
-    border: none;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 14px 18px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .grippie{
-    display:none;
-  }
-  .button-primary{
-    background: #343434;
+.pane-webform-client-block-598 {
+    background: #1fadff;
+    padding: 50px 0 25px;
     color: #fff;
-  }
-  .button-primary:hover{
-    background: #fff;
-    color: #1fadff;
-  }
+    align-content: center;
+    text-align: center;
+    // .webform-client-form{
+    //     padding:0 482px;
+    // }
+    h2 {
+        color: #fff;
+    }
+    h2:before,
+    h2:after {
+        background: #fff;
+    }
+    .form-item .webform-component .webform-component-textfield {
+        float: none;
+        width: 100%;
+        margin: 0 0 16px !important;
+    }
+    @include breakpoint($mobile) {
+        .webform-component-textarea {
+            padding: 0;
+        }
+    }
+    @include breakpoint($tablet) {
+        .webform-component-textarea {
+            padding: 0 148px;
+        }
+    }
+    @include breakpoint($desktop) {
+        .webform-component-textarea {
+            padding: 0 275px;
+        }
+    }
+    @include breakpoint($widedesktop) {
+        .webform-component-textarea {
+            vertical-align: middle;
+            clear: both;
+            padding: 0 482px;
+        }
+    }
+    .form-text,
+    .form-textarea {
+        background: rgba(0, 0, 0, 0.06);
+        color: #fff !important;
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 14px 18px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .grippie {
+        display: none;
+    }
+    .button-primary {
+        background: #343434;
+        color: #fff;
+    }
+    .button-primary:hover {
+        background: #fff;
+        color: #1fadff;
+    }
 }
+
 // .webform-client-form {
 //       .webform-component {
 //         &--name,
@@ -371,4 +398,3 @@
 //         }
 //       }
 //     }
-
