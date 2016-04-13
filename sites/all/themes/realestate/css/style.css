@@ -2344,21 +2344,21 @@ h2.title-1 {
 
 /*------------video----------------*/
 @media screen {
-  .pane-custom .container-12 {
+  .page-home .pane-custom .container-12 {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .pane-custom .container-12 {
+  .page-home .pane-custom .container-12 {
     width: 1200px;
     margin: auto;
   }
 }
-.pane-custom .parallax_two_wrapper {
+.page-home .pane-custom .parallax_two_wrapper {
   height: 500px;
   color: #fff;
 }
-.pane-custom .parallax-bg {
+.page-home .pane-custom .parallax-bg {
   bottom: 0;
   height: 100%;
   left: 0;
@@ -2370,49 +2370,60 @@ h2.title-1 {
 }
 
 /*------------web form------------*/
-.pane-webform-client-block-205 {
+.pane-webform-client-block-205,
+.pane-webform-client-block-598 {
   background: #1fadff;
   padding: 50px 0 25px;
   color: #fff;
   align-content: center;
   text-align: center;
 }
-.pane-webform-client-block-205 h2 {
+.pane-webform-client-block-205 h2,
+.pane-webform-client-block-598 h2 {
   color: #fff;
 }
 .pane-webform-client-block-205 h2:before,
-.pane-webform-client-block-205 h2:after {
+.pane-webform-client-block-205 h2:after,
+.pane-webform-client-block-598 h2:before,
+.pane-webform-client-block-598 h2:after {
   background: #fff;
 }
-.pane-webform-client-block-205 .form-item .webform-component .webform-component-textfield {
+.pane-webform-client-block-205 .form-item .webform-component .webform-component-textfield,
+.pane-webform-client-block-598 .form-item .webform-component .webform-component-textfield {
   float: none;
   width: 100%;
   margin: 0 0 16px !important;
 }
 @media screen {
-  .pane-webform-client-block-205 .webform-component-textarea {
+  .pane-webform-client-block-205 .webform-component-textarea,
+  .pane-webform-client-block-598 .webform-component-textarea {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  .pane-webform-client-block-205 .webform-component-textarea {
+  .pane-webform-client-block-205 .webform-component-textarea,
+  .pane-webform-client-block-598 .webform-component-textarea {
     padding: 0 148px;
   }
 }
 @media (min-width: 1024px) {
-  .pane-webform-client-block-205 .webform-component-textarea {
+  .pane-webform-client-block-205 .webform-component-textarea,
+  .pane-webform-client-block-598 .webform-component-textarea {
     padding: 0 275px;
   }
 }
 @media (min-width: 1440px) {
-  .pane-webform-client-block-205 .webform-component-textarea {
+  .pane-webform-client-block-205 .webform-component-textarea,
+  .pane-webform-client-block-598 .webform-component-textarea {
     vertical-align: middle;
     clear: both;
     padding: 0 482px;
   }
 }
 .pane-webform-client-block-205 .form-text,
-.pane-webform-client-block-205 .form-textarea {
+.pane-webform-client-block-205 .form-textarea,
+.pane-webform-client-block-598 .form-text,
+.pane-webform-client-block-598 .form-textarea {
   background: rgba(0, 0, 0, 0.06);
   color: #fff !important;
   border: none;
@@ -2423,14 +2434,17 @@ h2.title-1 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.pane-webform-client-block-205 .grippie {
+.pane-webform-client-block-205 .grippie,
+.pane-webform-client-block-598 .grippie {
   display: none;
 }
-.pane-webform-client-block-205 .button-primary {
+.pane-webform-client-block-205 .button-primary,
+.pane-webform-client-block-598 .button-primary {
   background: #343434;
   color: #fff;
 }
-.pane-webform-client-block-205 .button-primary:hover {
+.pane-webform-client-block-205 .button-primary:hover,
+.pane-webform-client-block-598 .button-primary:hover {
   background: #fff;
   color: #1fadff;
 }

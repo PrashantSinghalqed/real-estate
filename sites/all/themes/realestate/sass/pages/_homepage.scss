@@ -253,7 +253,7 @@
   }
 }
 /*------------video----------------*/
-.pane-custom{
+.page-home .pane-custom{
   @include breakpoint($mobile){
     .container-12{
       width:100%;
@@ -282,7 +282,8 @@
   }
 }
 /*------------web form------------*/
-.pane-webform-client-block-205{
+.pane-webform-client-block-205,
+.pane-webform-client-block-598{
   background: #1fadff;
   padding: 50px 0 25px;
   color: #fff;
