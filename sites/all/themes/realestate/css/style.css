@@ -1146,6 +1146,37 @@ div.footer .block-copyright a:hover {
   content: '\f023';
 }
 
+.block-block-4 {
+  float: left;
+}
+.block-block-4 p {
+  padding: 0;
+  margin: 0;
+}
+
+.block-tb-megamenu {
+  float: right;
+}
+
+#logo {
+  display: inline-block;
+  line-height: 20px;
+}
+#logo img {
+  background-image: url("../images/logo.png");
+  width: 205px;
+  height: 15px;
+}
+
+.slogan {
+  letter-spacing: 1px;
+  padding: 0 0 0 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6f6f6f;
+  text-align: right;
+}
+
 @media screen {
   .page-about-us .view-content {
     width: 94%;
