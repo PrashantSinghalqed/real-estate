@@ -16,7 +16,10 @@ function services_feature_default_page_manager_pages() {
   $page->admin_title = 'Services Page';
   $page->admin_description = 'Panel for rendering Services Page ';
   $page->path = 'services';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

@@ -265,7 +265,16 @@ function home_page_panel_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'video',
       'title' => '',
-      'body' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/YFKvL-ODa8k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+      'body' => '<div id="parallax_two_wrapper" class="parallax_two_wrapper video-bg" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_YTP_1460454727982" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><iframe id="mbYTP_YTP_1460454727982" class="playerBox" style="position: absolute; z-index: 0; width: 1885.6px; height: 910px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -172.5px; margin-left: -222.8px;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/YFKvL-ODa8k?autoplay=0&amp;modestbranding=1&amp;controls=0&..."></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
+<a class="tm_video_bg mb_YTVPlayer isMuted" data-property="{videoURL:\'http://youtu.be/YFKvL-ODa8k\', containment:\'#parallax_two_wrapper\',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}" id="YTP_1460454727982" style="display: none; position: relative; background-image: none;">youtube</a><div class="container-12"><div class="grid-12"> <div class="region region-parallax-two">
+<div id="block-block-10" class="block-block-10 block block-block block-odd">
+ 
+ 
+<div class="content block-content">
+<h2 class="title-1">Watch video</h2>
+</div>
+</div> </div>
+</div></div><div class="parallax-bg" data-parallax-type="image" data-img-url="http://livedemo00.template-help.com/drupal_54604/sites/default/files/blank.jpg" data-speed="0.5" data-invert="false"></div></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -281,10 +290,10 @@ function home_page_panel_default_page_manager_pages() {
     $display->content['new-a1ccb7ed-3f93-4c23-9cbd-1cadac9b2ad6'] = $pane;
     $display->panels['center'][6] = 'new-a1ccb7ed-3f93-4c23-9cbd-1cadac9b2ad6';
     $pane = new stdClass();
-    $pane->pid = 'new-fe6ec75c-c768-42fc-b21b-73428072cca8';
+    $pane->pid = 'new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
     $pane->panel = 'center';
     $pane->type = 'block';
-    $pane->subtype = 'webform-client-block-205';
+    $pane->subtype = 'webform-client-block-598';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -300,34 +309,9 @@ function home_page_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 7;
     $pane->locks = array();
-    $pane->uuid = 'fe6ec75c-c768-42fc-b21b-73428072cca8';
-    $display->content['new-fe6ec75c-c768-42fc-b21b-73428072cca8'] = $pane;
-    $display->panels['center'][7] = 'new-fe6ec75c-c768-42fc-b21b-73428072cca8';
-    $pane = new stdClass();
-    $pane->pid = 'new-e315f6e4-603c-4dd4-b639-2d00887a644c';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'olark_livechat_custom_pane';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '',
-      'format' => 'filtered_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $pane->uuid = 'e315f6e4-603c-4dd4-b639-2d00887a644c';
-    $display->content['new-e315f6e4-603c-4dd4-b639-2d00887a644c'] = $pane;
-    $display->panels['center'][8] = 'new-e315f6e4-603c-4dd4-b639-2d00887a644c';
+    $pane->uuid = '8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
+    $display->content['new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26'] = $pane;
+    $display->panels['center'][7] = 'new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-64807e18-078b-4d99-b9ad-4e9d8ee53919';
   $handler->conf['display'] = $display;

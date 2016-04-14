@@ -225,7 +225,7 @@ function contact_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_marker_file';
-  $strongarm->value = '63';
+  $strongarm->value = '125';
   $export['gmap_marker_file'] = $strongarm;
 
   $strongarm = new stdClass();
