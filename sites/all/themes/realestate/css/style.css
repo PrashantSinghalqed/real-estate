@@ -917,6 +917,9 @@ div.footer .region-footer {
   padding: 60px 0 35px;
   text-align: center;
 }
+div.footer .view-blog-tags-footer-block-view .view-content > div {
+  display: inline;
+}
 div.footer .view-blog-tags-footer-block-view a {
   font-weight: 700;
   display: inline-block;
@@ -926,7 +929,6 @@ div.footer .view-blog-tags-footer-block-view a {
   color: #4d4d4d;
   background: #2c2c2c;
   padding: 18px 25px 19px;
-  float: left;
   margin-left: 20px;
   margin-bottom: 10px;
 }

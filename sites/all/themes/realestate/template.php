@@ -21,8 +21,6 @@ function realestate_preprocess_page(&$variables) {
   }
 
 function realestate_preprocess_views_view_unformatted(&$variables){
-  // $variables['classes_array'][0] .= ' alpha clear-left';
-  // $variables['classes_array'][3] .= ' omega';
 
 if ($variables['view']->name == "rental_services_block" && $variables['view']->current_display == "block") {
   $variables['classes_array'][0] .= ' alpha clear-left';
@@ -33,11 +31,6 @@ if ($variables['view']->name == "rental_services_block" && $variables['view']->c
     $variables['classes_array'][0] .= "col-1-3 first odd";
     $variables['classes_array'][1] .= "col-1-3 even";
     $variables['classes_array'][2] .= "col-1-3 last col-last odd";
-    // dsm($variables);
-    // $r = $variables['view']->row_index;
-    // for ($i=0; $i < r.length; $i++) {
-    //   $variables['classes_array'][$i] .= "col-".$i;
-    // }
   }
 
 if ($variables['view']->name == "rental_services_block" && $variables['view']->current_display == "block_2") {
@@ -46,34 +39,3 @@ if ($variables['view']->name == "rental_services_block" && $variables['view']->c
 }
 }
 
-/**
- * Implementation of hook_theme().
- */
-// function realestate_theme() {
-//   return array(
-//     'views_view_unformatted__rental_services_block__block_1' => array (
-//       'classes_array' => array(),
-//     ),
-//   );
-// }
-
-// function realestate_preprocess_views_view_unformatted(&$variables){
-//   dsm($variables);
-//   $variables['classes_array'][0] .= ' col-1-3 first odd';
-// }
-
-// function realestate_preprocess_panels_pane(&$variables) {
-//   // dsm($variables);
-// }
-
-// function realestate_preprocess_clean_markup_panels_clean_element(&$variables) {
-//   // dsm($variables);
-// }
-
-
-/**
- *
- */
-// function mytheme_preprocess_views_view__page_1(&$variables) {
-//   dpm('This should be working');
-// }
