@@ -236,6 +236,27 @@
         }
     }
 
+@mixin two-column-panel {
+    .panels-flexible-column {
+      &-first {
+        @include breakpoint($mobile) {
+          @include span(16);
+        }
+        @include breakpoint($tablet) {
+          @include span(10.2);
+        }
+      }
+      &-last {
+        @include breakpoint($mobile) {
+          @include span(16);
+        }
+        @include breakpoint($tablet) {
+          @include span(5.8 last);
+        }
+      }
+    }
+}
+
 // @mixin two-column-block{
 //   .views-row-first{
 //     @include breakpoint($mobile){

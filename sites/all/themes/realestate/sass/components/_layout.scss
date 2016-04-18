@@ -118,3 +118,11 @@ $susy: (
     @include two-column-block;
   }
 }
+
+.page-blog- {
+  .region-content {
+    width: 95%;
+    margin: 0 auto;
+    @include two-column-panel;
+  }
+}

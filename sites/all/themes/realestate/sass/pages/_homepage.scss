@@ -191,11 +191,14 @@
     margin-bottom: 12px;
 }
 
-.total {
+.page-home {
+    .total {
     display: none;
 }
+}
 
-.poll {
+.page-home {
+    .poll {
     @include breakpoint($mobile) {
         padding: 0 0 10px;
     }
@@ -221,9 +224,12 @@
         }
     }
 }
+}
 
-.links {
-    display: none;
+.page-home {
+    .links {
+        display: none;
+    }
 }
 
 .pane-poll-block {
