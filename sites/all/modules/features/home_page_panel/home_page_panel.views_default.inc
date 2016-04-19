@@ -41,6 +41,34 @@ function home_page_panel_views_default_views() {
 <p>Vum iriure dolor in hendrerit in volestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui delenit augue duis dolore te feugait nulla facilisi. Nament claritatem insitast u elegentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod. ii legunt tas est etiam cer possim assum.</p>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+  $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_2']['label'] = '';
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="clearfix">
+<div class="col-1-3">
+<i class="fa fa fa-users"></i>
+<div id="tm-counter1433742692" class="counter">
+<div data-num="" data-content="7908" class="num">7908</div>
+<div class="title">Happy Clients</div>
+</div>
+</div>
+<div class="col-1-3">
+<i class="fa fa fa-tags"></i>
+<div id="tm-counter1433742692--2" class="counter">
+<div data-num="" data-content="24" class="num">24</div>
+<div class="title">Sales per month</div>
+</div>
+</div>
+<div class="col-1-3 col-last">
+<i class="fa fa fa-home"></i>
+<div id="tm-counter1433742692--3" class="counter">
+<div data-num="" data-content="9877" class="num">9877</div>
+<div class="title">Number of homes</div>
+</div>
+</div>
+</div>';
+  /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';

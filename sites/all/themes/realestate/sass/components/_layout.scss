@@ -40,7 +40,13 @@ $susy: (
       &about-us,
       //&webform-client-block-205
       {
-        @include container;
+        @include breakpoint($mobile){
+          width:96%;
+          margin:auto;
+        }
+        @include breakpoint($desktop){
+          @include container;
+        }
       }
     }
   }

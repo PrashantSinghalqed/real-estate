@@ -265,7 +265,16 @@ function home_page_panel_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'video',
       'title' => '',
-      'body' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/YFKvL-ODa8k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+      'body' => '<div id="parallax_two_wrapper" class="parallax_two_wrapper video-bg" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_YTP_1460454727982" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><iframe id="mbYTP_YTP_1460454727982" class="playerBox" style="position: absolute; z-index: 0; width: 1885.6px; height: 910px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -172.5px; margin-left: -222.8px;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/YFKvL-ODa8k?autoplay=0&amp;modestbranding=1&amp;controls=0&..."></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
+<a class="tm_video_bg mb_YTVPlayer isMuted" data-property="{videoURL:\'http://youtu.be/YFKvL-ODa8k\', containment:\'#parallax_two_wrapper\',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}" id="YTP_1460454727982" style="display: none; position: relative; background-image: none;">youtube</a><div class="container-12"><div class="grid-12"> <div class="region region-parallax-two">
+<div id="block-block-10" class="block-block-10 block block-block block-odd">
+ 
+ 
+<div class="content block-content">
+<h2 class="title-1">Watch video</h2>
+</div>
+</div> </div>
+</div></div><div class="parallax-bg" data-parallax-type="image" data-img-url="http://livedemo00.template-help.com/drupal_54604/sites/default/files/blank.jpg" data-speed="0.5" data-invert="false"></div></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
