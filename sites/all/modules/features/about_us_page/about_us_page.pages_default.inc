@@ -16,7 +16,10 @@ function about_us_page_default_page_manager_pages() {
   $page->admin_title = 'About-Us';
   $page->admin_description = '';
   $page->path = 'About-us_panel';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -259,7 +262,10 @@ function about_us_page_default_page_manager_pages() {
   $page->admin_title = 'Privacy Policy page';
   $page->admin_description = 'Lists down the privacy policies, terms and conditions concerned.';
   $page->path = 'privacy-policy';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'none',
     'title' => '',
