@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = image
+dependencies[] = nice_menus
 dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = views

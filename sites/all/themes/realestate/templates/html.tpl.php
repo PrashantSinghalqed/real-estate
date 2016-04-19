@@ -62,15 +62,6 @@
   <?php print $page_bottom; ?>
 </body>
 <!-- Including script for StickUp menu -->
-<script src="../js/stickUp.min.js"></script>
-<script type="text/javascript">
-              //initiating jQuery
-              jQuery(function($) {
-                $(document).ready( function() {
-                  //enabling stickUp on the '.header' class
-                  $('.header').stickUp();
-                });
-              });
-</script>
+
 
 </html>
