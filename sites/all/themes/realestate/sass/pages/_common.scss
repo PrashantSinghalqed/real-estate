@@ -195,11 +195,11 @@ span {
     vertical-align: baseline;
 }
 
-.content {
+.container-12 {
     padding: 35px 0 70px;
 }
 
-.panels-flexible-row.poll {
+.poll-sidebar {
     .links {
         display: block;
         text-align: left;
@@ -232,7 +232,7 @@ span {
     }
 }
 
-.poll {
+.poll-sidebar {
     .title,
     .total {
         margin-bottom: 15px;

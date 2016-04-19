@@ -240,7 +240,10 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -507,7 +510,10 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -630,7 +636,7 @@ function blog_view_panels_default_page_manager_pages() {
           0 => 'poll_region',
         ),
         'parent' => '1',
-        'class' => 'poll',
+        'class' => '',
         'hide_empty' => 0,
       ),
       'poll_region' => array(
@@ -771,7 +777,10 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

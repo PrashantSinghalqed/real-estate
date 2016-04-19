@@ -690,12 +690,20 @@ th {
   }
 }
 
-.page-blog- .region-content {
+.page-blog- .region-content,
+.page-faq .region-content,
+.page-testimonials .region-content,
+.page-archive-page .region-content,
+.page-node .region-content {
   width: 95%;
   margin: 0 auto;
 }
 @media screen {
-  .page-blog- .region-content .panels-flexible-column-first {
+  .page-blog- .region-content .panels-flexible-column-first,
+  .page-faq .region-content .panels-flexible-column-first,
+  .page-testimonials .region-content .panels-flexible-column-first,
+  .page-archive-page .region-content .panels-flexible-column-first,
+  .page-node .region-content .panels-flexible-column-first {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -703,14 +711,22 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-blog- .region-content .panels-flexible-column-first {
+  .page-blog- .region-content .panels-flexible-column-first,
+  .page-faq .region-content .panels-flexible-column-first,
+  .page-testimonials .region-content .panels-flexible-column-first,
+  .page-archive-page .region-content .panels-flexible-column-first,
+  .page-node .region-content .panels-flexible-column-first {
     width: 63.29114%;
     float: left;
     margin-right: 1.26582%;
   }
 }
 @media screen {
-  .page-blog- .region-content .panels-flexible-column-last {
+  .page-blog- .region-content .panels-flexible-column-last,
+  .page-faq .region-content .panels-flexible-column-last,
+  .page-testimonials .region-content .panels-flexible-column-last,
+  .page-archive-page .region-content .panels-flexible-column-last,
+  .page-node .region-content .panels-flexible-column-last {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -718,7 +734,11 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-blog- .region-content .panels-flexible-column-last {
+  .page-blog- .region-content .panels-flexible-column-last,
+  .page-faq .region-content .panels-flexible-column-last,
+  .page-testimonials .region-content .panels-flexible-column-last,
+  .page-archive-page .region-content .panels-flexible-column-last,
+  .page-node .region-content .panels-flexible-column-last {
     width: 35.44304%;
     float: right;
     margin-right: 0;
@@ -930,17 +950,17 @@ span {
   vertical-align: baseline;
 }
 
-.content {
+.container-12 {
   padding: 35px 0 70px;
 }
 
-.panels-flexible-row.poll .links {
+.poll-sidebar .links {
   display: block;
   text-align: left;
   list-style-type: none;
   padding-left: 0;
 }
-.panels-flexible-row.poll .links a {
+.poll-sidebar .links a {
   webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #1fadff;
@@ -956,30 +976,30 @@ span {
   text-transform: uppercase;
   letter-spacing: 0;
 }
-.panels-flexible-row.poll .links a:hover {
+.poll-sidebar .links a:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
 }
-.panels-flexible-row.poll .links li.first {
+.poll-sidebar .links li.first {
   margin-bottom: 10px;
 }
 
-.poll .title,
-.poll .total {
+.poll-sidebar .title,
+.poll-sidebar .total {
   margin-bottom: 15px;
 }
-.poll .bar {
+.poll-sidebar .bar {
   background-color: #fff;
   border: 1px solid #eaebef;
   height: 20px;
   padding: 1px;
 }
-.poll .bar .foreground {
+.poll-sidebar .bar .foreground {
   background: #1fadff;
   height: 16px;
 }
-.poll .form-submit {
+.poll-sidebar .form-submit {
   webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #1fadff;
@@ -995,7 +1015,7 @@ span {
   text-transform: uppercase;
   letter-spacing: 0;
 }
-.poll .form-submit:hover {
+.poll-sidebar .form-submit:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
