@@ -2263,7 +2263,7 @@ h2.title-1 {
 #nice-menu-1 {
   float: right;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #nice-menu-1 li {
     width: auto;
     background: none;

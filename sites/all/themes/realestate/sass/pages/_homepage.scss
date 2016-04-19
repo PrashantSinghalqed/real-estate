@@ -52,7 +52,7 @@
 
 #nice-menu-1{
     float:right;
-    @include breakpoint($tablet){
+    @include breakpoint($desktop){
         li{
 
             width:auto;
