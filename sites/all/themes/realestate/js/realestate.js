@@ -18,7 +18,7 @@
       $(".mobile").click(function(){
         var n=$("#block-nice-menus-1").css("display");
         if(n === 'none'){
-         // alert(n);
+
           //$("#block-nice-menus-1").css("display","block !important");
           document.querySelector('style').textContent+="@media (max-width: 767px){.region-header > #block-nice-menus-1{ display:block !important}";
         }
@@ -27,6 +27,17 @@
         // alert("The paragraph was clicked.");
         // $("#block-nice-menus-1").removeClass("block");
           document.querySelector('style').textContent+="@media (max-width: 767px){.region-header > #block-nice-menus-1{ display:none !important}";
+        }
+      });
+      $('.block-block-2 p').click(function(){
+        if($("#block-search-form").hasClass('active')){
+          $("#block-search-form").removeClass('active');
+
+        // $("#block-search-form").animate({width:'toggle'},400);
+        // $(".form-type-textfield").toggle(500);
+        }
+        else{
+          $("#block-search-form").addClass('active');
         }
       });
   });// your code
