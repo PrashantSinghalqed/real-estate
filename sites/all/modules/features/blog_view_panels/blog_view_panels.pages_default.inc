@@ -277,10 +277,7 @@ function blog_view_panels_default_page_manager_pages() {
   $page->admin_title = 'Archive';
   $page->admin_description = '';
   $page->path = 'archive-page';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -544,10 +541,7 @@ function blog_view_panels_default_page_manager_pages() {
   $page->admin_title = 'blog';
   $page->admin_description = '';
   $page->path = 'blog-';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
