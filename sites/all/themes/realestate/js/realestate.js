@@ -50,6 +50,17 @@
           $("#block-search-form").addClass('active');
         }
       });
+      $('.block-block-2 p').click(function(){
+        if($("#block-search-form").hasClass('active')){
+          $("#block-search-form").removeClass('active');
+
+        // $("#block-search-form").animate({width:'toggle'},400);
+        // $(".form-type-textfield").toggle(500);
+        }
+        else{
+          $("#block-search-form").addClass('active');
+        }
+      });
   });// your code
 })(jQuery);
 

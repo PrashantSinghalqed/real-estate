@@ -269,8 +269,8 @@ function home_page_panel_default_page_manager_pages() {
 =3&amp;loop=1&amp;playlist=YFKvL-ODa8k&amp;=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;controls=0&"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
 <div class="container-12"><div class="grid-12"> <div class="region region-parallax-two">
 <div id="block-block-10" class="block-block-10 block block-block block-odd">
- 
- 
+
+
 <div class="content block-content">
 <h2 class="title-1">Watch video</h2>
 </div>
@@ -291,10 +291,10 @@ function home_page_panel_default_page_manager_pages() {
     $display->content['new-a1ccb7ed-3f93-4c23-9cbd-1cadac9b2ad6'] = $pane;
     $display->panels['center'][6] = 'new-a1ccb7ed-3f93-4c23-9cbd-1cadac9b2ad6';
     $pane = new stdClass();
-    $pane->pid = 'new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
+    $pane->pid = 'new-fe6ec75c-c768-42fc-b21b-73428072cca8';
     $pane->panel = 'center';
     $pane->type = 'block';
-    $pane->subtype = 'webform-client-block-598';
+    $pane->subtype = 'webform-client-block-205';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -314,6 +314,35 @@ function home_page_panel_default_page_manager_pages() {
     $display->content['new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26'] = $pane;
     $display->panels['center'][7] = 'new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
   $display->hide_title = PANELS_TITLE_NONE;
+    $pane->uuid = 'fe6ec75c-c768-42fc-b21b-73428072cca8';
+    $display->content['new-fe6ec75c-c768-42fc-b21b-73428072cca8'] = $pane;
+    $display->panels['center'][7] = 'new-fe6ec75c-c768-42fc-b21b-73428072cca8';
+    $pane = new stdClass();
+    $pane->pid = 'new-e315f6e4-603c-4dd4-b639-2d00887a644c';
+    $pane->panel = 'center';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 8;
+    $pane->locks = array();
+    $pane->uuid = 'e315f6e4-603c-4dd4-b639-2d00887a644c';
+    $display->content['new-e315f6e4-603c-4dd4-b639-2d00887a644c'] = $pane;
+    $display->panels['center'][8] = 'new-e315f6e4-603c-4dd4-b639-2d00887a644c';
+  $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-64807e18-078b-4d99-b9ad-4e9d8ee53919';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

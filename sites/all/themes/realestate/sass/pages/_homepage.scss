@@ -255,6 +255,107 @@
     margin-bottom: 0;
     overflow: hidden;
 }
+.page-home{
+    @include breakpoint($mobile){
+        #flexslider-1{
+            height:150px;
+        }
+    }
+    @include breakpoint($tablet){
+        #flexslider-1{
+            height:auto;
+        }
+    }
+    .views-field-nothing{
+        span{
+            .container-12{
+                position: absolute;
+                text-align: center;
+            }
+            @include breakpoint($mobile){
+                .container-12{
+                    margin-top: -43px;
+                    width: 94%;
+                    left: 3%;
+                }
+            }
+            @include breakpoint($tablet){
+                .container-12{
+                    width:96%;
+                    margin-left:2%;
+                    margin-top:-164px
+                }
+            }
+            @include breakpoint($desktop){
+                .container-12{
+                    width:96%;
+                    margin-left:2%;
+                    margin-top:-204px
+                }
+            }
+            @include breakpoint($widedesktop){
+                .container-12{
+                    width: 1200px;
+                    margin: auto;
+                    margin-left: 8.5%;
+                    margin-top: -275px;
+                    position: absolute;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .inner {
+        background: #333333;
+        padding: 36px 50px 39px;
+    }
+    @include breakpoint($mobile){
+     .inner   a{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 5px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+
+    @include breakpoint($desktop){
+        .inner a{
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 5px;
+        }
+    }
+    @include breakpoint($widedesktop){
+        .inner a{
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: 14px;
+        }
+    }
+
+     .inner a:hover{
+        color:$blue
+     }
+
+    @include breakpoint($mobile){
+        .inner{
+        padding: 15px 0px;
+    }
+    }
+    @include breakpoint($tablet){
+        .inner{
+        padding: 15px 20px;
+    }
+    }
+    @include breakpoint($widedesktop){
+        .inner{
+         padding: 36px 50px 39px;
+        }
+    }
+}
 
 
 /*-------static block----------*/
@@ -333,6 +434,7 @@
         .clearfix .col-1-3 .fa {
             display: block;
             text-align: left;
+            font-size: 58px;
         }
     }
     @include breakpoint($tablet) {
@@ -588,6 +690,7 @@
 @include breakpoint($tablet) {
     .pane-about-us {
         height: 329px;
+        height: 400px;
     }
 }
 
@@ -654,7 +757,7 @@
     }
     @include breakpoint($desktop) {
         .region-parallax-two {
-            padding: 220px 0 220px;
+            padding: 200px 0 220px;
         }
     }
     .parallax_two_wrapper {
@@ -690,6 +793,29 @@
         // }
         h2 {
             color: #fff;
+        }
+        @include breakpoint($tablet){
+            .webform-component{
+                input{
+                    width:96%;
+                    margin:auto;
+                }
+            }
+            .webform-component--message{
+                width:96%;
+                margin:auto;
+            }
+        }
+        @include breakpoint($desktop){
+            .webform-component{
+                input{
+                    width:auto;
+                }
+            }
+            .webform-component--message{
+                width:auto;
+                margin:auto;
+            }
         }
         ::-webkit-input-placeholder {
             /* WebKit, Blink, Edge */

@@ -1203,7 +1203,7 @@ div.footer .block-copyright a:hover {
   text-decoration: none;
 }
 
-> > > > > > > aa48c1512c4976033bfad4f31d6379fcf5887d9f
+
 .region-header-top {
   z-index: 99;
   padding: 0 0 29px;
@@ -1415,13 +1415,17 @@ div.footer .block-copyright a:hover {
   text-align: right;
 }
 
+.page-about-us {
+  /*------Get to know us block--------*/
+  /*-------our advantages-----------*/
+}
 @media screen {
   .page-about-us .view-content {
     width: 94%;
     margin: 0 3%;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-about-us .view-content {
     width: 96%;
     margin: 0 2%;
@@ -1429,22 +1433,21 @@ div.footer .block-copyright a:hover {
 }
 
 @media screen {
-  h2:after,
-  h2:before {
+  .page-about-us h2:after,
+  .page-about-us h2:before {
     display: none;
     margin-right: 0px;
     margin-left: 0px;
   }
-
-  h2 {
+  .page-about-us h2 {
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 1px;
   }
 }
 @media (min-width: 1024px) {
-  h2:after,
-  h2:before {
+  .page-about-us h2:after,
+  .page-about-us h2:before {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -1464,8 +1467,7 @@ div.footer .block-copyright a:hover {
     margin-right: 25px;
     margin-left: 25px;
   }
-
-  h2 {
+  .page-about-us h2 {
     text-align: center;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -1475,71 +1477,65 @@ div.footer .block-copyright a:hover {
     position: relative;
   }
 }
-.about-desc a,
-.about-title-wrapper a,
-.block-views-about-us-block-2 a,
-.combine-awards a {
+.page-about-us .about-desc a,
+.page-about-us .about-title-wrapper a,
+.page-about-us .block-views-about-us-block-2 a,
+.page-about-us .combine-awards a {
   color: #343434;
   font: bold 20px/26px 'Open Sans', sans-serif;
   margin-bottom: 5px;
 }
-
-.about-desc a:hover,
-.about-title-wrapper a:hover,
-.block-views-about-us-block-2 a:hover,
-.combine-awards a:hover {
+.page-about-us .about-desc a:hover,
+.page-about-us .about-title-wrapper a:hover,
+.page-about-us .block-views-about-us-block-2 a:hover,
+.page-about-us .combine-awards a:hover {
   color: #1fadff;
   text-decoration: none;
 }
-
-/*------Get to know us block--------*/
 @media screen {
-  .about-view-image {
+  .page-about-us .about-view-image {
     padding: 0;
   }
 }
 @media (min-width: 1024px) {
-  .about-view-image {
+  .page-about-us .about-view-image {
     padding: 0 240px;
   }
 }
 @media screen {
-  .about-desc {
+  .page-about-us .about-desc {
     padding: 0;
   }
 }
 @media (min-width: 1024px) {
-  .about-desc {
+  .page-about-us .about-desc {
     padding: 0 240px;
   }
 }
-.about-view-row {
+.page-about-us .about-view-row {
   text-align: center;
 }
-
-/*-------our advantages-----------*/
 @media screen {
-  .about-view-row {
+  .page-about-us .about-view-row {
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 20px;
   }
 }
 @media screen {
-  .views-row-last .about-title-wrapper {
+  .page-about-us .views-row-last .about-title-wrapper {
     margin-left: 0px;
   }
 }
 @media screen {
-  .views-row-odd {
+  .page-about-us .views-row-odd {
     width: auto;
   }
 }
-.about-title-wrapper {
+.page-about-us .about-title-wrapper {
   padding-left: 28px;
   border-left: 2px solid #eaebef;
 }
-
 @media screen {
   .page-about-us .block-views-about-us-block-1 .views-row-first {
     width: 100%;
@@ -1626,7 +1622,7 @@ h2.title-1 {
   }
 }
 @media screen {
-  .page-about-us .block-block-1 .container-12 {
+  .block-block-1 .container-12 {
     width: auto;
     display: block;
     float: none;
@@ -1635,7 +1631,7 @@ h2.title-1 {
   }
 }
 @media (min-width: 1024px) {
-  .page-about-us .block-block-1 .container-12 {
+  .block-block-1 .container-12 {
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -1648,13 +1644,16 @@ h2.title-1 {
 }
 
 /*--------professionals-------*/
+.page-about-us {
+  /*----------our awards---------*/
+}
 @media screen {
-  .views-field-field-prof-pic img {
+  .page-about-us .views-field-field-prof-pic img {
     width: 100%;
   }
 }
 @media (min-width: 1024px) {
-  .views-field-field-prof-pic img {
+  .page-about-us .views-field-field-prof-pic img {
     width: auto;
   }
 }
@@ -1691,24 +1690,22 @@ h2.title-1 {
     margin-right: 0;
   }
 }
-
 @media (min-width: 1024px) {
-  .block-views-about-us-block-2 {
+  .page-about-us .block-views-about-us-block-2 {
     padding: 58px 0 20px;
   }
 }
-/*----------our awards---------*/
 @media (min-width: 768px) {
-  .com {
+  .page-about-us .com {
     height: 100px;
   }
 }
 @media (min-width: 1024px) {
-  .com {
+  .page-about-us .com {
     height: 74px;
   }
 }
-.fa {
+.page-about-us .content .fa {
   float: left;
   font-size: 58px;
   line-height: 58px;
@@ -1716,42 +1713,39 @@ h2.title-1 {
   color: #343434;
 }
 @media screen {
-  .fa {
+  .page-about-us .content .fa {
     float: none;
     margin: 0;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .fa {
+  .page-about-us .content .fa {
     float: left;
     margin: 0 30px 20px 0;
     width: auto;
     width: 30%;
   }
 }
-
-.block-views-about-us-block-3 {
+.page-about-us .block-views-about-us-block-3 {
   border: 1px solid #eaebef;
   padding: 80px 0;
   margin-bottom: 30px;
 }
-.block-views-about-us-block-3 .view-content .combine-awards:last-child {
+.page-about-us .block-views-about-us-block-3 .view-content .combine-awards:last-child {
   margin-right: 0;
 }
-
 @media screen {
-  .block-views-about-us-block-3 {
+  .page-about-us .block-views-about-us-block-3 {
     width: 96%;
     padding: 40px 20px;
   }
-
-  .combine-awards {
+  .page-about-us .combine-awards {
     padding: 0;
   }
 }
 @media (min-width: 1024px) {
-  .block-views-about-us-block-3 {
+  .page-about-us .block-views-about-us-block-3 {
     padding: 40px;
   }
 }
@@ -2511,6 +2505,98 @@ h2.title-1 {
   overflow: hidden;
 }
 
+@media screen {
+  .page-home #flexslider-1 {
+    height: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .page-home #flexslider-1 {
+    height: auto;
+  }
+}
+.page-home .views-field-nothing span .container-12 {
+  position: absolute;
+  text-align: center;
+}
+@media screen {
+  .page-home .views-field-nothing span .container-12 {
+    margin-top: -43px;
+    width: 94%;
+    left: 3%;
+  }
+}
+@media (min-width: 768px) {
+  .page-home .views-field-nothing span .container-12 {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: -164px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-home .views-field-nothing span .container-12 {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: -204px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-home .views-field-nothing span .container-12 {
+    width: 1200px;
+    margin: auto;
+    margin-left: 8.5%;
+    margin-top: -275px;
+    position: absolute;
+    text-align: center;
+  }
+}
+.page-home .inner {
+  background: #333333;
+  padding: 36px 50px 39px;
+}
+@media screen {
+  .page-home .inner a {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .page-home .inner a {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 5px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-home .inner a {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 14px;
+  }
+}
+.page-home .inner a:hover {
+  color: #1fadff;
+}
+@media screen {
+  .page-home .inner {
+    padding: 15px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .page-home .inner {
+    padding: 15px 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-home .inner {
+    padding: 36px 50px 39px;
+  }
+}
+
 /*-------static block----------*/
 @media screen {
   .page-home .pane-static {
@@ -2584,6 +2670,7 @@ h2.title-1 {
   .page-home .pane-content .view-id-static .clearfix .col-1-3 .fa {
     display: block;
     text-align: left;
+    font-size: 58px;
   }
 }
 @media (min-width: 768px) {
@@ -2876,6 +2963,7 @@ h2.title-1 {
 @media (min-width: 768px) {
   .pane-about-us {
     height: 329px;
+    height: 400px;
   }
 }
 @media (min-width: 1024px) {
@@ -2951,7 +3039,7 @@ h2.title-1 {
 }
 @media (min-width: 1024px) {
   .page-home .pane-custom .region-parallax-two {
-    padding: 220px 0 220px;
+    padding: 200px 0 220px;
   }
 }
 .page-home .pane-custom .parallax_two_wrapper {
@@ -2980,6 +3068,29 @@ h2.title-1 {
 .page-home .pane-webform-client-block-205 h2,
 .page-home .pane-webform-client-block-598 h2 {
   color: #fff;
+}
+@media (min-width: 768px) {
+  .page-home .pane-webform-client-block-205 .webform-component input,
+  .page-home .pane-webform-client-block-598 .webform-component input {
+    width: 96%;
+    margin: auto;
+  }
+  .page-home .pane-webform-client-block-205 .webform-component--message,
+  .page-home .pane-webform-client-block-598 .webform-component--message {
+    width: 96%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .page-home .pane-webform-client-block-205 .webform-component input,
+  .page-home .pane-webform-client-block-598 .webform-component input {
+    width: auto;
+  }
+  .page-home .pane-webform-client-block-205 .webform-component--message,
+  .page-home .pane-webform-client-block-598 .webform-component--message {
+    width: auto;
+    margin: auto;
+  }
 }
 .page-home .pane-webform-client-block-205 ::-webkit-input-placeholder,
 .page-home .pane-webform-client-block-598 ::-webkit-input-placeholder {
