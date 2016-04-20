@@ -774,7 +774,6 @@ img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: auto;
   max-width: 100%;
   width: auto;
 }
@@ -2285,7 +2284,7 @@ h2.title-1 {
     background-color: #e9e9e9;
     width: 96%;
     margin: auto;
-    position: relative;
+    margin-top: 40px;
   }
   .header-top .block-block-2 {
     display: none;
@@ -2306,11 +2305,13 @@ h2.title-1 {
 @media screen {
   .header-top .form-submit {
     left: 210px;
+    top: -47px;
   }
 }
 @media (min-width: 768px) {
   .header-top .form-submit {
     left: 259px;
+    top: -47px;
   }
 }
 .header-top .form-actions:after {
@@ -2335,11 +2336,13 @@ h2.title-1 {
 @media screen {
   .header-top .form-actions:after {
     left: 249px;
+    top: 67px;
   }
 }
 @media (min-width: 768px) {
   .header-top .form-actions:after {
     left: 290px;
+    top: 30px;
   }
 }
 .header-top #edit-actions--3 {
@@ -2977,6 +2980,28 @@ h2.title-1 {
 .page-home .pane-webform-client-block-205 h2,
 .page-home .pane-webform-client-block-598 h2 {
   color: #fff;
+}
+.page-home .pane-webform-client-block-205 ::-webkit-input-placeholder,
+.page-home .pane-webform-client-block-598 ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #FFF;
+}
+.page-home .pane-webform-client-block-205 :-moz-placeholder,
+.page-home .pane-webform-client-block-598 :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #FFF;
+  opacity: 1;
+}
+.page-home .pane-webform-client-block-205 ::-moz-placeholder,
+.page-home .pane-webform-client-block-598 ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #FFF;
+  opacity: 1;
+}
+.page-home .pane-webform-client-block-205 :-ms-input-placeholder,
+.page-home .pane-webform-client-block-598 :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF;
 }
 .page-home .pane-webform-client-block-205 h2:before,
 .page-home .pane-webform-client-block-205 h2:after,

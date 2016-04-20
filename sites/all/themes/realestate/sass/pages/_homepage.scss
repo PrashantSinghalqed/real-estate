@@ -7,13 +7,12 @@
             background-color: #e9e9e9;
             width: 96%;
             margin: auto;
-            position:relative;
+            margin-top: 40px;
         }
         .block-block-2 {
             display: none;
         }
     }
-
     .form-submit {
         position: relative;
         width: 45px;
@@ -22,22 +21,24 @@
         border: none;
         text-indent: -9999px;
         z-index: 2;
-        background:none;
+        background: none;
         left: 259px;
         top: -47px;
         // left: 259px;
     }
-    @include breakpoint($mobile){
-        .form-submit{
-            left:210px;
+    @include breakpoint($mobile) {
+        .form-submit {
+            left: 210px;
+            top: -47px;
         }
     }
-    @include breakpoint($tablet){
-        .form-submit{
-            left:259px;
+    @include breakpoint($tablet) {
+        .form-submit {
+            left: 259px;
+            top: -47px;
         }
     }
-    .form-actions:after{
+    .form-actions:after {
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
@@ -57,14 +58,16 @@
         left: 290px;
         position: absolute;
     }
-    @include breakpoint($mobile){
-        .form-actions:after{
-            left:249px
+    @include breakpoint($mobile) {
+        .form-actions:after {
+            left: 249px;
+            top: 67px;
         }
     }
-    @include breakpoint($tablet){
-        .form-actions:after{
-            left:290px
+    @include breakpoint($tablet) {
+        .form-actions:after {
+            left: 290px;
+            top: 30px;
         }
     }
     #edit-actions--3 {
@@ -129,7 +132,7 @@
     @include breakpoint($tablet) {
         .active {
             left: 80px;
-            top:80px;
+            top: 80px;
         }
     }
 }
@@ -687,6 +690,24 @@
         // }
         h2 {
             color: #fff;
+        }
+        ::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #FFF;
+        }
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #FFF;
+            opacity: 1;
+        }
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #FFF;
+            opacity: 1;
+        }
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #FFF;
         }
         h2:before,
         h2:after {
