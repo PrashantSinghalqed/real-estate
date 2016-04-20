@@ -16,7 +16,10 @@ function faq_panel_default_page_manager_pages() {
   $page->admin_title = 'FAQ';
   $page->admin_description = 'FAQ';
   $page->path = 'faq';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
