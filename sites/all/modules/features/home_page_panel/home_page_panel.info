@@ -19,4 +19,5 @@ features[features_api][] = api:2
 features[flexslider_optionset][] = slideshow
 features[flexslider_optionset][] = slideshow2
 features[page_manager_pages][] = home_page_panel
+features[views_view][] = slideshow
 features[views_view][] = static
