@@ -1203,7 +1203,7 @@ div.footer .block-copyright a:hover {
   text-decoration: none;
 }
 
-
+> > > > > > > aa48c1512c4976033bfad4f31d6379fcf5887d9f
 .region-header-top {
   z-index: 99;
   padding: 0 0 29px;
@@ -2529,14 +2529,12 @@ h2.title-1 {
 @media (min-width: 768px) {
   .page-home .views-field-nothing span .container-12 {
     width: 96%;
-    margin-left: 2%;
+    margin-left: -1%;
     margin-top: -164px;
   }
 }
 @media (min-width: 1024px) {
   .page-home .views-field-nothing span .container-12 {
-    width: 96%;
-    margin-left: 2%;
     margin-top: -204px;
   }
 }

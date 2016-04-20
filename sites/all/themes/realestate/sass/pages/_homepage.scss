@@ -282,14 +282,13 @@
             @include breakpoint($tablet){
                 .container-12{
                     width:96%;
-                    margin-left:2%;
+                    margin-left:-1%;
                     margin-top:-164px
                 }
             }
             @include breakpoint($desktop){
                 .container-12{
-                    width:96%;
-                    margin-left:2%;
+
                     margin-top:-204px
                 }
             }
