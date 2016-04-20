@@ -43,8 +43,6 @@ function faq_panel_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h6';
   /* Field: Content: Answer */
   $handler->display->display_options['fields']['field_answer']['id'] = 'field_answer';
   $handler->display->display_options['fields']['field_answer']['table'] = 'field_data_field_answer';

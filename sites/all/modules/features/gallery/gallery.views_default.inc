@@ -91,7 +91,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -177,7 +177,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -244,7 +244,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -314,7 +314,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -380,7 +380,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -444,7 +444,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -486,7 +486,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_property_image']['settings'] = array(
     'colorbox_node_style' => 'large',
-    'colorbox_node_style_first' => 'large',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => 'large',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
@@ -511,7 +511,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -576,7 +576,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -646,7 +646,7 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_property_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_property_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_property_tags']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
