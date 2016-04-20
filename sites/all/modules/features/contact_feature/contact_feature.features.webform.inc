@@ -21,7 +21,7 @@ $webforms = array();
   'language' => 'und',
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'cb3e5872-0166-4d91-b31a-9752e5905fae',
+  'uuid' => '6565aac2-c84e-429f-9f6d-a1eaa1017f52',
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -233,7 +233,7 @@ $webforms = array();
   'picture' => 0,
   'data' => NULL,
   'webform_features_author' => '',
-  'webform_features_revision_author' => 'rahul',
+  'webform_features_revision_author' => '',
 );
 return $webforms;
 }
