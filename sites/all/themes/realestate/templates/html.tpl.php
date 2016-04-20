@@ -61,7 +61,4 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>
-<!-- Including script for StickUp menu -->
-
-
 </html>

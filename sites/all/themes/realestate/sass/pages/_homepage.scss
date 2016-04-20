@@ -689,6 +689,7 @@
 
 @include breakpoint($tablet) {
     .pane-about-us {
+        height: 329px;
         height: 400px;
     }
 }

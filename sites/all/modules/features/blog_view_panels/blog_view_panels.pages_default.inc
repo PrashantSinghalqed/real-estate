@@ -5,17 +5,30 @@
  */
 
 /**
- * Implements hook_default_page_manager_handlers().
+ * Implements hook_default_page_manager_pages().
  */
-function blog_view_panels_default_page_manager_handlers() {
-  $export = array();
-
+function blog_view_panels_default_page_manager_pages() {
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'anonymous_blog_page';
+  $page->task = 'page';
+  $page->admin_title = 'Anonymous Blog Page';
+  $page->admin_description = '';
+  $page->path = 'blog-/Anonymous';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'blog_user__panel_context_2426784d-84a1-406c-8cb0-5cda87e4a6aa';
-  $handler->task = 'blog_user';
-  $handler->subtask = '';
+  $handler->name = 'page_anonymous_blog_page__panel_context_d5cfd512-712a-495e-955e-ccd251c3e044';
+  $handler->task = 'page';
+  $handler->subtask = 'anonymous_blog_page';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -26,22 +39,9 @@ function blog_view_panels_default_page_manager_handlers() {
     'body_classes_to_add' => '',
     'css_id' => '',
     'css' => '',
-    'contexts' => array(
-      0 => array(
-        'identifier' => 'User',
-        'keyword' => '%user:name',
-        'name' => 'user',
-        'type' => 'current',
-        'uid' => '',
-        'id' => 1,
-      ),
-    ),
+    'contexts' => array(),
     'relationships' => array(),
     'name' => '',
-    'access' => array(
-      'logic' => 'and',
-      'plugins' => array(),
-    ),
   );
   $display = new panels_display();
   $display->layout = 'flexible';
@@ -58,7 +58,7 @@ function blog_view_panels_default_page_manager_handlers() {
       ),
       'main' => array(
         'type' => 'column',
-        'width' => '65.58441558441558',
+        'width' => '64.95537903304893',
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
@@ -82,7 +82,7 @@ function blog_view_panels_default_page_manager_handlers() {
       ),
       1 => array(
         'type' => 'column',
-        'width' => '34.41558441558441',
+        'width' => '35.04462096695107',
         'width_type' => '%',
         'parent' => 'canvas',
         'children' => array(
@@ -102,6 +102,15 @@ function blog_view_panels_default_page_manager_handlers() {
         'class' => '',
         'hide_empty' => 0,
       ),
+      'categories' => array(
+        'type' => 'region',
+        'title' => 'categories',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '2',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
       3 => array(
         'type' => 'row',
         'contains' => 'region',
@@ -109,15 +118,6 @@ function blog_view_panels_default_page_manager_handlers() {
           0 => 'poll_region',
         ),
         'parent' => '1',
-        'class' => '',
-        'hide_empty' => 0,
-      ),
-      'categories' => array(
-        'type' => 'region',
-        'title' => 'categories',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => '2',
         'class' => '',
         'hide_empty' => 0,
       ),
@@ -141,12 +141,12 @@ function blog_view_panels_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = 'fhakfjla';
-  $display->uuid = '2067f6f2-b18f-4284-a9ae-594fc15cf406';
+  $display->title = '';
+  $display->uuid = '16a812db-726c-4414-8229-72d5bfa1961d';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-2f8832a9-a7ae-417a-ac88-af74b4bec610';
+    $pane->pid = 'new-2aa4f880-d34f-405f-8d3a-e77c98ba9082';
     $pane->panel = 'categories';
     $pane->type = 'views';
     $pane->subtype = 'blog_categories_block_view';
@@ -177,11 +177,11 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '2f8832a9-a7ae-417a-ac88-af74b4bec610';
-    $display->content['new-2f8832a9-a7ae-417a-ac88-af74b4bec610'] = $pane;
-    $display->panels['categories'][0] = 'new-2f8832a9-a7ae-417a-ac88-af74b4bec610';
+    $pane->uuid = '2aa4f880-d34f-405f-8d3a-e77c98ba9082';
+    $display->content['new-2aa4f880-d34f-405f-8d3a-e77c98ba9082'] = $pane;
+    $display->panels['categories'][0] = 'new-2aa4f880-d34f-405f-8d3a-e77c98ba9082';
     $pane = new stdClass();
-    $pane->pid = 'new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
+    $pane->pid = 'new-7e876098-5acb-45b9-bb7e-30abe8ba42fa';
     $pane->panel = 'center';
     $pane->type = 'views';
     $pane->subtype = 'blog';
@@ -199,10 +199,7 @@ function blog_view_panels_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'page_1',
-      'context' => array(
-        0 => '',
-      ),
+      'display' => 'page_2',
       'override_title' => 0,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
@@ -215,11 +212,11 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
-    $display->content['new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670'] = $pane;
-    $display->panels['center'][0] = 'new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
+    $pane->uuid = '7e876098-5acb-45b9-bb7e-30abe8ba42fa';
+    $display->content['new-7e876098-5acb-45b9-bb7e-30abe8ba42fa'] = $pane;
+    $display->panels['center'][0] = 'new-7e876098-5acb-45b9-bb7e-30abe8ba42fa';
     $pane = new stdClass();
-    $pane->pid = 'new-64c22fbe-45bb-41f7-a624-571c76d8f727';
+    $pane->pid = 'new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'olark_livechat_custom_pane';
@@ -240,11 +237,11 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '64c22fbe-45bb-41f7-a624-571c76d8f727';
-    $display->content['new-64c22fbe-45bb-41f7-a624-571c76d8f727'] = $pane;
-    $display->panels['center'][1] = 'new-64c22fbe-45bb-41f7-a624-571c76d8f727';
+    $pane->uuid = '2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
+    $display->content['new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557'] = $pane;
+    $display->panels['center'][1] = 'new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
     $pane = new stdClass();
-    $pane->pid = 'new-2a386b38-ec22-4316-8f8b-6debc5a50156';
+    $pane->pid = 'new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
     $pane->panel = 'poll_region';
     $pane->type = 'block';
     $pane->subtype = 'poll-recent';
@@ -259,28 +256,19 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'poll-sidebar',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '2a386b38-ec22-4316-8f8b-6debc5a50156';
-    $display->content['new-2a386b38-ec22-4316-8f8b-6debc5a50156'] = $pane;
-    $display->panels['poll_region'][0] = 'new-2a386b38-ec22-4316-8f8b-6debc5a50156';
+    $pane->uuid = '2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
+    $display->content['new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce'] = $pane;
+    $display->panels['poll_region'][0] = 'new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['blog_user__panel_context_2426784d-84a1-406c-8cb0-5cda87e4a6aa'] = $handler;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['anonymous_blog_page'] = $page;
 
-  return $export;
-}
-
-/**
- * Implements hook_default_page_manager_pages().
- */
-function blog_view_panels_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
@@ -817,6 +805,277 @@ function blog_view_panels_default_page_manager_pages() {
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['blog'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'per_user_blog';
+  $page->task = 'page';
+  $page->admin_title = 'Per User Blog';
+  $page->admin_description = '';
+  $page->path = 'blog-/%user';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array(
+    'user' => array(
+      'id' => 1,
+      'identifier' => 'User: name',
+      'name' => 'user_name',
+      'settings' => array(),
+    ),
+  );
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_per_user_blog__panel';
+  $handler->task = 'page';
+  $handler->subtask = 'per_user_blog';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'User Blog Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'panel',
+  );
+  $display = new panels_display();
+  $display->layout = 'flexible';
+  $display->layout_settings = array(
+    'items' => array(
+      'canvas' => array(
+        'type' => 'row',
+        'contains' => 'column',
+        'children' => array(
+          0 => 'main',
+          1 => 1,
+        ),
+        'parent' => NULL,
+      ),
+      'main' => array(
+        'type' => 'column',
+        'width' => '64.95537903304893',
+        'width_type' => '%',
+        'children' => array(
+          0 => 'main-row',
+        ),
+        'parent' => 'canvas',
+      ),
+      'main-row' => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'center',
+        ),
+        'parent' => 'main',
+      ),
+      'center' => array(
+        'type' => 'region',
+        'title' => 'Center',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => 'main-row',
+      ),
+      1 => array(
+        'type' => 'column',
+        'width' => '35.04462096695107',
+        'width_type' => '%',
+        'parent' => 'canvas',
+        'children' => array(
+          0 => 2,
+          1 => 3,
+        ),
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      2 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'categories',
+        ),
+        'parent' => '1',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      'categories' => array(
+        'type' => 'region',
+        'title' => 'categories',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '2',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      3 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'poll_region',
+        ),
+        'parent' => '1',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      'poll_region' => array(
+        'type' => 'region',
+        'title' => 'poll-region',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '3',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+    ),
+  );
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+      'categories' => NULL,
+      'poll_region' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '16a812db-726c-4414-8229-72d5bfa1961d';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-2aa4f880-d34f-405f-8d3a-e77c98ba9082';
+    $pane->panel = 'categories';
+    $pane->type = 'views';
+    $pane->subtype = 'blog_categories_block_view';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '9',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2aa4f880-d34f-405f-8d3a-e77c98ba9082';
+    $display->content['new-2aa4f880-d34f-405f-8d3a-e77c98ba9082'] = $pane;
+    $display->panels['categories'][0] = 'new-2aa4f880-d34f-405f-8d3a-e77c98ba9082';
+    $pane = new stdClass();
+    $pane->pid = 'new-a5c62fd1-34c8-4be3-bf9d-915b1d19e196';
+    $pane->panel = 'center';
+    $pane->type = 'views';
+    $pane->subtype = 'blog';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 1,
+      'nodes_per_page' => '3',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 1,
+      'link_to_view' => 0,
+      'args' => '%1',
+      'url' => '',
+      'display' => 'page_1',
+      'override_title' => 0,
+      'override_title_text' => 'view',
+      'override_title_heading' => 'h2',
+      'context' => array(
+        0 => '',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a5c62fd1-34c8-4be3-bf9d-915b1d19e196';
+    $display->content['new-a5c62fd1-34c8-4be3-bf9d-915b1d19e196'] = $pane;
+    $display->panels['center'][0] = 'new-a5c62fd1-34c8-4be3-bf9d-915b1d19e196';
+    $pane = new stdClass();
+    $pane->pid = 'new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
+    $pane->panel = 'center';
+    $pane->type = 'custom';
+    $pane->subtype = 'olark_livechat_custom_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'filtered_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
+    $display->content['new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557'] = $pane;
+    $display->panels['center'][1] = 'new-2b1fe7c5-2afb-4668-ae87-a6e0c3e2b557';
+    $pane = new stdClass();
+    $pane->pid = 'new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
+    $pane->panel = 'poll_region';
+    $pane->type = 'block';
+    $pane->subtype = 'poll-recent';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
+    $display->content['new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce'] = $pane;
+    $display->panels['poll_region'][0] = 'new-2e82a7dd-5ebd-49bd-abfd-ab3e5e2a67ce';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = 'new-a5c62fd1-34c8-4be3-bf9d-915b1d19e196';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['per_user_blog'] = $page;
 
   return $pages;
 
