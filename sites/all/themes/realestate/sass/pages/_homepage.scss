@@ -780,7 +780,9 @@
 /*------------web form------------*/
 
 .page-home {
-    .webform-client-form{
+    .webform-client-form,
+    .pane-webform-client-block-598,
+    .pane-webform-client-block-205{
         background: #1fadff;
         padding: 50px 0 25px;
         color: #fff;

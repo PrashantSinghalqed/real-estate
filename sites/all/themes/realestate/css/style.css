@@ -3055,81 +3055,117 @@ h2.title-1 {
 }
 
 /*------------web form------------*/
-.page-home .webform-client-form {
+.page-home .webform-client-form,
+.page-home .pane-webform-client-block-598,
+.page-home .pane-webform-client-block-205 {
   background: #1fadff;
   padding: 50px 0 25px;
   color: #fff;
   align-content: center;
   text-align: center;
 }
-.page-home .webform-client-form h2 {
+.page-home .webform-client-form h2,
+.page-home .pane-webform-client-block-598 h2,
+.page-home .pane-webform-client-block-205 h2 {
   color: #fff;
 }
 @media (min-width: 768px) {
-  .page-home .webform-client-form .webform-component input {
+  .page-home .webform-client-form .webform-component input,
+  .page-home .pane-webform-client-block-598 .webform-component input,
+  .page-home .pane-webform-client-block-205 .webform-component input {
     width: 96%;
     margin: auto;
   }
-  .page-home .webform-client-form .webform-component--message {
+  .page-home .webform-client-form .webform-component--message,
+  .page-home .pane-webform-client-block-598 .webform-component--message,
+  .page-home .pane-webform-client-block-205 .webform-component--message {
     width: 96%;
     margin: auto;
   }
 }
 @media (min-width: 1024px) {
-  .page-home .webform-client-form .webform-component input {
+  .page-home .webform-client-form .webform-component input,
+  .page-home .pane-webform-client-block-598 .webform-component input,
+  .page-home .pane-webform-client-block-205 .webform-component input {
     width: auto;
   }
-  .page-home .webform-client-form .webform-component--message {
+  .page-home .webform-client-form .webform-component--message,
+  .page-home .pane-webform-client-block-598 .webform-component--message,
+  .page-home .pane-webform-client-block-205 .webform-component--message {
     width: auto;
     margin: auto;
   }
 }
-.page-home .webform-client-form ::-webkit-input-placeholder {
+.page-home .webform-client-form ::-webkit-input-placeholder,
+.page-home .pane-webform-client-block-598 ::-webkit-input-placeholder,
+.page-home .pane-webform-client-block-205 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #FFF;
 }
-.page-home .webform-client-form :-moz-placeholder {
+.page-home .webform-client-form :-moz-placeholder,
+.page-home .pane-webform-client-block-598 :-moz-placeholder,
+.page-home .pane-webform-client-block-205 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #FFF;
   opacity: 1;
 }
-.page-home .webform-client-form ::-moz-placeholder {
+.page-home .webform-client-form ::-moz-placeholder,
+.page-home .pane-webform-client-block-598 ::-moz-placeholder,
+.page-home .pane-webform-client-block-205 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #FFF;
   opacity: 1;
 }
-.page-home .webform-client-form :-ms-input-placeholder {
+.page-home .webform-client-form :-ms-input-placeholder,
+.page-home .pane-webform-client-block-598 :-ms-input-placeholder,
+.page-home .pane-webform-client-block-205 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #FFF;
 }
 .page-home .webform-client-form h2:before,
-.page-home .webform-client-form h2:after {
+.page-home .webform-client-form h2:after,
+.page-home .pane-webform-client-block-598 h2:before,
+.page-home .pane-webform-client-block-598 h2:after,
+.page-home .pane-webform-client-block-205 h2:before,
+.page-home .pane-webform-client-block-205 h2:after {
   background: #fff;
 }
-.page-home .webform-client-form .form-item .webform-component .webform-component-textfield {
+.page-home .webform-client-form .form-item .webform-component .webform-component-textfield,
+.page-home .pane-webform-client-block-598 .form-item .webform-component .webform-component-textfield,
+.page-home .pane-webform-client-block-205 .form-item .webform-component .webform-component-textfield {
   float: none;
   width: 100%;
   margin: 0 0 16px !important;
 }
 @media screen {
-  .page-home .webform-client-form .webform-component-textarea {
+  .page-home .webform-client-form .webform-component-textarea,
+  .page-home .pane-webform-client-block-598 .webform-component-textarea,
+  .page-home .pane-webform-client-block-205 .webform-component-textarea {
     padding: 0;
   }
 }
 @media (min-width: 1024px) {
-  .page-home .webform-client-form .webform-component-textarea {
+  .page-home .webform-client-form .webform-component-textarea,
+  .page-home .pane-webform-client-block-598 .webform-component-textarea,
+  .page-home .pane-webform-client-block-205 .webform-component-textarea {
     padding: 0 275px;
   }
 }
 @media (min-width: 1440px) {
-  .page-home .webform-client-form .webform-component-textarea {
+  .page-home .webform-client-form .webform-component-textarea,
+  .page-home .pane-webform-client-block-598 .webform-component-textarea,
+  .page-home .pane-webform-client-block-205 .webform-component-textarea {
     vertical-align: middle;
     clear: both;
     padding: 0 482px;
   }
 }
 .page-home .webform-client-form .form-text,
-.page-home .webform-client-form .form-textarea {
+.page-home .webform-client-form .form-textarea,
+.page-home .pane-webform-client-block-598 .form-text,
+.page-home .pane-webform-client-block-598 .form-textarea,
+.page-home .pane-webform-client-block-205 .form-text,
+.page-home .pane-webform-client-block-205 .form-textarea {
   background: rgba(0, 0, 0, 0.06);
   color: #fff !important;
   border: none;
@@ -3140,14 +3176,20 @@ h2.title-1 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.page-home .webform-client-form .grippie {
+.page-home .webform-client-form .grippie,
+.page-home .pane-webform-client-block-598 .grippie,
+.page-home .pane-webform-client-block-205 .grippie {
   display: none;
 }
-.page-home .webform-client-form .button-primary {
+.page-home .webform-client-form .button-primary,
+.page-home .pane-webform-client-block-598 .button-primary,
+.page-home .pane-webform-client-block-205 .button-primary {
   background: #343434;
   color: #fff;
 }
-.page-home .webform-client-form .button-primary:hover {
+.page-home .webform-client-form .button-primary:hover,
+.page-home .pane-webform-client-block-598 .button-primary:hover,
+.page-home .pane-webform-client-block-205 .button-primary:hover {
   background: #fff;
   color: #1fadff;
 }
