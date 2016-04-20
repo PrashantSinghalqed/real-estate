@@ -1,3 +1,4 @@
+
 .block-block-4{
   p{
     padding:0;
@@ -38,7 +39,7 @@
     width:94%;
     margin:0 3%;
   }
-}
+
 @include breakpoint($tablet){
   .view-content{
     width:96%;
@@ -174,7 +175,7 @@
   border-left: 2px solid #eaebef;
 }
 
-.page-about-us{
+
   .block-views-about-us-block-1{
     @include two-column-block;
   }
@@ -247,7 +248,7 @@ h2.title-1 {
 
 
 @include breakpoint($mobile){
-  .page-about-us .block-block-1{
+  .block-block-1{
     .container-12{
       width: auto;
       display: block;
@@ -258,14 +259,14 @@ h2.title-1 {
   }
 }
 @include breakpoint($tablet){
-  .page-about-us .block-block-1{
+   .block-block-1{
     .container-12{
 
     }
   }
 }
 @include breakpoint($desktop){
-  .page-about-us .block-block-1 {
+   .block-block-1 {
     .container-12 {
       position: relative;
       width: 1200px;
@@ -281,6 +282,7 @@ h2.title-1 {
   }
 
 /*--------professionals-------*/
+.page-about-us{
 @include breakpoint($mobile){
   .views-field-field-prof-pic img{
       width:100%;
@@ -291,11 +293,11 @@ h2.title-1 {
       width:auto;
     }
   }
-  .page-about-us {
+
     .block-views-about-us-block-2 {
       @include four-column-block;
     }
-  }
+
 @include breakpoint($desktop){
   .block-views-about-us-block-2{
     padding: 58px 0 20px;
@@ -323,6 +325,7 @@ h2.title-1 {
     height:74px;
   }
 }
+.content{
 .fa {
       float: left;
       font-size: 58px;
@@ -341,6 +344,7 @@ h2.title-1 {
         width:30%;
       }
     }
+}
 .block-views-about-us-block-3{
     border: 1px solid #eaebef;
     padding: 80px 0;
@@ -367,8 +371,9 @@ h2.title-1 {
     padding:40px;
   }
 }
-.page-about-us {
+
   .block-views-about-us-block-3 {
     @include about-us-3-column-block;
   }
+
 }
