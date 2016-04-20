@@ -265,8 +265,9 @@ function home_page_panel_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'video',
       'title' => '',
-      'body' => '<div id="parallax_two_wrapper" class="parallax_two_wrapper video-bg" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_YTP_1460454727982" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><iframe id="mbYTP_YTP_1460454727982" class="playerBox" style="position: absolute; z-index: 0; width: 1885.6px; height: 910px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -172.5px; margin-left: -222.8px;" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/YFKvL-ODa8k?autoplay=0&amp;modestbranding=1&amp;controls=0&..."></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
-<a class="tm_video_bg mb_YTVPlayer isMuted" data-property="{videoURL:\'http://youtu.be/YFKvL-ODa8k\', containment:\'#parallax_two_wrapper\',autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}" id="YTP_1460454727982" style="display: none; position: relative; background-image: none;">youtube</a><div class="container-12"><div class="grid-12"> <div class="region region-parallax-two">
+      'body' => '<div id="parallax_two_wrapper" class="parallax_two_wrapper video-bg" style="position: relative;"><div class="mbYTP_wrapper" id="wrapper_mbYTP_YTP_1460454727982" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 1; transition-property: opacity; transition-duration: 2000ms;"><iframe id="mbYTP_YTP_1460454727982" class="playerBox" style="position: absolute; z-index: 0; width: 1885.6px; height: 910px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -172.5px; margin-left: -222.8px;" frameborder="0" allowfullscreen="0" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/YFKvL-ODa8k?autoplay=1&amp;cc_load_policy=0&amp; disablekb=0&amp;fs=0&amp;iv_load_policy
+=3&amp;loop=1&amp;playlist=YFKvL-ODa8k&amp;=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;controls=0&"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>
+<div class="container-12"><div class="grid-12"> <div class="region region-parallax-two">
 <div id="block-block-10" class="block-block-10 block block-block block-odd">
  
  
@@ -312,7 +313,7 @@ function home_page_panel_default_page_manager_pages() {
     $pane->uuid = '8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
     $display->content['new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26'] = $pane;
     $display->panels['center'][7] = 'new-8fc9cd02-e3d1-44b9-a991-da2e2262ee26';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-64807e18-078b-4d99-b9ad-4e9d8ee53919';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

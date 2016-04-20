@@ -316,7 +316,7 @@ function services_feature_default_page_manager_pages() {
 	</div>
 </div>  </div>
 </div></div>
-<div class="parallax-bg parallax-img-2" data-type="background" data-speed="10">
+<div class="parallax-bg parallax-img-2" data-type="background" data-speed="2">
 </div>
 </div>',
       'format' => 'full_html',

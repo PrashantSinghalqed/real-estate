@@ -63,7 +63,7 @@ function blog_view_panels_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
@@ -102,7 +102,7 @@ function blog_view_panels_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -153,7 +153,7 @@ function blog_view_panels_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
@@ -185,6 +185,43 @@ function blog_view_panels_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog-field_share'.
+  $field_instances['node-blog-field_share'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addthis',
+        'settings' => array(),
+        'type' => 'addthis_disabled',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_share',
+    'label' => 'Share',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(),
+      'type' => 'addthis_button_widget',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-blog-field_youtube_'.
   $field_instances['node-blog-field_youtube_'] = array(
     'bundle' => 'blog',
@@ -193,7 +230,7 @@ function blog_view_panels_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
           'youtube_autohide' => FALSE,
@@ -238,6 +275,7 @@ function blog_view_panels_field_default_field_instances() {
   t('Blog Tags');
   t('Description');
   t('Image');
+  t('Share');
   t('Youtube ');
 
   return $field_instances;

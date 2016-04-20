@@ -22,7 +22,7 @@ function blog_view_panels_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Anonymous Blogs';
+  $handler->display->display_options['title'] = 'user Blog';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -190,6 +190,8 @@ function blog_view_panels_views_default_views() {
 
   /* Display: User Blog */
   $handler = $view->new_display('page', 'User Blog', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'User Blog';
   $handler->display->display_options['display_description'] = 'List of blogs posted by a particular user';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Nid */
@@ -302,6 +304,8 @@ function blog_view_panels_views_default_views() {
 
   /* Display: Anonymous Blogs page */
   $handler = $view->new_display('page', 'Anonymous Blogs page', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Anonymous Blogs';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';

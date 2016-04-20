@@ -80,7 +80,10 @@
     width: 150%;
     background: url("../images/parallax-four.jpg") center no-repeat fixed;
     background-size: cover;
-    max-height: 600px;
+    max-height: 1000px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   .pane-rental-services-block .block-views-services-two-block {
     @extend %clearfix;
@@ -166,7 +169,10 @@
       width: 150%;
       background: url("../images/parallax-five.jpg") center no-repeat fixed;
       background-size: cover;
-      max-height: 600px;
+      max-height: 1000px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      transition: all 0.2s ease;
       @include breakpoint($mobile){
         max-height: 1000px;
       }

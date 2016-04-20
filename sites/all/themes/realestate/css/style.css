@@ -963,7 +963,7 @@ span {
   vertical-align: baseline;
 }
 
-.container-12 {
+.page-wrapper > div.content {
   padding: 35px 0 70px;
 }
 
@@ -2990,7 +2990,10 @@ h2.title-1 {
   width: 150%;
   background: url("../images/parallax-four.jpg") center no-repeat fixed;
   background-size: cover;
-  max-height: 600px;
+  max-height: 1000px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .page-services .pane-rental-services-block .block-views-services-two-block {
   margin-top: 58px;
@@ -3083,7 +3086,10 @@ h2.title-1 {
   width: 150%;
   background: url("../images/parallax-five.jpg") center no-repeat fixed;
   background-size: cover;
-  max-height: 600px;
+  max-height: 1000px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 @media screen {
   .page-services .parallax_five_wrapper .parallax-bg {
