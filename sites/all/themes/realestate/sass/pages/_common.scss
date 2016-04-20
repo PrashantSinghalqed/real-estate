@@ -195,11 +195,11 @@ span {
     vertical-align: baseline;
 }
 
-.content {
+.container-12 {
     padding: 35px 0 70px;
 }
 
-.panels-flexible-row.poll {
+.poll-sidebar {
     .links {
         display: block;
         text-align: left;
@@ -232,7 +232,7 @@ span {
     }
 }
 
-.poll {
+.poll-sidebar {
     .title,
     .total {
         margin-bottom: 15px;
@@ -593,5 +593,49 @@ div.footer {
         background: url(../images/list-marker.png) 0 10px no-repeat;
         margin: 10px 0 0;
         padding: 0 0 0 34px;
+    }
+}
+
+.page-blog-,
+.page-blog,
+.page-faq,
+.page-testimonials {
+    .pager {
+        text-align: left;
+        margin-top: 30px;
+        li {
+            margin-left: 0;
+            padding: 0;
+        }
+        li.pager-current {
+            background: #343434;
+            color:#fff;
+            padding: 12px 15px 13px;
+        }
+        li.pager-item a,
+        li.pager-next a,
+        li.pager-last a,
+        li.pager-first a,
+        li.pager-previous a {
+            webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background: #1fadff;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            color: #fff;
+            display: inline-block;
+            font: 700 14px/20px $text-font-family;
+            outline: none;
+            padding: 12px 15px 13px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            &:hover {
+                background: #343434;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
     }
 }

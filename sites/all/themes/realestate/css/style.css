@@ -698,12 +698,22 @@ th {
   }
 }
 
-.page-blog- .region-content {
+.page-blog- .region-content,
+.page-blog .region-content,
+.page-faq .region-content,
+.page-testimonials .region-content,
+.page-archive-page .region-content,
+.page-node .region-content {
   width: 95%;
   margin: 0 auto;
 }
 @media screen {
-  .page-blog- .region-content .panels-flexible-column-first {
+  .page-blog- .region-content .panels-flexible-column-first,
+  .page-blog .region-content .panels-flexible-column-first,
+  .page-faq .region-content .panels-flexible-column-first,
+  .page-testimonials .region-content .panels-flexible-column-first,
+  .page-archive-page .region-content .panels-flexible-column-first,
+  .page-node .region-content .panels-flexible-column-first {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -711,14 +721,24 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-blog- .region-content .panels-flexible-column-first {
+  .page-blog- .region-content .panels-flexible-column-first,
+  .page-blog .region-content .panels-flexible-column-first,
+  .page-faq .region-content .panels-flexible-column-first,
+  .page-testimonials .region-content .panels-flexible-column-first,
+  .page-archive-page .region-content .panels-flexible-column-first,
+  .page-node .region-content .panels-flexible-column-first {
     width: 63.29114%;
     float: left;
     margin-right: 1.26582%;
   }
 }
 @media screen {
-  .page-blog- .region-content .panels-flexible-column-last {
+  .page-blog- .region-content .panels-flexible-column-last,
+  .page-blog .region-content .panels-flexible-column-last,
+  .page-faq .region-content .panels-flexible-column-last,
+  .page-testimonials .region-content .panels-flexible-column-last,
+  .page-archive-page .region-content .panels-flexible-column-last,
+  .page-node .region-content .panels-flexible-column-last {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -726,7 +746,12 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-blog- .region-content .panels-flexible-column-last {
+  .page-blog- .region-content .panels-flexible-column-last,
+  .page-blog .region-content .panels-flexible-column-last,
+  .page-faq .region-content .panels-flexible-column-last,
+  .page-testimonials .region-content .panels-flexible-column-last,
+  .page-archive-page .region-content .panels-flexible-column-last,
+  .page-node .region-content .panels-flexible-column-last {
     width: 35.44304%;
     float: right;
     margin-right: 0;
@@ -938,17 +963,17 @@ span {
   vertical-align: baseline;
 }
 
-.content {
+.container-12 {
   padding: 35px 0 70px;
 }
 
-.panels-flexible-row.poll .links {
+.poll-sidebar .links {
   display: block;
   text-align: left;
   list-style-type: none;
   padding-left: 0;
 }
-.panels-flexible-row.poll .links a {
+.poll-sidebar .links a {
   webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #1fadff;
@@ -964,30 +989,30 @@ span {
   text-transform: uppercase;
   letter-spacing: 0;
 }
-.panels-flexible-row.poll .links a:hover {
+.poll-sidebar .links a:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
 }
-.panels-flexible-row.poll .links li.first {
+.poll-sidebar .links li.first {
   margin-bottom: 10px;
 }
 
-.poll .title,
-.poll .total {
+.poll-sidebar .title,
+.poll-sidebar .total {
   margin-bottom: 15px;
 }
-.poll .bar {
+.poll-sidebar .bar {
   background-color: #fff;
   border: 1px solid #eaebef;
   height: 20px;
   padding: 1px;
 }
-.poll .bar .foreground {
+.poll-sidebar .bar .foreground {
   background: #1fadff;
   height: 16px;
 }
-.poll .form-submit {
+.poll-sidebar .form-submit {
   webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #1fadff;
@@ -1003,7 +1028,7 @@ span {
   text-transform: uppercase;
   letter-spacing: 0;
 }
-.poll .form-submit:hover {
+.poll-sidebar .form-submit:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
@@ -1276,6 +1301,88 @@ div.footer .block-copyright a:hover {
   background: url(../images/list-marker.png) 0 10px no-repeat;
   margin: 10px 0 0;
   padding: 0 0 0 34px;
+}
+
+.page-blog- .pager,
+.page-blog .pager,
+.page-faq .pager,
+.page-testimonials .pager {
+  text-align: left;
+  margin-top: 30px;
+}
+.page-blog- .pager li,
+.page-blog .pager li,
+.page-faq .pager li,
+.page-testimonials .pager li {
+  margin-left: 0;
+  padding: 0;
+}
+.page-blog- .pager li.pager-current,
+.page-blog .pager li.pager-current,
+.page-faq .pager li.pager-current,
+.page-testimonials .pager li.pager-current {
+  background: #343434;
+  color: #fff;
+  padding: 12px 15px 13px;
+}
+.page-blog- .pager li.pager-item a,
+.page-blog- .pager li.pager-next a,
+.page-blog- .pager li.pager-last a,
+.page-blog- .pager li.pager-first a,
+.page-blog- .pager li.pager-previous a,
+.page-blog .pager li.pager-item a,
+.page-blog .pager li.pager-next a,
+.page-blog .pager li.pager-last a,
+.page-blog .pager li.pager-first a,
+.page-blog .pager li.pager-previous a,
+.page-faq .pager li.pager-item a,
+.page-faq .pager li.pager-next a,
+.page-faq .pager li.pager-last a,
+.page-faq .pager li.pager-first a,
+.page-faq .pager li.pager-previous a,
+.page-testimonials .pager li.pager-item a,
+.page-testimonials .pager li.pager-next a,
+.page-testimonials .pager li.pager-last a,
+.page-testimonials .pager li.pager-first a,
+.page-testimonials .pager li.pager-previous a {
+  webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #1fadff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font: 700 14px/20px "Open-Sans", sans-serif;
+  outline: none;
+  padding: 12px 15px 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.page-blog- .pager li.pager-item a:hover,
+.page-blog- .pager li.pager-next a:hover,
+.page-blog- .pager li.pager-last a:hover,
+.page-blog- .pager li.pager-first a:hover,
+.page-blog- .pager li.pager-previous a:hover,
+.page-blog .pager li.pager-item a:hover,
+.page-blog .pager li.pager-next a:hover,
+.page-blog .pager li.pager-last a:hover,
+.page-blog .pager li.pager-first a:hover,
+.page-blog .pager li.pager-previous a:hover,
+.page-faq .pager li.pager-item a:hover,
+.page-faq .pager li.pager-next a:hover,
+.page-faq .pager li.pager-last a:hover,
+.page-faq .pager li.pager-first a:hover,
+.page-faq .pager li.pager-previous a:hover,
+.page-testimonials .pager li.pager-item a:hover,
+.page-testimonials .pager li.pager-next a:hover,
+.page-testimonials .pager li.pager-last a:hover,
+.page-testimonials .pager li.pager-first a:hover,
+.page-testimonials .pager li.pager-previous a:hover {
+  background: #343434;
+  color: #fff;
+  text-decoration: none;
 }
 
 .block-block-4 {
@@ -1784,49 +1891,6 @@ h2.title-1 {
   text-align: left;
   width: 10%;
   float: none;
-}
-
-.page-blog- .pager {
-  text-align: left;
-  margin-top: 30px;
-}
-.page-blog- .pager li {
-  margin-left: 0;
-  padding: 0;
-}
-.page-blog- .pager li.pager-current {
-  background: #343434;
-  color: #fff;
-  padding: 12px 15px 13px;
-}
-.page-blog- .pager li.pager-item a,
-.page-blog- .pager li.pager-next a,
-.page-blog- .pager li.pager-last a,
-.page-blog- .pager li.pager-first a,
-.page-blog- .pager li.pager-previous a {
-  webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background: #1fadff;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  color: #fff;
-  display: inline-block;
-  font: 700 14px/20px "Open-Sans", sans-serif;
-  outline: none;
-  padding: 12px 15px 13px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0;
-}
-.page-blog- .pager li.pager-item a:hover,
-.page-blog- .pager li.pager-next a:hover,
-.page-blog- .pager li.pager-last a:hover,
-.page-blog- .pager li.pager-first a:hover,
-.page-blog- .pager li.pager-previous a:hover {
-  background: #343434;
-  color: #fff;
-  text-decoration: none;
 }
 
 @media screen {
@@ -3205,4 +3269,24 @@ h2.title-1 {
 .page-services .pane-rental-services-block.block-views-block-four-block .view-display-id-block_4 .view-content .views-field-nothing {
   padding-top: 68px;
   margin-bottom: -21px;
+}
+
+.page-testimonials .view-testimonials-view .views-row {
+  margin-bottom: 30px;
+}
+.page-testimonials .view-testimonials-view .views-row-last {
+  margin-bottom: 0px;
+}
+.page-testimonials .view-testimonials-view .views-field-field-testimonial-image {
+  float: left;
+  margin: 0 20px 0 0;
+  max-width: 45%;
+  width: 80px;
+}
+.page-testimonials .view-testimonials-view .views-field-field-testimonial-description {
+  margin-bottom: 10px;
+}
+.page-testimonials .view-testimonials-view .views-field-field-client-name,
+.page-testimonials .view-testimonials-view .views-field-field-client-designation {
+  text-align: right;
 }

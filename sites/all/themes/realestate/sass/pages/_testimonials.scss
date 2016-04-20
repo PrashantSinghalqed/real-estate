@@ -1,0 +1,23 @@
+.page-testimonials {
+    .view-testimonials-view {
+        .views-row{
+          margin-bottom: 30px;
+          &-last {
+            margin-bottom: 0px;
+          }
+        }
+        .views-field-field-testimonial-image {
+            float: left;
+            margin: 0 20px 0 0;
+            max-width: 45%;
+            width: 80px;
+        }
+        .views-field-field-testimonial-description {
+            margin-bottom: 10px;
+        }
+        .views-field-field-client-name,
+        .views-field-field-client-designation {
+            text-align: right;
+        }
+    }
+}

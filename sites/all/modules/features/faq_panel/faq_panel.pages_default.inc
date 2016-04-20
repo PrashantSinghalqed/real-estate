@@ -246,7 +246,10 @@ function faq_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

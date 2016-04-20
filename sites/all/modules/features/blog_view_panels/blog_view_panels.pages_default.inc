@@ -26,11 +26,21 @@ function blog_view_panels_default_page_manager_handlers() {
     'body_classes_to_add' => '',
     'css_id' => '',
     'css' => '',
-    'contexts' => array(),
+    'contexts' => array(
+      0 => array(
+        'identifier' => 'User',
+        'keyword' => '%user:name',
+        'name' => 'user',
+        'type' => 'current',
+        'uid' => '',
+        'id' => 1,
+      ),
+    ),
     'relationships' => array(),
     'name' => '',
     'access' => array(
       'logic' => 'and',
+      'plugins' => array(),
     ),
   );
   $display = new panels_display();
@@ -131,7 +141,7 @@ function blog_view_panels_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'fhakfjla';
   $display->uuid = '2067f6f2-b18f-4284-a9ae-594fc15cf406';
   $display->content = array();
   $display->panels = array();
@@ -171,21 +181,30 @@ function blog_view_panels_default_page_manager_handlers() {
     $display->content['new-2f8832a9-a7ae-417a-ac88-af74b4bec610'] = $pane;
     $display->panels['categories'][0] = 'new-2f8832a9-a7ae-417a-ac88-af74b4bec610';
     $pane = new stdClass();
-    $pane->pid = 'new-ca750c21-31b0-4e91-a0e1-aceb5785b84b';
+    $pane->pid = 'new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
     $pane->panel = 'center';
-    $pane->type = 'node';
-    $pane->subtype = 'node';
+    $pane->type = 'views';
+    $pane->subtype = 'blog';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '%1',
-      'links' => 1,
-      'leave_node_title' => 0,
-      'identifier' => '',
-      'build_mode' => 'teaser',
-      'link_node_title' => 1,
-      'override_title' => 1,
-      'override_title_text' => '%user:name Blog ',
+      'override_pager_settings' => 0,
+      'use_pager' => 1,
+      'nodes_per_page' => '3',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'page_1',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -196,9 +215,9 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'ca750c21-31b0-4e91-a0e1-aceb5785b84b';
-    $display->content['new-ca750c21-31b0-4e91-a0e1-aceb5785b84b'] = $pane;
-    $display->panels['center'][0] = 'new-ca750c21-31b0-4e91-a0e1-aceb5785b84b';
+    $pane->uuid = '7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
+    $display->content['new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670'] = $pane;
+    $display->panels['center'][0] = 'new-7e9f6bc9-8ecd-473d-95fa-e89f010f3670';
     $pane = new stdClass();
     $pane->pid = 'new-64c22fbe-45bb-41f7-a624-571c76d8f727';
     $pane->panel = 'center';
@@ -240,7 +259,10 @@ function blog_view_panels_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -248,7 +270,7 @@ function blog_view_panels_default_page_manager_handlers() {
     $display->content['new-2a386b38-ec22-4316-8f8b-6debc5a50156'] = $pane;
     $display->panels['poll_region'][0] = 'new-2a386b38-ec22-4316-8f8b-6debc5a50156';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-ca750c21-31b0-4e91-a0e1-aceb5785b84b';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['blog_user__panel_context_2426784d-84a1-406c-8cb0-5cda87e4a6aa'] = $handler;
 
@@ -507,7 +529,10 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -630,7 +655,7 @@ function blog_view_panels_default_page_manager_pages() {
           0 => 'poll_region',
         ),
         'parent' => '1',
-        'class' => 'poll',
+        'class' => '',
         'hide_empty' => 0,
       ),
       'poll_region' => array(
@@ -771,7 +796,10 @@ function blog_view_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll-sidebar',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

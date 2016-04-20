@@ -125,7 +125,12 @@ $susy: (
   }
 }
 
-.page-blog- {
+.page-blog-,
+.page-blog,
+.page-faq,
+.page-testimonials,
+.page-archive-page,
+.page-node {
   .region-content {
     width: 95%;
     margin: 0 auto;
