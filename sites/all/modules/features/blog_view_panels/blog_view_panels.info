@@ -4,6 +4,7 @@ core = 7.x
 package = Features
 dependencies[] = about_us_page
 dependencies[] = addthis
+dependencies[] = addthis_displays
 dependencies[] = archive
 dependencies[] = blog
 dependencies[] = contact_feature
