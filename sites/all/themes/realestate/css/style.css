@@ -703,7 +703,8 @@ th {
 .page-faq .region-content,
 .page-testimonials .region-content,
 .page-archive-page .region-content,
-.page-node .region-content {
+.page-node .region-content,
+.page-taxonomy-term .region-content {
   width: 95%;
   margin: 0 auto;
 }
@@ -713,7 +714,8 @@ th {
   .page-faq .region-content .panels-flexible-column-first,
   .page-testimonials .region-content .panels-flexible-column-first,
   .page-archive-page .region-content .panels-flexible-column-first,
-  .page-node .region-content .panels-flexible-column-first {
+  .page-node .region-content .panels-flexible-column-first,
+  .page-taxonomy-term .region-content .panels-flexible-column-first {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -726,7 +728,8 @@ th {
   .page-faq .region-content .panels-flexible-column-first,
   .page-testimonials .region-content .panels-flexible-column-first,
   .page-archive-page .region-content .panels-flexible-column-first,
-  .page-node .region-content .panels-flexible-column-first {
+  .page-node .region-content .panels-flexible-column-first,
+  .page-taxonomy-term .region-content .panels-flexible-column-first {
     width: 63.29114%;
     float: left;
     margin-right: 1.26582%;
@@ -738,7 +741,8 @@ th {
   .page-faq .region-content .panels-flexible-column-last,
   .page-testimonials .region-content .panels-flexible-column-last,
   .page-archive-page .region-content .panels-flexible-column-last,
-  .page-node .region-content .panels-flexible-column-last {
+  .page-node .region-content .panels-flexible-column-last,
+  .page-taxonomy-term .region-content .panels-flexible-column-last {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -751,7 +755,8 @@ th {
   .page-faq .region-content .panels-flexible-column-last,
   .page-testimonials .region-content .panels-flexible-column-last,
   .page-archive-page .region-content .panels-flexible-column-last,
-  .page-node .region-content .panels-flexible-column-last {
+  .page-node .region-content .panels-flexible-column-last,
+  .page-taxonomy-term .region-content .panels-flexible-column-last {
     width: 35.44304%;
     float: right;
     margin-right: 0;
@@ -1304,21 +1309,24 @@ div.footer .block-copyright a:hover {
 .page-blog- .pager,
 .page-blog .pager,
 .page-faq .pager,
-.page-testimonials .pager {
+.page-testimonials .pager,
+.page-taxonomy-term .pager {
   text-align: left;
   margin-top: 30px;
 }
 .page-blog- .pager li,
 .page-blog .pager li,
 .page-faq .pager li,
-.page-testimonials .pager li {
+.page-testimonials .pager li,
+.page-taxonomy-term .pager li {
   margin-left: 0;
   padding: 0;
 }
 .page-blog- .pager li.pager-current,
 .page-blog .pager li.pager-current,
 .page-faq .pager li.pager-current,
-.page-testimonials .pager li.pager-current {
+.page-testimonials .pager li.pager-current,
+.page-taxonomy-term .pager li.pager-current {
   background: #343434;
   color: #fff;
   padding: 12px 15px 13px;
@@ -1342,7 +1350,12 @@ div.footer .block-copyright a:hover {
 .page-testimonials .pager li.pager-next a,
 .page-testimonials .pager li.pager-last a,
 .page-testimonials .pager li.pager-first a,
-.page-testimonials .pager li.pager-previous a {
+.page-testimonials .pager li.pager-previous a,
+.page-taxonomy-term .pager li.pager-item a,
+.page-taxonomy-term .pager li.pager-next a,
+.page-taxonomy-term .pager li.pager-last a,
+.page-taxonomy-term .pager li.pager-first a,
+.page-taxonomy-term .pager li.pager-previous a {
   webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #1fadff;
@@ -1377,7 +1390,12 @@ div.footer .block-copyright a:hover {
 .page-testimonials .pager li.pager-next a:hover,
 .page-testimonials .pager li.pager-last a:hover,
 .page-testimonials .pager li.pager-first a:hover,
-.page-testimonials .pager li.pager-previous a:hover {
+.page-testimonials .pager li.pager-previous a:hover,
+.page-taxonomy-term .pager li.pager-item a:hover,
+.page-taxonomy-term .pager li.pager-next a:hover,
+.page-taxonomy-term .pager li.pager-last a:hover,
+.page-taxonomy-term .pager li.pager-first a:hover,
+.page-taxonomy-term .pager li.pager-previous a:hover {
   background: #343434;
   color: #fff;
   text-decoration: none;
