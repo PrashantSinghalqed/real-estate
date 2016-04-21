@@ -167,24 +167,7 @@
 }
 @mixin home-three-column-block {
     .pane-content {
-        // @include breakpoint($mobile) {
-        //     @include span(16);
-        //     float: none;
-        //     margin-right: 0;
-        //     margin: 0 auto;
-        // }
-        // @include breakpoint($tablet) {
-        //     @include span(15 of 16);
-        //     float: none;
-        //     margin-right: 0;
-        //     margin: 0 auto;
-        // }
-        // @include breakpoint($widedesktop) {
-        //     @include span(12 of 16);
-        //     float: none;
-        //     margin-right: 0;
-        //     margin: 0 auto;
-        // }
+
         .text {
             @include breakpoint($mobile) {
                 @include span(16 of 16);
