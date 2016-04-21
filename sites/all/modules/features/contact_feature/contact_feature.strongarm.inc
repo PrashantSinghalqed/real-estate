@@ -118,7 +118,7 @@ function contact_feature_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_default';
   $strongarm->value = array(
-    'width' => '1170px',
+    'width' => '100%',
     'height' => '300px',
     'latlong' => '18.564176577263844,73.97323123164063',
     'zoom' => '10',
@@ -155,7 +155,7 @@ function contact_feature_strongarm() {
       'locpick' => FALSE,
       'nodrag' => 0,
       'nokeyboard' => 1,
-      'nomousezoom' => 0,
+      'nomousezoom' => 1,
       'nocontzoom' => 0,
       'autozoom' => 0,
       'dynmarkers' => 0,
@@ -225,7 +225,7 @@ function contact_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_marker_file';
-  $strongarm->value = '125';
+  $strongarm->value = '63';
   $export['gmap_marker_file'] = $strongarm;
 
   $strongarm = new stdClass();

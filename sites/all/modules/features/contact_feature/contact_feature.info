@@ -39,7 +39,6 @@ features[field_instance][] = node-contact_info-field_fax
 features[field_instance][] = node-contact_info-field_telephone
 features[node][] = contact_info
 features[node][] = webform
-features[node_export_features][] = cb3e5872-0166-4d91-b31a-9752e5905fae
 features[page_manager_pages][] = contacts_page
 features[user_permission][] = access all webform results
 features[user_permission][] = access own webform results
