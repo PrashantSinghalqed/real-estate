@@ -94,7 +94,7 @@
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #343434;
-    font: 900 30px/30px 'Open Sans', sans-serif;
+    font: 900 30px/30px $text-font-family;
     margin-bottom: 52px;
     position: relative;
   }
@@ -104,7 +104,7 @@
   .block-views-about-us-block-2 a,
   .combine-awards a{
     color: #343434;
-    font: bold 20px/26px 'Open Sans', sans-serif;
+    font: bold 20px/26px $text-font-family;
     margin-bottom: 5px;
 
   }

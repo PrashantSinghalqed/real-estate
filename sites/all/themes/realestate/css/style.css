@@ -763,7 +763,7 @@ th {
   overflow: hidden;
   background: #fff;
   color: #656565;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   position: relative;
@@ -780,7 +780,7 @@ img {
 
 h1 {
   color: #343434;
-  font: 400 50px/50px "Open-Sans", sans-serif;
+  font: 400 50px/50px "Open Sans", sans-serif;
   margin-bottom: 34px;
 }
 
@@ -789,7 +789,7 @@ h2 {
   letter-spacing: 8px;
   text-transform: uppercase;
   color: #343434;
-  font: 900 30px/30px "Open-Sans", sans-serif;
+  font: 900 30px/30px "Open Sans", sans-serif;
   margin-bottom: 52px;
   position: relative;
 }
@@ -848,13 +848,13 @@ h2:after {
 
 h4 {
   color: #343434;
-  font: 400 18px/24px "Open-Sans", sans-serif;
+  font: 400 18px/24px "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
 
 h6 {
   color: #343434;
-  font: bold 16px/26px "Open-Sans", sans-serif;
+  font: bold 16px/26px "Open Sans", sans-serif;
   margin-bottom: 5px;
 }
 
@@ -908,7 +908,7 @@ a.button {
   box-shadow: none;
   color: white;
   display: inline-block;
-  font: 700 14px/20px "Open-Sans", sans-serif;
+  font: 700 14px/20px "Open Sans", sans-serif;
   outline: none;
   padding: 12px 70px 13px;
   text-decoration: none;
@@ -947,7 +947,7 @@ select {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #656565 !important;
-  font: 14px 'Open Sans', sans-serif;
+  font: 14px "Open Sans", sans-serif;
   max-width: 100%;
   padding: 5px 10px 6px;
 }
@@ -981,7 +981,7 @@ span {
   box-shadow: none;
   color: white;
   display: inline-block;
-  font: 700 14px/20px "Open-Sans", sans-serif;
+  font: 700 14px/20px "Open Sans", sans-serif;
   outline: none;
   padding: 12px 70px 13px;
   text-decoration: none;
@@ -1020,7 +1020,7 @@ span {
   box-shadow: none;
   color: white;
   display: inline-block;
-  font: 700 14px/20px "Open-Sans", sans-serif;
+  font: 700 14px/20px "Open Sans", sans-serif;
   outline: none;
   padding: 12px 70px 13px;
   text-decoration: none;
@@ -1169,7 +1169,7 @@ div.footer .block-copyright a:hover {
 .tb-megamenu-nav li {
   background: none;
   border: 0;
-  font: 400 15px/20px 'Open Sans', sans-serif;
+  font: 400 15px/20px "Open Sans", sans-serif;
   margin: 0 0 0 62px;
   overflow: inherit;
   padding: 10px;
@@ -1190,7 +1190,7 @@ div.footer .block-copyright a:hover {
 
 .tb-megamenu .nav li a {
   color: #343434;
-  font: 400 15px/20px 'Open Sans', sans-serif;
+  font: 400 15px/20px "Open Sans", sans-serif;
   margin-bottom: 5px;
   text-decoration: none;
   border-right: none;
@@ -1198,12 +1198,11 @@ div.footer .block-copyright a:hover {
 }
 
 .tb-megamenu-nav {
-  font: bold 16px/26px 'Open Sans', sans-serif;
+  font: bold 16px/26px "Open Sans", sans-serif;
   margin-bottom: 5px;
   text-decoration: none;
 }
 
-> > > > > > > aa48c1512c4976033bfad4f31d6379fcf5887d9f
 .region-header-top {
   z-index: 99;
   padding: 0 0 29px;
@@ -1236,7 +1235,7 @@ div.footer .block-copyright a:hover {
 .search-button .fa:after {
   letter-spacing: 1px;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   content: 'Search';
   padding-left: 18px;
 }
@@ -1352,7 +1351,7 @@ div.footer .block-copyright a:hover {
   box-shadow: none;
   color: #fff;
   display: inline-block;
-  font: 700 14px/20px "Open-Sans", sans-serif;
+  font: 700 14px/20px "Open Sans", sans-serif;
   outline: none;
   padding: 12px 15px 13px;
   text-decoration: none;
@@ -1472,7 +1471,7 @@ div.footer .block-copyright a:hover {
     letter-spacing: 8px;
     text-transform: uppercase;
     color: #343434;
-    font: 900 30px/30px 'Open Sans', sans-serif;
+    font: 900 30px/30px "Open Sans", sans-serif;
     margin-bottom: 52px;
     position: relative;
   }
@@ -1482,7 +1481,7 @@ div.footer .block-copyright a:hover {
 .page-about-us .block-views-about-us-block-2 a,
 .page-about-us .combine-awards a {
   color: #343434;
-  font: bold 20px/26px 'Open Sans', sans-serif;
+  font: bold 20px/26px "Open Sans", sans-serif;
   margin-bottom: 5px;
 }
 .page-about-us .about-desc a:hover,
@@ -2463,7 +2462,7 @@ h2.title-1 {
     width: auto;
     background: none;
     border: 0;
-    font: 400 15px/20px 'Open Sans', sans-serif;
+    font: 400 15px/20px "Open Sans", sans-serif;
     margin-left: 15px;
     overflow: inherit;
     padding: 0;

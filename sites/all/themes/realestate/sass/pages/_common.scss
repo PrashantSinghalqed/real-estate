@@ -4,7 +4,7 @@
     overflow: hidden;
     background: #fff;
     color: #656565;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $text-font-family;
     font-size: 14px;
     line-height: 26px;
     // min-width: 1250px;
@@ -180,7 +180,7 @@ select {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #656565 !important;
-    font: 14px 'Open Sans', sans-serif;
+    font: 14px $text-font-family;
     max-width: 100%;
     padding: 5px 10px 6px;
 }
@@ -457,7 +457,7 @@ div.footer {
 .tb-megamenu-nav li {
     background: none;
     border: 0;
-    font: 400 15px/20px 'Open Sans', sans-serif;
+    font: 400 15px/20px $text-font-family;
     margin: 0 0 0 62px;
     overflow: inherit;
     padding: 10px;
@@ -478,7 +478,7 @@ div.footer {
 
 .tb-megamenu .nav li a {
     color: #343434;
-    font: 400 15px/20px 'Open Sans', sans-serif;
+    font: 400 15px/20px $text-font-family;
     margin-bottom: 5px;
     text-decoration: none;
     border-right: none;
@@ -486,12 +486,11 @@ div.footer {
 }
 
 .tb-megamenu-nav {
-    font: bold 16px/26px 'Open Sans', sans-serif;
+    font: bold 16px/26px $text-font-family;
     margin-bottom: 5px;
     text-decoration: none;
 }
 
->>>>>>> aa48c1512c4976033bfad4f31d6379fcf5887d9f
 .region-header-top {
     z-index: 99;
     padding: 0 0 29px;
@@ -525,7 +524,7 @@ div.footer {
     .fa:after {
         letter-spacing: 1px;
         font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $text-font-family;
         content: 'Search';
         padding-left: 18px;
     }
