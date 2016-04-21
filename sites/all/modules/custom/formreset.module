@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function formreset_form_alter(&$form, &$form_state, $form_id) {
+switch ($form_id) {
+case 'myform':
+  $form['buttons']['reset_button'] = array(
+    '#type' => 'markup',
+    '#value' => '<input class="form-reset button-primary" value="Clear" type="reset">',
+    '#weight' => 2000,
+  );
+  break;
+ }
+ return $form;
+}
