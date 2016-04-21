@@ -2495,6 +2495,14 @@ h2.title-1 {
   text-decoration: none;
 }
 
+.page-home .panel-separator {
+  margin: 0;
+}
+.page-home .page-wrapper > div.content {
+  /* padding: 35px 0 70px; */
+  padding: 0;
+}
+
 /*-----------flex slider-----------*/
 .page-home .flexslider {
   background: none;
@@ -2596,6 +2604,10 @@ h2.title-1 {
 }
 
 /*-------static block----------*/
+.page-home .content .region .pane-static {
+  margin-top: 100px;
+}
+
 @media screen {
   .page-home .pane-static {
     width: 96%;
@@ -2820,6 +2832,12 @@ h2.title-1 {
   border: 1px solid #eaebef;
   padding: 58px 10px 0;
   margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.page-home .content .region .pane-poll-block {
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 @media screen {
