@@ -22,7 +22,7 @@ function blog_view_panels_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -64,9 +64,8 @@ function blog_view_panels_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -106,10 +105,10 @@ function blog_view_panels_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'node_view_mode_image',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -194,9 +193,14 @@ function blog_view_panels_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'addthis',
-        'settings' => array(),
-        'type' => 'addthis_disabled',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'buttons_size' => 'addthis_16x16_style',
+          'counter_orientation' => 'horizontal',
+          'extra_css' => '',
+          'share_services' => 'facebook,twitter,googleplus,delicious,linkedin,email',
+        ),
+        'type' => 'addthis_basic_toolbox',
         'weight' => 5,
       ),
       'teaser' => array(
