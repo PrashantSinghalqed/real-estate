@@ -160,7 +160,8 @@
 
 #nice-menu-1 > li > a:hover,
 #nice-menu-1 > li.active-trail > a,
-#nice-menu-1 > li.sfHover > a {
+#nice-menu-1 > li.sfHover > a ,
+#nice-menu-1 > li > ul > li >a:hover{
     color: #1fadff;
     text-decoration: none;
 }
@@ -176,6 +177,7 @@
                     // float:left;
                     //width:80%;
                     margin-left: 25px;
+                    width:150px;
                 }
             }
         }
