@@ -1951,6 +1951,29 @@ h2.title-1 {
     margin-right: 0;
   }
 }
+.page-contacts .webform-client-form div.form-actions input#edit-reset {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #1fadff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+  display: inline-block;
+  font: 700 14px/20px "Open Sans", sans-serif;
+  outline: none;
+  padding: 12px 70px 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.page-contacts .webform-client-form div.form-actions input#edit-reset:hover {
+  background: #343434;
+  color: #fff;
+  text-decoration: none;
+}
 
 .view-main-gallery .item-list {
   background: none;
@@ -2009,10 +2032,10 @@ h2.title-1 {
 }
 
 .galleryimage img {
-  -moz-transition: .2s ease;
-  -o-transition: .2s ease;
-  /* -webkit-transition: .2s ease; */
-  /* transition: .2s ease; */
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
   width: 100%;
 }
 

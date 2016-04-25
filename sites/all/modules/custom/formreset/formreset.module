@@ -1,0 +1,16 @@
+<?php
+
+function formreset_form_webform_client_form_86_alter(&$form, &$form_state, $form_id) {
+  // Modification for the form with the given form ID goes here. For example, if
+  // FORM_ID is "user_register_form" this code would run only on the user
+  // registration form.
+dsm($form);
+  $form['actions']['reset'] = array(
+    '#type' => 'button',
+    '#value' => t('Clear'),
+    '#weight' => 9,
+    '#validate' => array(),
+    '#attributes' => array(
+      'onclick' => 'this.form.reset(); return false;'),
+);
+}
