@@ -1647,7 +1647,7 @@ h2.title-1 {
     margin: 0px 0px 30px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .block-block-1 .container-12 {
     position: relative;
     width: 1200px;
@@ -2799,11 +2799,12 @@ h2.title-1 {
 }
 
 @media (min-width: 1024px) {
-  .view-display-id-block_1 .view-content {
+  .home-page .view-display-id-block_1 .view-content {
     width: 100%;
     margin: 0 auto;
   }
 }
+
 @media screen {
   .pane-slideshow .view-display-id-block_1 {
     width: 100%;

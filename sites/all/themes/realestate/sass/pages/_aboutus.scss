@@ -265,7 +265,7 @@ h2.title-1 {
     }
   }
 }
-@include breakpoint($desktop){
+@include breakpoint($widedesktop){
    .block-block-1 {
     .container-12 {
       position: relative;
