@@ -506,7 +506,21 @@
 .pane-gallery-menu {
     padding: 46px 0;
 }
-
+.page-home{
+    .view-id-gallery_menu{
+        .item-list{
+    .views-field-field-property-price{
+        padding-top: 11px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    letter-spacing: 15px;
+    color: #343434;
+    border-top: 2px solid #eaebef;
+    }
+}
+}
+}
 
 /*-----------slider 2-------------------*/
 
@@ -562,7 +576,7 @@
         }
     }
 }
-.home-page{
+.page-home{
 @include breakpoint($desktop) {
     .view-display-id-block_1 {
         .view-content {
