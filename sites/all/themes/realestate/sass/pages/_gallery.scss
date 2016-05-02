@@ -60,10 +60,10 @@
 
 .galleryimage {
     img {
-        -moz-transition: .2s ease;
-        -o-transition: .2s ease;
-        /* -webkit-transition: .2s ease; */
-        /* transition: .2s ease; */
+        -moz-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease;
         width: 100%;
     }
 }
@@ -212,7 +212,7 @@
     .galleryimage {
         a {
             // width:49%;
-            height: 480px;
+            height: 330px;
         }
     }
 }

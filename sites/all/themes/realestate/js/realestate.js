@@ -16,6 +16,9 @@
   //       });
   //   });
    //alert("hello");
+    if($("body").hasClass('logged-in')) {
+      $('menu').css("display","none");
+    }
     $(window).scroll(function(){
       if($(window).width() >= 1024){
        var h= $(".header-top").height();
@@ -52,6 +55,5 @@
       });
   });// your code
 })(jQuery);
-
 
 
