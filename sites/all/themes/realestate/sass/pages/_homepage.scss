@@ -518,6 +518,21 @@
     color: #343434;
     border-top: 2px solid #eaebef;
     }
+    @include breakpoint($mobile){
+        .views-field-field-property-price{
+            font-size: 50px;
+        }
+    }
+    @include breakpoint($desktop){
+        .views-field-field-property-price{
+            font-size: 35px;
+        }
+    }
+    @include breakpoint($widedesktop){
+        .views-field-field-property-price{
+            font-size: 35px;
+        }
+    }
 }
 }
 }
