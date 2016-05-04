@@ -288,9 +288,10 @@ h2.title-1 {
       width:100%;
     }
   }
-@include breakpoint($desktop){
+@include breakpoint($tablet){
   .views-field-field-prof-pic img{
       width:auto;
+      height:auto;
     }
   }
 
@@ -341,7 +342,7 @@ h2.title-1 {
         float: left;
         margin: 0 30px 20px 0;
         width:auto;
-        width:30%;
+        width:16%;
       }
     }
 }

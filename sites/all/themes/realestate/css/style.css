@@ -1669,9 +1669,10 @@ h2.title-1 {
     width: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .page-about-us .views-field-field-prof-pic img {
     width: auto;
+    height: auto;
   }
 }
 .page-about-us .block-views-about-us-block-2 .views-row {
@@ -1741,7 +1742,7 @@ h2.title-1 {
     float: left;
     margin: 0 30px 20px 0;
     width: auto;
-    width: 30%;
+    width: 16%;
   }
 }
 .page-about-us .block-views-about-us-block-3 {
