@@ -3,7 +3,7 @@ description = Drupal 7 responsive theme for Real estate website
 
 core = 7.x
 
-scripts[] = js/realestate.js
+scripts[] = js/realestate.min.js
 
 stylesheets[all][] = css/style.css
 
